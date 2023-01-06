@@ -1,0 +1,13 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<scroll-view
+  scroll-y="{{ true }}"
+  class="ext-class {{ namespace.join('sidebar') }}"
+  style="{{ extStyle }}"
+  bind:scrolltoupper="onScrollToUpper"
+  bind:scrolltolower="onScrollToLower"
+  bind:scroll="onScroll"
+>
+  <slot />
+</scroll-view>
+

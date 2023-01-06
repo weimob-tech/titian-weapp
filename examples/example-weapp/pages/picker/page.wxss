@@ -1,0 +1,263 @@
+.page {
+  background-color: #f9f9f9;
+}
+
+.page-container {
+  position: relative;
+
+  /* height: 40vh; */
+}
+
+.page-container.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* height: calc(40vh + 44px); */
+
+  /* margin-top: -44px; */
+}
+
+.page-container:empty {
+  display: none;
+}
+
+.page-container:empty + .menu {
+  height: auto;
+  padding-top: 0;
+
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+.page-container:empty + .menu::before {
+  content: none;
+}
+
+.page-container:empty + .menu::after {
+  content: none;
+}
+
+.page-container:empty + .menu .footer {
+  height: 28rpx;
+  padding-bottom: 0;
+}
+
+.menu {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 10rpx;
+  overflow: hidden;
+
+  border-radius: 32rpx 32rpx 0 0;
+
+  background: #fff;
+  box-shadow: 0 -8rpx 40rpx 0 rgba(0, 0, 0, 6%);
+}
+
+.menu::before {
+  content: '';
+
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 40rpx;
+  left: 40rpx;
+  height: 50rpx;
+
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0%) 0%, #fff 100%);
+}
+
+.menu::after {
+  content: '';
+
+  position: absolute;
+  z-index: 1;
+  right: 40rpx;
+  bottom: 0;
+  left: 40rpx;
+  height: 68rpx;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0%) 0%, #fff 100%);
+}
+
+.drawer {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 0 48rpx 20rpx;
+  overflow: hidden;
+
+  border-radius: 12rpx;
+
+  background: #f9f9f9;
+}
+
+/* .drawer.first {
+  margin-top: 50rpx;
+}
+.drawer.last {
+  margin-bottom: 100rpx;
+} */
+.drawer::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+
+  transform: scale(0.5);
+  transform-origin: left top;
+
+  border: 2rpx solid #f2f2f2;
+  border-radius: 24rpx;
+}
+
+.title {
+  box-sizing: border-box;
+  width: 150rpx;
+  padding: 32rpx;
+}
+
+.desc {
+  color: #212121;
+  font-size: 26rpx;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.name {
+  margin-top: 6rpx;
+
+  color: #c4c4c4;
+  font-size: 20rpx;
+  line-height: 24rpx;
+}
+
+.operation {
+  flex: 1;
+}
+
+.radio-box {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: calc(100vw - 246rpx);
+
+  white-space: nowrap;
+}
+
+.radio-box::before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20rpx;
+
+  background: linear-gradient(-90deg, rgba(250, 250, 250, 0%) 0%, #fafafa 100%);
+}
+
+.radio-box::after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20rpx;
+
+  background: linear-gradient(90deg, rgba(250, 250, 250, 0%) 0%, #fafafa 100%);
+}
+
+.radio {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: 60rpx;
+  margin-top: 6rpx;
+  margin-bottom: 6rpx;
+  padding: 0 12rpx;
+
+  border-radius: 8rpx;
+
+  background: #fff;
+  box-shadow: 0 4rpx 10rpx 0 rgba(0, 0, 0, 2%);
+
+  color: #9e9e9e;
+  font-size: 24rpx;
+  line-height: normal;
+}
+
+.radio:first-child {
+  margin-left: 20rpx;
+}
+
+.radio:last-child {
+  margin-right: 20rpx;
+}
+
+.radio + .radio {
+  margin-left: 12rpx;
+}
+
+.radio.checked {
+  color: #111;
+  font-weight: 500;
+}
+
+.colors {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 30rpx;
+}
+
+.color {
+  position: relative;
+  width: 36rpx;
+  height: 36rpx;
+
+  border: 2rpx solid transparent;
+  border-radius: 100%;
+}
+
+.color + .color {
+  margin-left: 51rpx;
+}
+
+.color.checked {
+  border-color: inherit;
+}
+
+.color.checked::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  border: 3rpx solid #fff;
+  border-radius: 100%;
+}
+
+.radius {
+  flex: 1;
+  padding-right: 40rpx;
+  padding-left: 20rpx;
+}
+
+.footer {
+  height: 34rpx;
+  padding-bottom: constant(safe-area-inset-bottom); /* 兼容 iOS < 11.2 */
+  padding-bottom: env(safe-area-inset-bottom); /* 兼容 iOS >= 11.2 */
+}

@@ -1,0 +1,5 @@
+<ti-page options="{{ options }}" center="{{ false }}" bind:change="onChange">
+  <view class="container">
+    <ti-collapse value="{{ active }}" repel="{{ attr.mode === 'accordion' }}" options="{{ list }}" />
+  </view>
+</ti-page>

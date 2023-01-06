@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="titian-loading-wrap"
+    style=""
+  >
+    <wx-view
+      class="ext-class titian-loading-circular titian-loading"
+      style="padding:6rpx;width:60rpx;height:60rpx"
+    >
+      <wx-view
+        class="titian-loading-view-circular titian-loading-view"
+        style="width:60rpx;height:60rpx"
+      >
+        <wx-view
+          class="titian-loading-view-item"
+          style="width:60rpx;height:60rpx;border-width:5rpx"
+        />
+      </wx-view>
+      <wx-view
+        class="titian-loading-view-circular titian-loading-view"
+        style="width:60rpx;height:60rpx"
+      >
+        <wx-view
+          class="titian-loading-view-item"
+          style="width:60rpx;height:60rpx;border-width:5rpx"
+        />
+      </wx-view>
+      <wx-view
+        class="titian-loading-view-circular titian-loading-view"
+        style="width:60rpx;height:60rpx"
+      >
+        <wx-view
+          class="titian-loading-view-item"
+          style="width:60rpx;height:60rpx;border-width:5rpx"
+        />
+      </wx-view>
+      <wx-view
+        class="titian-loading-view-circular titian-loading-view"
+        style="width:60rpx;height:60rpx"
+      >
+        <wx-view
+          class="titian-loading-view-item"
+          style="width:60rpx;height:60rpx;border-width:5rpx"
+        />
+      </wx-view>
+      <wx-view
+        class="titian-loading-view-circular titian-loading-view"
+        style="width:60rpx;height:60rpx"
+      >
+        <wx-view
+          class="titian-loading-view-item"
+          style="width:60rpx;height:60rpx;border-width:5rpx"
+        />
+      </wx-view>
+    </wx-view>
+    <wx-view
+      class="titian-loading-text"
+      style=""
+    />
+  </wx-view>
+</main>
+`;

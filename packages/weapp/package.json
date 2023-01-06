@@ -1,0 +1,22 @@
+{
+  "name": "titian-mp",
+  "version": "0.1.0",
+  "description": "wechat mini program ui component",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weimob-tech/titian-mp"
+  },
+  "license": "MIT",
+  "author": "",
+  "types": "types/**/*.d.ts",
+  "files": [
+    "esm",
+    "types",
+    "README.md"
+  ],
+  "devDependencies": {
+    "miniprogram-simulate": "^1.4.3"
+  },
+  "miniprogram": "esm"
+}

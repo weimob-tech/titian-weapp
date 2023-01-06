@@ -1,0 +1,312 @@
+{
+  "description": "Titian weapp 项目配置文件",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "es7": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "disableUseStrict": false,
+    "minifyWXML": true,
+    "showES6CompileOption": false,
+    "useCompilerPlugins": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.20.1",
+  "appid": "wxc0a8a416d00114a6",
+  "projectname": "Titian",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "商品详情",
+          "pathName": "pages/product-detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "ActionSheet 上拉菜单",
+          "pathName": "pages/action-sheet/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "BackTop 返回顶部",
+          "pathName": "pages/back-top/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Badge 徽标",
+          "pathName": "pages/badge/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Button 按钮",
+          "pathName": "pages/button/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Calendar 日历",
+          "pathName": "pages/calendar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Cell 输入格",
+          "pathName": "pages/cell/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Checkbox 复选框",
+          "pathName": "pages/checkbox/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Collapse 折叠面板",
+          "pathName": "pages/collapse/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Circle Progress 环形进度条",
+          "pathName": "pages/circle-progress/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "CountDown 倒计时",
+          "pathName": "pages/countdown/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Dialog 对话框",
+          "pathName": "pages/dialog/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Divider 分割线",
+          "pathName": "pages/divider/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Dropdown Menu 下拉菜单",
+          "pathName": "pages/dropdown-menu/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Empty 空态",
+          "pathName": "pages/empty/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Grid 宫格",
+          "pathName": "pages/grid/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Icon 图标",
+          "pathName": "pages/icon/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Image 图标",
+          "pathName": "pages/image/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Input 输入框",
+          "pathName": "pages/input/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "InputNumber 数字输入框",
+          "pathName": "pages/input-number/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Layout 布局",
+          "pathName": "pages/layout/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Loading 加载",
+          "pathName": "pages/loading/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "NoticeBar 公告栏",
+          "pathName": "pages/notice-bar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Picker 选择器",
+          "pathName": "pages/picker/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Popup 弹出层",
+          "pathName": "pages/popup/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Progress 进度条",
+          "pathName": "pages/progress/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Radio 单选框",
+          "pathName": "pages/radio/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Rate 评分",
+          "pathName": "pages/rate/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "ShareSheet 分享",
+          "pathName": "pages/share-sheet/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Sidebar 侧边栏",
+          "pathName": "pages/sidebar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Slider 滑块",
+          "pathName": "pages/slider/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Steps 步骤",
+          "pathName": "pages/steps/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Sticky 粘性布局",
+          "pathName": "pages/sticky/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "SwipeCell 侧拉表格",
+          "pathName": "pages/swipe-cell/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Tabbar 标签栏",
+          "pathName": "pages/tabbar/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Tag 标签",
+          "pathName": "pages/tag/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Textarea 文本域",
+          "pathName": "pages/textarea/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Toast 提示",
+          "pathName": "pages/toast/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Tooltip 提示",
+          "pathName": "pages/tooltip/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Transition 动效",
+          "pathName": "pages/transition/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "TreeSelect 树形选择",
+          "pathName": "pages/tree-select/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Uploader 上传",
+          "pathName": "pages/uploader/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

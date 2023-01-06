@@ -1,0 +1,757 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should multiple mode do success 1`] = `
+<main>
+  <ti-dropdown-menu
+    class="menu"
+  >
+    <wx-view
+      class="ext-class titian-dropdown-menu"
+      style=""
+    >
+      <wx-view
+        class="titian-dropdown-menu-title-wrap"
+      >
+        <wx-view
+          class="title-class titian-dropdown-menu-title titian-dropdown-menu-title-0 titian-dropdown-menu-visible"
+          data-idx="{{0}}"
+        >
+          <ti-button
+            data-idx="{{0}}"
+            bind:click="onTitleToggle"
+          >
+            <wx-button
+              appParameter=""
+              class="ext-class titian-button-block titian-button-hairline titian-button titian-button-text titian-button-type-primary titian-button-size-big"
+              data-detail="{{null}}"
+              disabled="{{false}}"
+              formType=""
+              hoverClass="active"
+              hoverStartTime="{{20}}"
+              hoverStayTime="{{70}}"
+              id="titian-button"
+              lang="en"
+              loading="{{false}}"
+              openType=""
+              scope=""
+              sendMessageImg=""
+              sendMessagePath=""
+              sendMessageTitle=""
+              sessionFrom=""
+              showMessageCard="{{false}}"
+              size="big"
+              style="--text-color:var(--button-text-color,primary);--loading-color:var(--button-loading-color, --text-color);--background-color:transparent;--active-color:transparent"
+              bind:FollowLifestyle="bindFollowLifestyle"
+              bind:contact="onContact"
+              bind:error="onError"
+              bind:getAuthorize="bindGetAuthorize"
+              bind:getphonenumber="onGetphonenumber"
+              bind:getuserinfo="onGetuserinfo"
+              bind:launchapp="onLaunchapp"
+              bind:opensetting="onOpensetting"
+              bind:tap="onClick"
+            >
+              <wx-view
+                class="titian-button-content button-inner-class"
+              >
+                
+        选项1
+        
+                <wx-view
+                  class="titian-dropdown-menu-icon"
+                >
+                  <ti-icon>
+                    <wx-view
+                      class="titian-icon-base titian-icon titian-icon-arrow-down ext-class"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </ti-icon>
+                </wx-view>
+              </wx-view>
+            </wx-button>
+          </ti-button>
+        </wx-view>
+        <wx-view
+          class="title-class titian-dropdown-menu-title titian-dropdown-menu-title-1"
+          data-idx="{{1}}"
+        >
+          <ti-button
+            data-idx="{{1}}"
+            bind:click="onTitleToggle"
+          >
+            <wx-button
+              appParameter=""
+              class="ext-class titian-button-block titian-button-hairline titian-button titian-button-text titian-button-type-primary titian-button-size-big"
+              data-detail="{{null}}"
+              disabled="{{false}}"
+              formType=""
+              hoverClass="active"
+              hoverStartTime="{{20}}"
+              hoverStayTime="{{70}}"
+              id="titian-button"
+              lang="en"
+              loading="{{false}}"
+              openType=""
+              scope=""
+              sendMessageImg=""
+              sendMessagePath=""
+              sendMessageTitle=""
+              sessionFrom=""
+              showMessageCard="{{false}}"
+              size="big"
+              style="--text-color:var(--button-text-color,black);--loading-color:var(--button-loading-color, --text-color);--background-color:transparent;--active-color:transparent"
+              bind:FollowLifestyle="bindFollowLifestyle"
+              bind:contact="onContact"
+              bind:error="onError"
+              bind:getAuthorize="bindGetAuthorize"
+              bind:getphonenumber="onGetphonenumber"
+              bind:getuserinfo="onGetuserinfo"
+              bind:launchapp="onLaunchapp"
+              bind:opensetting="onOpensetting"
+              bind:tap="onClick"
+            >
+              <wx-view
+                class="titian-button-content button-inner-class"
+              >
+                
+        选项2
+        
+                <wx-view
+                  class="titian-dropdown-menu-icon"
+                >
+                  <ti-icon>
+                    <wx-view
+                      class="titian-icon-base titian-icon titian-icon-arrow-down ext-class"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </ti-icon>
+                </wx-view>
+              </wx-view>
+            </wx-button>
+          </ti-button>
+        </wx-view>
+      </wx-view>
+      <ti-dropdown-item
+        class="item1"
+        bind:change="onChange"
+        bind:close="onClose"
+        bind:open="onOpen"
+        bind:submit="onSubmit"
+      >
+        <wx-view
+          class="ext-class titian-dropdown-item-visible titian-dropdown-item"
+          style="top: 0px"
+        >
+          <ti-popup
+            bind:close="onPopupClose"
+            bind:enter="onEnter"
+            bind:entered="onEntered"
+            bind:exit="onExit"
+            bind:exited="onExited"
+          >
+            <ti-transition
+              enterDoneClass="titian-popup-enter-done"
+              exitClass="titian-popup-enter-done"
+              extClass="titian-popup-mask ext-mask-class"
+              preventScroll="{{true}}"
+              bind:tap="onTapMask"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="ext-class titian-transition titian-fade-enter-done titian-fade-enter-active enter-done-class enter-active-class"
+                disableScroll=""
+                style="-webkit-transition-duration:300ms;transition-duration:300ms;-webkit-transition-timing-function:linear;transition-timing-function:linear;z-index: 10001; ; "
+                bind:transitionend="onTransitionEnd"
+              />
+            </ti-transition>
+            <ti-transition
+              enterActiveClass="titian-popup-fade-down-start-active titian-popup"
+              enterClass="titian-popup-fade-down-start titian-popup"
+              enterDoneClass="titian-popup-fade-down-middle titian-popup"
+              exitActiveClass="titian-popup-fade-down-end-active titian-popup"
+              exitClass="titian-popup-fade-down-middle titian-popup"
+              exitDoneClass="titian-popup-fade-down-end titian-popup"
+              extClass="ext-content-class titian-popup-top titian-popup"
+              bind:enter="onEnter"
+              bind:entered="onEntered"
+              bind:exit="onExit"
+              bind:exited="onExited"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="ext-class titian-transition titian--enter-done titian--enter-active enter-done-class enter-active-class"
+                disableScroll=""
+                style="-webkit-transition-duration:300ms;transition-duration:300ms;z-index:10002"
+                bind:transitionend="onTransitionEnd"
+              >
+                <wx-view
+                  class="titian-popup-box ext-class"
+                  style=""
+                >
+                  <ti-cell
+                    data-item="{{
+                      Object {
+                        "title": "选项1",
+                        "value": "1",
+                      }
+                    }}"
+                    extClass="item-class "
+                    bind:click="onCellTap"
+                  >
+                    <wx-view
+                      class="ext-class titian-cell-divider titian-cell"
+                      hoverClass="hover-class "
+                      hoverStayTime="60"
+                      style="align-items:center"
+                      bind:tap="onClick"
+                    >
+                      <wx-view
+                        class="titian-cell-title-wrap"
+                        style="align-items:center"
+                      >
+                        <wx-view
+                          class="titian-cell-icon-box"
+                        />
+                        <wx-view>
+                          <wx-view
+                            style="display:flex;align-items:center"
+                          >
+                            <wx-view
+                              class="title-class titian-cell-title"
+                              style=""
+                            >
+                              
+          选项1
+        
+                            </wx-view>
+                          </wx-view>
+                        </wx-view>
+                      </wx-view>
+                      <wx-view
+                        class="titian-cell-desc-wrap"
+                      >
+                        <wx-view
+                          class="desc-content-class titian-cell-desc-content"
+                        />
+                      </wx-view>
+                    </wx-view>
+                  </ti-cell>
+                  <ti-cell
+                    data-item="{{
+                      Object {
+                        "title": "选项2",
+                        "value": "2",
+                      }
+                    }}"
+                    extClass="item-class "
+                    bind:click="onCellTap"
+                  >
+                    <wx-view
+                      class="ext-class titian-cell-divider titian-cell"
+                      hoverClass="hover-class "
+                      hoverStayTime="60"
+                      style="align-items:center"
+                      bind:tap="onClick"
+                    >
+                      <wx-view
+                        class="titian-cell-title-wrap"
+                        style="align-items:center"
+                      >
+                        <wx-view
+                          class="titian-cell-icon-box"
+                        />
+                        <wx-view>
+                          <wx-view
+                            style="display:flex;align-items:center"
+                          >
+                            <wx-view
+                              class="title-class titian-cell-title"
+                              style=""
+                            >
+                              
+          选项2
+        
+                            </wx-view>
+                          </wx-view>
+                        </wx-view>
+                      </wx-view>
+                      <wx-view
+                        class="titian-cell-desc-wrap"
+                      >
+                        <wx-view
+                          class="desc-content-class titian-cell-desc-content"
+                        />
+                      </wx-view>
+                    </wx-view>
+                  </ti-cell>
+                  <ti-button
+                    extClass="titian-dropdown-item-submit"
+                    bind:tap="onSubmit"
+                  >
+                    <wx-button
+                      appParameter=""
+                      class="ext-class titian-button-gradient titian-button-hairline titian-button titian-button-contained titian-button-type-primary titian-button-size-big"
+                      data-detail="{{null}}"
+                      disabled="{{false}}"
+                      formType=""
+                      hoverClass="active"
+                      hoverStartTime="{{20}}"
+                      hoverStayTime="{{70}}"
+                      id="titian-button"
+                      lang="en"
+                      loading="{{false}}"
+                      openType=""
+                      scope=""
+                      sendMessageImg=""
+                      sendMessagePath=""
+                      sendMessageTitle=""
+                      sessionFrom=""
+                      showMessageCard="{{false}}"
+                      size="big"
+                      style="--text-color:var(--button-text-color, #fff);--loading-color:var(--button-loading-color, --text-color);--background-color:var(--button-background-color,primary);--active-color:var(--button-active-color,primary)"
+                      bind:FollowLifestyle="bindFollowLifestyle"
+                      bind:contact="onContact"
+                      bind:error="onError"
+                      bind:getAuthorize="bindGetAuthorize"
+                      bind:getphonenumber="onGetphonenumber"
+                      bind:getuserinfo="onGetuserinfo"
+                      bind:launchapp="onLaunchapp"
+                      bind:opensetting="onOpensetting"
+                      bind:tap="onClick"
+                    >
+                      <wx-view
+                        class="titian-button-content button-inner-class"
+                      >
+                        
+        确定
+      
+                      </wx-view>
+                    </wx-button>
+                  </ti-button>
+                </wx-view>
+              </wx-view>
+            </ti-transition>
+          </ti-popup>
+        </wx-view>
+      </ti-dropdown-item>
+      <ti-dropdown-item>
+        <wx-view
+          class="ext-class titian-dropdown-item"
+          style="top: 0px"
+        >
+          <ti-popup
+            bind:close="onPopupClose"
+            bind:enter="onEnter"
+            bind:entered="onEntered"
+            bind:exit="onExit"
+            bind:exited="onExited"
+          >
+            <ti-transition
+              enterDoneClass="titian-popup-enter-done"
+              exitClass="titian-popup-enter-done"
+              extClass="titian-popup-mask ext-mask-class"
+              preventScroll="{{true}}"
+              bind:tap="onTapMask"
+              catch:touchmove="noop"
+            />
+            <ti-transition
+              enterActiveClass="titian-popup-fade-down-start-active titian-popup"
+              enterClass="titian-popup-fade-down-start titian-popup"
+              enterDoneClass="titian-popup-fade-down-middle titian-popup"
+              exitActiveClass="titian-popup-fade-down-end-active titian-popup"
+              exitClass="titian-popup-fade-down-middle titian-popup"
+              exitDoneClass="titian-popup-fade-down-end titian-popup"
+              extClass="ext-content-class titian-popup-top titian-popup"
+              bind:enter="onEnter"
+              bind:entered="onEntered"
+              bind:exit="onExit"
+              bind:exited="onExited"
+              catch:touchmove="noop"
+            />
+          </ti-popup>
+        </wx-view>
+      </ti-dropdown-item>
+    </wx-view>
+  </ti-dropdown-menu>
+</main>
+`;
+
+exports[`test component should render success 1`] = `
+<main>
+  <ti-dropdown-menu
+    class="menu"
+  >
+    <wx-view
+      class="ext-class titian-dropdown-menu"
+      style=""
+    >
+      <wx-view
+        class="titian-dropdown-menu-title-wrap"
+      >
+        <wx-view
+          class="title-class titian-dropdown-menu-title titian-dropdown-menu-title-0 titian-dropdown-menu-visible"
+          data-idx="{{0}}"
+        >
+          <ti-button
+            data-idx="{{0}}"
+            bind:click="onTitleToggle"
+          >
+            <wx-button
+              appParameter=""
+              class="ext-class titian-button-block titian-button-hairline titian-button titian-button-text titian-button-type-primary titian-button-size-big"
+              data-detail="{{null}}"
+              disabled="{{false}}"
+              formType=""
+              hoverClass="active"
+              hoverStartTime="{{20}}"
+              hoverStayTime="{{70}}"
+              id="titian-button"
+              lang="en"
+              loading="{{false}}"
+              openType=""
+              scope=""
+              sendMessageImg=""
+              sendMessagePath=""
+              sendMessageTitle=""
+              sessionFrom=""
+              showMessageCard="{{false}}"
+              size="big"
+              style="--text-color:var(--button-text-color,primary);--loading-color:var(--button-loading-color, --text-color);--background-color:transparent;--active-color:transparent"
+              bind:FollowLifestyle="bindFollowLifestyle"
+              bind:contact="onContact"
+              bind:error="onError"
+              bind:getAuthorize="bindGetAuthorize"
+              bind:getphonenumber="onGetphonenumber"
+              bind:getuserinfo="onGetuserinfo"
+              bind:launchapp="onLaunchapp"
+              bind:opensetting="onOpensetting"
+              bind:tap="onClick"
+            >
+              <wx-view
+                class="titian-button-content button-inner-class"
+              >
+                
+        选项1
+        
+                <wx-view
+                  class="titian-dropdown-menu-icon"
+                >
+                  <ti-icon>
+                    <wx-view
+                      class="titian-icon-base titian-icon titian-icon-arrow-down ext-class"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </ti-icon>
+                </wx-view>
+              </wx-view>
+            </wx-button>
+          </ti-button>
+        </wx-view>
+        <wx-view
+          class="title-class titian-dropdown-menu-title titian-dropdown-menu-title-1"
+          data-idx="{{1}}"
+        >
+          <ti-button
+            data-idx="{{1}}"
+            bind:click="onTitleToggle"
+          >
+            <wx-button
+              appParameter=""
+              class="ext-class titian-button-block titian-button-hairline titian-button titian-button-text titian-button-type-primary titian-button-size-big"
+              data-detail="{{null}}"
+              disabled="{{false}}"
+              formType=""
+              hoverClass="active"
+              hoverStartTime="{{20}}"
+              hoverStayTime="{{70}}"
+              id="titian-button"
+              lang="en"
+              loading="{{false}}"
+              openType=""
+              scope=""
+              sendMessageImg=""
+              sendMessagePath=""
+              sendMessageTitle=""
+              sessionFrom=""
+              showMessageCard="{{false}}"
+              size="big"
+              style="--text-color:var(--button-text-color,black);--loading-color:var(--button-loading-color, --text-color);--background-color:transparent;--active-color:transparent"
+              bind:FollowLifestyle="bindFollowLifestyle"
+              bind:contact="onContact"
+              bind:error="onError"
+              bind:getAuthorize="bindGetAuthorize"
+              bind:getphonenumber="onGetphonenumber"
+              bind:getuserinfo="onGetuserinfo"
+              bind:launchapp="onLaunchapp"
+              bind:opensetting="onOpensetting"
+              bind:tap="onClick"
+            >
+              <wx-view
+                class="titian-button-content button-inner-class"
+              >
+                
+        选项2
+        
+                <wx-view
+                  class="titian-dropdown-menu-icon"
+                >
+                  <ti-icon>
+                    <wx-view
+                      class="titian-icon-base titian-icon titian-icon-arrow-down ext-class"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </ti-icon>
+                </wx-view>
+              </wx-view>
+            </wx-button>
+          </ti-button>
+        </wx-view>
+      </wx-view>
+      <ti-dropdown-item
+        class="item1"
+        bind:change="onChange"
+        bind:close="onClose"
+        bind:open="onOpen"
+        bind:submit="onSubmit"
+      >
+        <wx-view
+          class="ext-class titian-dropdown-item-visible titian-dropdown-item"
+          style="top: 0px"
+        >
+          <ti-popup
+            bind:close="onPopupClose"
+            bind:enter="onEnter"
+            bind:entered="onEntered"
+            bind:exit="onExit"
+            bind:exited="onExited"
+          >
+            <ti-transition
+              enterDoneClass="titian-popup-enter-done"
+              exitClass="titian-popup-enter-done"
+              extClass="titian-popup-mask ext-mask-class"
+              preventScroll="{{true}}"
+              bind:tap="onTapMask"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="ext-class titian-transition titian-fade-enter-done titian-fade-enter-active enter-done-class enter-active-class"
+                disableScroll=""
+                style="-webkit-transition-duration:300ms;transition-duration:300ms;-webkit-transition-timing-function:linear;transition-timing-function:linear;z-index: 10001; ; "
+                bind:transitionend="onTransitionEnd"
+              />
+            </ti-transition>
+            <ti-transition
+              enterActiveClass="titian-popup-fade-down-start-active titian-popup"
+              enterClass="titian-popup-fade-down-start titian-popup"
+              enterDoneClass="titian-popup-fade-down-middle titian-popup"
+              exitActiveClass="titian-popup-fade-down-end-active titian-popup"
+              exitClass="titian-popup-fade-down-middle titian-popup"
+              exitDoneClass="titian-popup-fade-down-end titian-popup"
+              extClass="ext-content-class titian-popup-top titian-popup"
+              bind:enter="onEnter"
+              bind:entered="onEntered"
+              bind:exit="onExit"
+              bind:exited="onExited"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="ext-class titian-transition titian--enter-done titian--enter-active enter-done-class enter-active-class"
+                disableScroll=""
+                style="-webkit-transition-duration:300ms;transition-duration:300ms;z-index:10002"
+                bind:transitionend="onTransitionEnd"
+              >
+                <wx-view
+                  class="titian-popup-box ext-class"
+                  style=""
+                >
+                  <ti-cell
+                    data-item="{{
+                      Object {
+                        "title": "选项1",
+                        "value": "1",
+                      }
+                    }}"
+                    extClass="item-class "
+                    bind:click="onCellTap"
+                  >
+                    <wx-view
+                      class="ext-class titian-cell-divider titian-cell"
+                      hoverClass="hover-class "
+                      hoverStayTime="60"
+                      style="align-items:center"
+                      bind:tap="onClick"
+                    >
+                      <wx-view
+                        class="titian-cell-title-wrap"
+                        style="align-items:center"
+                      >
+                        <wx-view
+                          class="titian-cell-icon-box"
+                        />
+                        <wx-view>
+                          <wx-view
+                            style="display:flex;align-items:center"
+                          >
+                            <wx-view
+                              class="title-class titian-cell-title"
+                              style=""
+                            >
+                              
+          选项1
+        
+                            </wx-view>
+                          </wx-view>
+                        </wx-view>
+                      </wx-view>
+                      <wx-view
+                        class="titian-cell-desc-wrap"
+                      >
+                        <wx-view
+                          class="desc-content-class titian-cell-desc-content"
+                        />
+                      </wx-view>
+                    </wx-view>
+                  </ti-cell>
+                  <ti-cell
+                    data-item="{{
+                      Object {
+                        "title": "选项2",
+                        "value": "2",
+                      }
+                    }}"
+                    extClass="item-class "
+                    bind:click="onCellTap"
+                  >
+                    <wx-view
+                      class="ext-class titian-cell-divider titian-cell"
+                      hoverClass="hover-class "
+                      hoverStayTime="60"
+                      style="align-items:center"
+                      bind:tap="onClick"
+                    >
+                      <wx-view
+                        class="titian-cell-title-wrap"
+                        style="align-items:center"
+                      >
+                        <wx-view
+                          class="titian-cell-icon-box"
+                        />
+                        <wx-view>
+                          <wx-view
+                            style="display:flex;align-items:center"
+                          >
+                            <wx-view
+                              class="title-class titian-cell-title"
+                              style=""
+                            >
+                              
+          选项2
+        
+                            </wx-view>
+                          </wx-view>
+                        </wx-view>
+                      </wx-view>
+                      <wx-view
+                        class="titian-cell-desc-wrap"
+                      >
+                        <wx-view
+                          class="desc-content-class titian-cell-desc-content"
+                        />
+                      </wx-view>
+                    </wx-view>
+                  </ti-cell>
+                  <ti-button
+                    extClass="titian-dropdown-item-submit"
+                    bind:tap="onSubmit"
+                  >
+                    <wx-button
+                      appParameter=""
+                      class="ext-class titian-button-gradient titian-button-hairline titian-button titian-button-contained titian-button-type-primary titian-button-size-big"
+                      data-detail="{{null}}"
+                      disabled="{{false}}"
+                      formType=""
+                      hoverClass="active"
+                      hoverStartTime="{{20}}"
+                      hoverStayTime="{{70}}"
+                      id="titian-button"
+                      lang="en"
+                      loading="{{false}}"
+                      openType=""
+                      scope=""
+                      sendMessageImg=""
+                      sendMessagePath=""
+                      sendMessageTitle=""
+                      sessionFrom=""
+                      showMessageCard="{{false}}"
+                      size="big"
+                      style="--text-color:var(--button-text-color, #fff);--loading-color:var(--button-loading-color, --text-color);--background-color:var(--button-background-color,primary);--active-color:var(--button-active-color,primary)"
+                      bind:FollowLifestyle="bindFollowLifestyle"
+                      bind:contact="onContact"
+                      bind:error="onError"
+                      bind:getAuthorize="bindGetAuthorize"
+                      bind:getphonenumber="onGetphonenumber"
+                      bind:getuserinfo="onGetuserinfo"
+                      bind:launchapp="onLaunchapp"
+                      bind:opensetting="onOpensetting"
+                      bind:tap="onClick"
+                    >
+                      <wx-view
+                        class="titian-button-content button-inner-class"
+                      >
+                        
+        确定
+      
+                      </wx-view>
+                    </wx-button>
+                  </ti-button>
+                </wx-view>
+              </wx-view>
+            </ti-transition>
+          </ti-popup>
+        </wx-view>
+      </ti-dropdown-item>
+      <ti-dropdown-item>
+        <wx-view
+          class="ext-class titian-dropdown-item"
+          style="top: 0px"
+        >
+          <ti-popup
+            bind:close="onPopupClose"
+            bind:enter="onEnter"
+            bind:entered="onEntered"
+            bind:exit="onExit"
+            bind:exited="onExited"
+          >
+            <ti-transition
+              enterDoneClass="titian-popup-enter-done"
+              exitClass="titian-popup-enter-done"
+              extClass="titian-popup-mask ext-mask-class"
+              preventScroll="{{true}}"
+              bind:tap="onTapMask"
+              catch:touchmove="noop"
+            />
+            <ti-transition
+              enterActiveClass="titian-popup-fade-down-start-active titian-popup"
+              enterClass="titian-popup-fade-down-start titian-popup"
+              enterDoneClass="titian-popup-fade-down-middle titian-popup"
+              exitActiveClass="titian-popup-fade-down-end-active titian-popup"
+              exitClass="titian-popup-fade-down-middle titian-popup"
+              exitDoneClass="titian-popup-fade-down-end titian-popup"
+              extClass="ext-content-class titian-popup-top titian-popup"
+              bind:enter="onEnter"
+              bind:entered="onEntered"
+              bind:exit="onExit"
+              bind:exited="onExited"
+              catch:touchmove="noop"
+            />
+          </ti-popup>
+        </wx-view>
+      </ti-dropdown-item>
+    </wx-view>
+  </ti-dropdown-menu>
+</main>
+`;

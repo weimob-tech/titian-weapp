@@ -1,0 +1,9 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <ti-row gutter="{{ attr.gutter }}">
+      <ti-col wx:for="{{ attr.group }}" wx:key="index" span="{{ item.span || null }}" offset="{{ item.offset || null }}">
+        <view class="item {{ 'item' + item.span }} {{ 'index' + index }}">{{ item.label }}</view>
+      </ti-col>
+    </ti-row>
+  </view>
+</ti-page>

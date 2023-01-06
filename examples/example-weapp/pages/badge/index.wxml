@@ -1,0 +1,26 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <block wx:if="{{ attrs.atText }}">
+    <ti-badge
+      content="{{ attrs.content }}"
+      dot="{{ attrs.dot }}"
+      icon="{{ attrs.icon }}"
+      at-text="{{ attrs.atText }}"
+      spread="{{ attrs.spread }}"
+      offset="{{ attrs.offset }}"
+    >
+      <view class="text" wx:if="{{ attrs.isText }}">Title Text</view>
+    </ti-badge>
+  </block>
+  <view class="box" wx:else>
+    <ti-badge
+      content="{{ attrs.content }}"
+      dot="{{ attrs.dot }}"
+      icon="{{ attrs.icon }}"
+      spread="{{ attrs.spread }}"
+      offset="{{ attrs.offset }}"
+    >
+      <view class="badge-box" wx:if="{{ attrs.isIcon }}">Icon</view>
+    </ti-badge>
+  </view>
+</ti-page>
+

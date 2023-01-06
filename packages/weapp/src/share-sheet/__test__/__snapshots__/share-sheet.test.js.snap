@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component 单行 1`] = `
+<main>
+  <ti-popup
+    class="titian-share-sheet-popup"
+    extClass="ext-popup-class"
+    extContentClass="ext-popup-content-class"
+    extMaskClass="ext-popup-mask-class"
+    bind:close="onClose"
+  >
+    <ti-transition
+      enterDoneClass="titian-popup-enter-done"
+      exitClass="titian-popup-enter-done"
+      extClass="titian-popup-mask ext-mask-class"
+      preventScroll="{{undefined}}"
+      bind:tap="onTapMask"
+    />
+    <ti-transition
+      enterActiveClass="titian-popup-slide-up-start-active titian-popup"
+      enterClass="titian-popup-slide-up-start titian-popup"
+      enterDoneClass="titian-popup-slide-up-middle titian-popup"
+      exitActiveClass="{{undefined}}"
+      exitActiveClassd="titian-popup-slide-up-end-active titian-popup"
+      exitClass="titian-popup-slide-up-middle titian-popup"
+      exitDoneClass="titian-popup-slide-up-end titian-popup"
+      extClass="ext-content-class titian-popup-bottom titian-popup"
+      bind:enter="onEnter"
+      bind:entered="onEntered"
+      bind:exit="onExit"
+      bind:exited="onExited"
+    />
+  </ti-popup>
+</main>
+`;
+
+exports[`test component 多行 1`] = `
+<main>
+  <ti-popup
+    class="titian-share-sheet-popup"
+    extClass="ext-popup-class"
+    extContentClass="ext-popup-content-class"
+    extMaskClass="ext-popup-mask-class"
+    bind:close="onClose"
+  >
+    <ti-transition
+      enterDoneClass="titian-popup-enter-done"
+      exitClass="titian-popup-enter-done"
+      extClass="titian-popup-mask ext-mask-class"
+      preventScroll="{{undefined}}"
+      bind:tap="onTapMask"
+    />
+    <ti-transition
+      enterActiveClass="titian-popup-slide-up-start-active titian-popup"
+      enterClass="titian-popup-slide-up-start titian-popup"
+      enterDoneClass="titian-popup-slide-up-middle titian-popup"
+      exitActiveClass="{{undefined}}"
+      exitActiveClassd="titian-popup-slide-up-end-active titian-popup"
+      exitClass="titian-popup-slide-up-middle titian-popup"
+      exitDoneClass="titian-popup-slide-up-end titian-popup"
+      extClass="ext-content-class titian-popup-bottom titian-popup"
+      bind:enter="onEnter"
+      bind:entered="onEntered"
+      bind:exit="onExit"
+      bind:exited="onExited"
+    />
+  </ti-popup>
+</main>
+`;

@@ -1,0 +1,42 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view style="width:100%;margin:0 28rpx;--search-radius:{{ attrs.radius }}rpx">
+    <ti-search
+      ext-class="search-box {{ attrs.dashed === 1 ? 'diy' : '' }}"
+      search-inner-class="{{ attrs.dashed === 1 ? 'search-inner-class' : '' }}"
+      placeholder="请输入代填项引导文案"
+      center="{{ attrs.align }}"
+      wx:if="{{ attrs.style === 0 }}"
+    >
+      <ti-icon slot="right-icon" name="scan" size="32" />
+    </ti-search>
+    <ti-search
+      ext-class="search-box"
+      placeholder="请输入代填项引导文案"
+      center="{{ attrs.align }}"
+      wx:elif="{{ attrs.style === 1 }}"
+    >
+      <view slot="prefix" class="prefix">
+        <text>请选择</text>
+        <ti-icon name="arrow-down" size="32" />
+      </view>
+      <ti-icon slot="icon" name="scan" size="32" />
+    </ti-search>
+    <ti-search
+      bind:search="test"
+      ext-class="search-box"
+      search-button-class="test"
+      placeholder="请输入代填项引导文案"
+      center="{{ attrs.align }}"
+      animation="{{ false }}"
+      wx:else
+    >
+      <view slot="prefix" class="prefix">
+        <ti-icon name="category" size="42" />
+      </view>
+      <view slot="suffix" class="suffix">
+        <ti-icon name="arrange" size="42" />
+      </view>
+    </ti-search>
+  </view>
+</ti-page>
+

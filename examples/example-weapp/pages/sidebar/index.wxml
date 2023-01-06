@@ -1,0 +1,13 @@
+<ti-page options="{{ options }}" center="{{ false }}" bind:change="onChange">
+  <ti-sidebar
+    active-index="1"
+    bind:change="onChangeSelected"
+    style="--sidebar-active-text-color: {{ attrs.color }};--sidebar-radius:{{ attrs.radius }}rpx"
+  >
+    <ti-sidebar-item label="侧边导航" badge="1" />
+    <ti-sidebar-item label="IP联名款" />
+    <ti-sidebar-item label="精选系列" />
+    <ti-sidebar-item label="明星同款" />
+    <ti-sidebar-item label="羽绒服" />
+  </ti-sidebar>
+</ti-page>

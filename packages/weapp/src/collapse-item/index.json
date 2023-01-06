@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-cell": "../cell/index",
+    "ti-icon": "../icon/index"
+  }
+}

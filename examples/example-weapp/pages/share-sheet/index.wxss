@@ -1,0 +1,6 @@
+/* stylelint-disable-next-line selector-type-no-unknown */
+page {
+  /* --share-sheet-popup-radius: 50%; */
+
+  /* --share-sheet-item-icon-bg-color: #000; */
+}

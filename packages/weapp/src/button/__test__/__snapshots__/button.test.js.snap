@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-button
+    appParameter=""
+    class="ext-class titian-button-hairline titian-button titian-button-filled titian-button-type-primary titian-button-size-big"
+    data-detail="{{null}}"
+    disabled="{{false}}"
+    formType=""
+    hoverClass="active"
+    hoverStartTime="{{20}}"
+    hoverStayTime="{{70}}"
+    id="titian-button"
+    lang="en"
+    loading="{{false}}"
+    openType=""
+    scope=""
+    sendMessageImg=""
+    sendMessagePath=""
+    sendMessageTitle=""
+    sessionFrom=""
+    showMessageCard="{{false}}"
+    size="big"
+    style="--text-color:var(--button-text-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 1));--loading-color:var(--button-loading-color, --text-color);--background-color:var(--button-background-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 0.1));--active-color:var(--button-active-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 0.2))"
+    bind:FollowLifestyle="bindFollowLifestyle"
+    bind:contact="onContact"
+    bind:error="onError"
+    bind:getAuthorize="bindGetAuthorize"
+    bind:getphonenumber="onGetphonenumber"
+    bind:getuserinfo="onGetuserinfo"
+    bind:launchapp="onLaunchapp"
+    bind:opensetting="onOpensetting"
+    bind:tap="onClick"
+  >
+    <wx-view
+      class="titian-button-content button-inner-class"
+    />
+  </wx-button>
+</main>
+`;
+
+exports[`test component should render success with color 1`] = `
+<main>
+  <wx-button
+    appParameter=""
+    class="ext-class titian-button-gradient titian-button-hairline titian-button titian-button-contained titian-button-type-primary titian-button-size-big"
+    data-detail="{{null}}"
+    disabled="{{false}}"
+    formType=""
+    hoverClass="active"
+    hoverStartTime="{{20}}"
+    hoverStayTime="{{70}}"
+    id="titian-button"
+    lang="en"
+    loading="{{false}}"
+    openType=""
+    scope=""
+    sendMessageImg=""
+    sendMessagePath=""
+    sendMessageTitle=""
+    sessionFrom=""
+    showMessageCard="{{false}}"
+    size="big"
+    style="--text-color:var(--button-text-color, #fff);--loading-color:var(--button-loading-color, --text-color);--background-color:var(--button-background-color,linear-gradient(270deg, rgba(239, 71, 31, 0.75) 0%, #FFBE70 100%));--active-color:var(--button-active-color,linear-gradient(270deg, rgba(239, 71, 31, 0.75) 0%, #FFBE70 100%))"
+    bind:FollowLifestyle="bindFollowLifestyle"
+    bind:contact="onContact"
+    bind:error="onError"
+    bind:getAuthorize="bindGetAuthorize"
+    bind:getphonenumber="onGetphonenumber"
+    bind:getuserinfo="onGetuserinfo"
+    bind:launchapp="onLaunchapp"
+    bind:opensetting="onOpensetting"
+    bind:tap="onClick"
+  >
+    <wx-view
+      class="titian-button-content button-inner-class"
+    />
+  </wx-button>
+</main>
+`;
+
+exports[`test component should render success with color 2`] = `
+<main>
+  <wx-button
+    appParameter=""
+    class="ext-class titian-button-gradient titian-button-hairline titian-button titian-button-contained titian-button-type-primary titian-button-size-big"
+    data-detail="{{null}}"
+    disabled="{{false}}"
+    formType=""
+    hoverClass="active"
+    hoverStartTime="{{20}}"
+    hoverStayTime="{{70}}"
+    id="titian-button"
+    lang="en"
+    loading="{{false}}"
+    openType=""
+    scope=""
+    sendMessageImg=""
+    sendMessagePath=""
+    sendMessageTitle=""
+    sessionFrom=""
+    showMessageCard="{{false}}"
+    size="big"
+    style="--text-color:var(--button-text-color, #fff);--loading-color:var(--button-loading-color, --text-color);--background-color:var(--button-background-color,#f60);--active-color:var(--button-active-color,#f60)"
+    bind:FollowLifestyle="bindFollowLifestyle"
+    bind:contact="onContact"
+    bind:error="onError"
+    bind:getAuthorize="bindGetAuthorize"
+    bind:getphonenumber="onGetphonenumber"
+    bind:getuserinfo="onGetuserinfo"
+    bind:launchapp="onLaunchapp"
+    bind:opensetting="onOpensetting"
+    bind:tap="onClick"
+  >
+    <wx-view
+      class="titian-button-content button-inner-class"
+    />
+  </wx-button>
+</main>
+`;
+
+exports[`test component should render success with variant 1`] = `
+<main>
+  <wx-button
+    appParameter=""
+    class="ext-class titian-button-hairline titian-button titian-button-filled titian-button-type-primary titian-button-size-big"
+    data-detail="{{null}}"
+    disabled="{{false}}"
+    formType=""
+    hoverClass="active"
+    hoverStartTime="{{20}}"
+    hoverStayTime="{{70}}"
+    id="titian-button"
+    lang="en"
+    loading="{{false}}"
+    openType=""
+    scope=""
+    sendMessageImg=""
+    sendMessagePath=""
+    sendMessageTitle=""
+    sessionFrom=""
+    showMessageCard="{{false}}"
+    size="big"
+    style="--text-color:var(--button-text-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 1));--loading-color:var(--button-loading-color, --text-color);--background-color:var(--button-background-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 0.1));--active-color:var(--button-active-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 0.2))"
+    bind:FollowLifestyle="bindFollowLifestyle"
+    bind:contact="onContact"
+    bind:error="onError"
+    bind:getAuthorize="bindGetAuthorize"
+    bind:getphonenumber="onGetphonenumber"
+    bind:getuserinfo="onGetuserinfo"
+    bind:launchapp="onLaunchapp"
+    bind:opensetting="onOpensetting"
+    bind:tap="onClick"
+  >
+    <wx-view
+      class="titian-button-content button-inner-class"
+    />
+  </wx-button>
+</main>
+`;
+
+exports[`test component should render success with variant 2`] = `
+<main>
+  <wx-button
+    appParameter=""
+    class="ext-class titian-button-hairline titian-button titian-button-outlined titian-button-type-primary titian-button-size-big"
+    data-detail="{{null}}"
+    disabled="{{false}}"
+    formType=""
+    hoverClass="active"
+    hoverStartTime="{{20}}"
+    hoverStayTime="{{70}}"
+    id="titian-button"
+    lang="en"
+    loading="{{false}}"
+    openType=""
+    scope=""
+    sendMessageImg=""
+    sendMessagePath=""
+    sendMessageTitle=""
+    sessionFrom=""
+    showMessageCard="{{false}}"
+    size="big"
+    style="--text-color:var(--button-text-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 1));--loading-color:var(--button-loading-color, --text-color);--background-color:transparent;--active-color:var(--button-active-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 0.1));--button-border-color:var(--button-text-color,rgba(var(--theme-r, 250), var(--theme-g, 44), var(--theme-b, 25), 1))"
+    bind:FollowLifestyle="bindFollowLifestyle"
+    bind:contact="onContact"
+    bind:error="onError"
+    bind:getAuthorize="bindGetAuthorize"
+    bind:getphonenumber="onGetphonenumber"
+    bind:getuserinfo="onGetuserinfo"
+    bind:launchapp="onLaunchapp"
+    bind:opensetting="onOpensetting"
+    bind:tap="onClick"
+  >
+    <wx-view
+      class="titian-button-content button-inner-class"
+    />
+  </wx-button>
+</main>
+`;

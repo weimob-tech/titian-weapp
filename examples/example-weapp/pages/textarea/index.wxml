@@ -1,0 +1,12 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <ti-textarea
+      wx:if="{{ refresh }}"
+      placeholder="请输入评论文字，限200字以内…"
+      maxlength="200"
+      ext-class="{{ attrs.extClass }}"
+      show-count="{{ attrs.showCount }}"
+      auto-height="{{ attrs.autoHeight }}"
+    />
+  </view>
+</ti-page>

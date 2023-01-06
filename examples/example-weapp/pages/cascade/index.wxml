@@ -1,0 +1,25 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view>
+    <ti-button inline bind:tap="toggleVisible">
+      点击演示
+    </ti-button>
+  </view>
+</ti-page>
+<view class="cascade">
+  <ti-popup visible="{{ visible }}" position="bottom" bind:close="toggleVisible">
+    <ti-cascade
+      visible="{{ visible }}"
+      code="{{ attrs.code }}"
+      label="{{ attrs.label }}"
+      cascade="{{ attrs.cascade }}"
+      options="{{ attrs.options }}"
+      tabs="{{ attrs.tab }}"
+      value="{{ attrs.value }}"
+      get-options="{{ getOption }}"
+      bind:close="toggleVisible"
+      bind:change="onChangeCascade"
+      bind:change-swiper="onChangeSwiperCascade"
+    />
+  </ti-popup>
+</view>
+

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-progress"
+  >
+    <wx-view
+      class="titian-progress-determinate"
+      style="height:4rpx"
+    >
+      <wx-view
+        class="titian-progress-bar-linear titian-progress-bar"
+        style="background-color:#ff0000;background-image:linear-gradient(to right, #ffff00, #ff0000);color:#ff0000"
+      />
+      <wx-view
+        class="titian-progress-assist-bar"
+        style="background-color:#ff0000"
+      />
+    </wx-view>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render value success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-progress"
+  >
+    <wx-view
+      class="titian-progress-determinate"
+      style="height:4rpx"
+    >
+      <wx-view
+        class="titian-progress-bar"
+        style="transform:translateX(-50%);background-color:#ff0000"
+      />
+    </wx-view>
+  </wx-view>
+</main>
+`;

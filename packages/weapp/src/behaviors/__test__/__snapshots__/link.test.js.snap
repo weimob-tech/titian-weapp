@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test behavior link test link navigateTo, props success 1`] = `
+<main>
+  <wx-view
+    class="test"
+    bind:tap="jumpToLink"
+  >
+    pages/root/index
+  </wx-view>
+</main>
+`;

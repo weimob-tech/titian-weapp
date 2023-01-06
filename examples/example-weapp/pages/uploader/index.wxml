@@ -1,0 +1,16 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <ti-uploader
+      wx:if="{{ attrs }}"
+      size="{{ attrs.size }}"
+      count="{{ attrs.count }}"
+      choose-text="{{ attrs.uploadText }}"
+      url="{{ attrs.url }}"
+      upload-exercise="loading"
+      before-upload="{{ beforeUpload }}"
+      upload="{{ upload }}"
+      after-upload="{{ afterUpload }}"
+      complete="{{ complete }}"
+    />
+  </view>
+</ti-page>

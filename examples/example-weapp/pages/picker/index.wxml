@@ -1,0 +1,23 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <ti-button bind:tap="toggleVisible">点击演示</ti-button>
+  <view class="picker">
+    <ti-popup visible="{{ visible }}" position="bottom" bind:close="toggleVisible">
+      <ti-picker
+        row-alias="{{ attrs.rowAlias }}"
+        label="{{ attrs.label }}"
+        value="{{ attrs.value }}"
+        options="{{ attrs.options }}"
+        loading="{{ attrs.loading }}"
+        visible-item-count="5"
+        catch:change="onPickerChange"
+        bind:cancel="toggleVisible"
+        bind:confirm="toggleVisible"
+        ext-class="picker-ext"
+        ext-mask-class="picker-mask"
+        ext-hairline-class="picker-hairline"
+        ext-option-item-class="picker-option-item"
+        ext-option-class="picker-option"
+      />
+    </ti-popup>
+  </view>
+</ti-page>

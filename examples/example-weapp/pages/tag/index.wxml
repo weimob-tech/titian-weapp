@@ -1,0 +1,15 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view style="{{ attrs.cssVariable }}">
+    <ti-tag
+      variant="{{ attrs.variant }}"
+      shape="{{ attrs.shape }}"
+      color="{{ attrs.color }}"
+      size="{{ attrs.size }}"
+      left-icon="{{ attrs.leftIcon }}"
+      right-icon="{{ attrs.rightIcon }}"
+    >
+      {{ attrs.text }}
+    </ti-tag>
+  </view>
+</ti-page>
+

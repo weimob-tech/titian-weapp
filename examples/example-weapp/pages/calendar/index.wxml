@@ -1,0 +1,17 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view>
+    <ti-button inline bind:tap="toggleVisible">
+      点击演示
+    </ti-button>
+  </view>
+</ti-page>
+<view class="calendar">
+  <ti-calendar
+    visible="{{ visible }}"
+    mode="{{ attrs.mode }}"
+    color="{{ attrs.color }}"
+    max-size="{{ attrs.maxSize }}"
+    max-range="{{ attrs.maxRange }}"
+    bind:close="toggleVisible"
+  />
+</view>

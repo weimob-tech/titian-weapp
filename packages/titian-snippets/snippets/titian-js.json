@@ -1,0 +1,52 @@
+{
+  "Import Toast": {
+    "prefix": "import titoast",
+    "body": ["import { $tiToast } from 'titian-mp/index';"],
+    "description": "Titian import ti-toast"
+  },
+  "Toast info": {
+    "prefix": "titoast.info",
+    "body": ["$$tiToast().info({text: \"${1}\"})"],
+    "description": "Titian ti-toast info"
+  },
+  "Toast loading": {
+    "prefix": "titoast.loading",
+    "body": ["$$tiToast().loading({text: \"${1}\"})"],
+    "description": "Titian ti-toast loading"
+  },
+  "Toast warn": {
+    "prefix": "titoast.warn",
+    "body": ["$$tiToast().warn({text: \"${1}\"})"],
+    "description": "Titian ti-toast warn"
+  },
+  "Toast success": {
+    "prefix": "titoast.success",
+    "body": ["$$tiToast().success({text: \"${1}\"})"],
+    "description": "Titian ti-toast success"
+  },
+  "Toast fail": {
+    "prefix": "titoast.fail",
+    "body": ["$$tiToast().fail({text: \"${1}\"})"],
+    "description": "Titian ti-toast fail"
+  },
+  "Import Dialog": {
+    "prefix": "import tidialog",
+    "body": ["import { $tiDialog } from 'titian-mp/index';"],
+    "description": "Titian import ti-dialog"
+  },
+  "Dialog show": {
+    "prefix": "tidialog.show",
+    "body": [
+      "$$tiDislog().show({",
+      "\ttitle: \"${1}\",",
+      "\tcontent: \"${2}\",",
+      "\tconfirmText: \"${3:确定}\",",
+      "\tcancelText: \"${4:取消}\",",
+      "\thasCancelButton: \"${5:true}\",",
+      "\tonConfirm() {${6}},",
+      "\tonCancel() {${7}},",
+      "})"
+    ],
+    "description": "Titian ti-dialog show"
+  }
+}

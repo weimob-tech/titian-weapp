@@ -1,0 +1,12 @@
+'use strict';
+var CollapseItemStateEnum = {
+  FOLD: 'fold', // 收起
+  UN_FOLD: 'un_fold' // 展开
+};
+function completedStatus(status) {
+  return status === CollapseItemStateEnum.UN_FOLD;
+}
+
+module.exports = {
+  completedStatus: completedStatus
+};

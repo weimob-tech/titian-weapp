@@ -1,0 +1,21 @@
+var utils = require('../common/utils/wxs/convertStyles.wxs');
+
+function completedStyle(data) {
+  var styles = {};
+
+  if (data.activeColor) {
+    styles['--dropdown-active-color'] = data.activeColor;
+  }
+
+  if (data.mode === 'multiple') {
+    styles['--dropdown-label-active-color'] = 'black';
+  } else {
+    styles['--dropdown-label-active-color'] = data.activeColor;
+  }
+
+  return utils.convertStyles(styles);
+}
+
+module.exports = {
+  completedStyle: completedStyle
+};

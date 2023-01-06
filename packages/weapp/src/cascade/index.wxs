@@ -1,0 +1,31 @@
+'use strict';
+var namespace = require('../common/utils/wxs/namespace.wxs');
+
+module.exports = {
+  completedClass: function (data) {
+    return namespace.handle('cascade', [
+      'tab',
+      (data.columnValueList[data.index] || {})[data.label] ? 'value' : '',
+      data.active === data.index ? 'active' : ''
+    ]);
+  },
+  completedTabs: function (data) {
+    return (data.columnValueList[data.index] || {})[data.label] || data.item;
+  },
+  completedScrollIntoView: function (data) {
+    if (!data.columnValueList[data.index]) {
+      return '';
+    }
+    return 'opt_' + data.index + '_' + data.columnValueList[data.index][data.code];
+  },
+  completedCheckbox: function (data) {
+    var value = data.columnValueList[data.index];
+    if (!value) {
+      return false;
+    }
+    if (!value[data.code]) {
+      return false;
+    }
+    return value[data.code] === data.opt[data.code];
+  }
+};

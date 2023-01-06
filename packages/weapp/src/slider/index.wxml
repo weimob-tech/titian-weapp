@@ -1,0 +1,22 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view class="{{ namespace.join('slider') }}" catch:tap="onTapSlider">
+  <view class="{{ namespace.join('slider-rail') }} rail-class" />
+  <view
+    class="{{ namespace.join('slider-track') }} track-class"
+    style="left: {{ trackStartPercent }}%;width: {{ trackLengthPercent }}%"
+  />
+  <view
+    class="{{ namespace.join('slider-thumb') }} thumb-class"
+    style="left: {{ thumbPercent1 }}%;"
+    catch:touchmove="onThumbTouchMove"
+    data-thumb="1"
+  />
+  <view
+    wx:if="{{ isRangeValue }}"
+    class="{{ namespace.join('slider-thumb') }} thumb-class"
+    style="left: {{ thumbPercent2 }}%;"
+    data-thumb="2"
+    catch:touchmove="onThumbTouchMove"
+  />
+</view>

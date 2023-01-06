@@ -1,0 +1,31 @@
+{
+  "name": "titian-snippets",
+  "displayName": "titian-snippets",
+  "version": "0.1.0",
+  "description": "Weimob-UI Snippets for VS Code",
+  "categories": [
+    "Snippets"
+  ],
+  "license": "MIT",
+  "publisher": "titian",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "wxml",
+        "path": "./snippets/titian-wxml.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/titian-wxml.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/titian-js.json"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "icon": "images/logo.png"
+}

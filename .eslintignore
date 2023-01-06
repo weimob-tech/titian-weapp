@@ -1,0 +1,9 @@
+node_modules
+miniprogram_npm/
+packages/weapp/esm/*
+packages/weapp/dist-titan/*
+*.lock
+.husky/*
+.vscode/*
+*.d.ts
+*.wxs

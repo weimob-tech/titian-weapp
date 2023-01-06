@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component basic 1`] = `
+<main>
+  <wx-view>
+    <main>
+      <wx-view
+        class="titian-row-flex titian-row"
+        style="margin-left: -0rpx; margin-right: -0rpx;"
+      >
+        <main>
+          <wx-view
+            class="ext-class titian-col-8 titian-col-flex-8 titian-col-offset-0 titian-col"
+            style="padding-left:0rpx;padding-right:0rpx"
+          >
+            <wx-view>
+              1
+            </wx-view>
+          </wx-view>
+        </main>
+        <main>
+          <wx-view
+            class="ext-class titian-col-8 titian-col-flex-8 titian-col-offset-0 titian-col"
+            style="padding-left:0rpx;padding-right:0rpx"
+          >
+            <wx-view>
+              2
+            </wx-view>
+          </wx-view>
+        </main>
+        <main>
+          <wx-view
+            class="ext-class titian-col-8 titian-col-flex-8 titian-col-offset-0 titian-col"
+            style="padding-left:0rpx;padding-right:0rpx"
+          >
+            <wx-view>
+              3
+            </wx-view>
+          </wx-view>
+        </main>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-col-0 titian-col-flex-0 titian-col-offset-0 titian-col"
+    style="padding-left:0rpx;padding-right:0rpx"
+  />
+</main>
+`;

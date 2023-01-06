@@ -1,0 +1,14 @@
+<ti-page options="{{ options }}" bind:change="onChange" />
+
+<ti-cell-group>
+  <ti-cell wx:for="{{ list }}" wx:key="{{ index }}" title="向下滑动页面" />
+</ti-cell-group>
+
+<ti-back-top
+  use-slot="{{ attrs.useSlot }}"
+  visibility-height="{{ attrs.visibilityHeight }}"
+  text="{{ attrs.text }}"
+  duration="{{ attrs.duration }}"
+>
+  {{ attrs.text }}
+</ti-back-top>

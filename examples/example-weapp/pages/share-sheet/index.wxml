@@ -1,0 +1,13 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <ti-button bind:click="onClick">点击演示</ti-button>
+</ti-page>
+<ti-share-sheet
+  visible="{{ visible }}"
+  options="{{ list }}"
+  bind:getuserinfo="getUserInfo"
+  bind:contact="onContact"
+  bind:getphonenumber="onGetPhoneNumber"
+  bind:error="onError"
+  bind:launchapp="onLaunchApp"
+  bind:opensetting="onOpenSetting"
+/>

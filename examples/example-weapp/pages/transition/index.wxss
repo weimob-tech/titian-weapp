@@ -1,0 +1,36 @@
+/* pages/transition/index.wxss */
+.custom-container {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.container-show {
+  z-index: 1000;
+}
+
+.wrap {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-item {
+  width: 40vw;
+  margin: 20rpx 5vw;
+
+  font-size: 28rpx;
+}
+
+.placeholder {
+  width: 100px;
+  height: 100px;
+
+  background-color: #fa2c19;
+}

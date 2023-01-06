@@ -1,0 +1,34 @@
+<!--pages/transition/index.wxml-->
+<view class="page">
+  <view class="panel wrap">
+    <button class="btn-item" bind:tap="changeName" data-name="fade" disabled="{{ show }}">fade</button>
+    <button class="btn-item" bind:tap="changeName" data-name="fade-up" disabled="{{ show }}">fade up</button>
+    <button class="btn-item" bind:tap="changeName" data-name="fade-down" disabled="{{ show }}">fade down</button>
+    <button class="btn-item" bind:tap="changeName" data-name="fade-left" disabled="{{ show }}">fade left</button>
+    <button class="btn-item" bind:tap="changeName" data-name="fade-right" disabled="{{ show }}">fade right</button>
+    <button class="btn-item" bind:tap="changeName" data-name="fade-right" disabled="{{ show }}">fade right</button>
+    <button class="btn-item" bind:tap="changeName" data-name="slide-up" disabled="{{ show }}">slide up</button>
+    <button class="btn-item" bind:tap="changeName" data-name="slide-down" disabled="{{ show }}">slide down</button>
+    <button class="btn-item" bind:tap="changeName" data-name="slide-left" disabled="{{ show }}">slide left</button>
+    <button class="btn-item" bind:tap="changeName" data-name="slide-right" disabled="{{ show }}">slide right</button>
+    <button class="btn-item" bind:tap="changeName" data-name="zoom" disabled="{{ show }}">zoom</button>
+  </view>
+  <view class="custom-container {{ showEnd ? '' : 'container-show' }}">
+    <ti-transition
+      show="{{ show }}"
+      name="{{ name }}"
+      ext-class="placeholder"
+      enter="weimob-enter"
+      enter-done="weimob-enter-done"
+      enter-active="weimob-enter-active"
+      exit-active="weimob-exit-active"
+      exit-done="weimob-exit-done"
+      bind:enter="onEnter"
+      bind:entering="onEntering"
+      bind:entered="onEntered"
+      bind:exit="onExit"
+      bind:exiting="onExiting"
+      bind:exited="onExited"
+    />
+  </view>
+</view>

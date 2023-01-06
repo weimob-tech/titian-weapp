@@ -1,0 +1,86 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <ti-cell
+      title="{{ attr.title }}"
+      arrow="{{ attr.arrow }}"
+      required="{{ attr.required }}"
+      right-icon="{{ attr.information === 1 ? 'plus' : '' }}"
+      label="{{ attr.label }}"
+      sub-desc="{{ attr.subDesc }}"
+      desc="{{ attr.desc }}"
+      align-items="{{ attr.alignItems }}"
+      ext-style="{{ attr.extStyle }}"
+      icon="{{ attr.icon }}"
+      divider="{{ attr.mode !== 2 }}"
+      desc-content-class="desc-content"
+    >
+      <block wx:if="{{ attr.slotName === 'slot-icon' }}">
+        <ti-tag slot="icon" ext-style="margin-right: 12rpx;" style="display: contents;">标签</ti-tag>
+      </block>
+      <block wx:elif="{{ attr.slotName === 'slot-desc' }}">
+        <view wx:if="{{ attr.information === 2 }}" class="slot-desc" slot="desc">
+          <view style="color: #FA2C19">
+            优惠券
+          </view>
+          <ti-divider style="--divider-gap: 28rpx" orientation="vertical" hairline="{{ false }}" />
+          编辑
+        </view>
+        <view wx:if="{{ attr.information === 3 }}" class="slot-desc" slot="desc">
+          <ti-checkbox default-checked="{{ true }}" />
+        </view>
+        <view wx:if="{{ attr.information === 4 }}" class="slot-desc" slot="desc">
+          <ti-switch default-value="{{ true }}" />
+        </view>
+        <view wx:if="{{ attr.information === 5 }}" class="slot-desc" slot="desc">
+          <ti-badge static dot="{{ true }}" content />
+        </view>
+        <view wx:if="{{ attr.information === 6 }}" class="slot-desc" slot="desc">
+          <ti-image
+            width="64"
+            height="64"
+            radius="{{ 4 }}"
+            src="https://image-c-dev.weimobwmc.com/qa-On6X/8b97cd488593474ba4a8ccaa3c1a493f.png"
+          />
+        </view>
+      </block>
+    </ti-cell>
+    <ti-cell
+      wx:if="{{ attr.mode !== 2 }}"
+      title="{{ attr.longTitle }}"
+      arrow="{{ attr.arrow }}"
+      required="{{ attr.required }}"
+      right-icon="{{ attr.information === 1 ? 'delete' : '' }}"
+      icon="{{ attr.icon }}"
+      divider="{{ false }}"
+      title-width="{{ attr.titleWidth }}"
+      desc-content-class="desc-content"
+    >
+      <block wx:if="{{ attr.slotName === 'slot-icon' }}">
+        <ti-tag slot="icon" ext-style="margin-right: 12rpx;" style="display: contents;">标签</ti-tag>
+      </block>
+      <block wx:elif="{{ attr.slotName === 'slot-desc' }}">
+        <view wx:if="{{ attr.information === 2 }}" class="slot-desc" slot="desc">
+          <ti-icon size="28" name="plus" ext-style="margin-right: 8rpx" />
+          添加
+        </view>
+        <view wx:if="{{ attr.information === 3 }}" class="slot-desc" slot="desc">
+          <ti-checkbox default-checked="{{ false }}" />
+        </view>
+        <view wx:if="{{ attr.information === 4 }}" class="slot-desc" slot="desc">
+          <ti-switch default-value="{{ false }}" />
+        </view>
+        <view wx:if="{{ attr.information === 5 }}" class="slot-desc" slot="desc">
+          <ti-badge static dot="{{ false }}" content="{{ 999 }}" />
+        </view>
+        <view wx:if="{{ attr.information === 6 }}" class="slot-desc" slot="desc">
+          <ti-image
+            width="64"
+            height="64"
+            radius="100%"
+            src="https://image-c-dev.weimobwmc.com/qa-On6X/8b97cd488593474ba4a8ccaa3c1a493f.png"
+          />
+        </view>
+      </block>
+    </ti-cell>
+  </view>
+</ti-page>

@@ -1,0 +1,9 @@
+<wxs src="./index.wxs" module="utils" />
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view
+  class="{{ namespace.join('svg-path-view') }} {{ namespace.handle('svg-path-view', [ spin ? 'spin' : '' ]) }} ext-class"
+  style="{{ utils.getSvgBackgroundImage({ name, fills: svgPathFillColor, viewBox, useMask, paths: svgPath, size, rotate, extStyle }) }}"
+  bind:tap="onClick"
+/>
+

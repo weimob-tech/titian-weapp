@@ -1,0 +1,16 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <ti-grid columns="{{ attr.column }}" direction="{{ attr.direction }}" border="{{ attr.divide }}">
+      <ti-grid-item
+        wx:for="{{ attr.group[ attr.number ]}}"
+        wx:key="index"
+        color="#fa2c19"
+        icon="{{ item.icon }}"
+        text="{{ item.text }}"
+        custom-content="{{ attr.customContent }}"
+      >
+        <view wx:if="{{ attr.customContent }}" slot="content">- 内容 -</view>
+      </ti-grid-item>
+    </ti-grid>
+  </view>
+</ti-page>

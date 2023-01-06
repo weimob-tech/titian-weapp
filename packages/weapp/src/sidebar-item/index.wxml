@@ -1,0 +1,8 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view class="{{ namespace.join('sidebar-item', [ { active, disabled } ]) }}" bind:tap="onClick" bind:test="test">
+  <ti-badge content="{{ badge }}" dot="{{ dot }}" at-text>
+    <view class="{{ namespace.join('sidebar-item-text') }}">{{ label }}</view>
+  </ti-badge>
+</view>
+

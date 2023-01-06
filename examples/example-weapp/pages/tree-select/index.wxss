@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  color: #9e9e9e;
+  line-height: 28px;
+  background-color: #ffffff;
+}

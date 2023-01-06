@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    $gdc="{{[Function]}}"
+    $wxs:bind:tap="{{[Function]}}"
+    $wxs:bind:touchend="{{[Function]}}"
+    $wxs:bind:touchmove="{{[Function]}}"
+    $wxs:bind:touchstart="{{[Function]}}"
+    $wxs:change:value="{{[Function]}}"
+    class="titian-switch  ext-class"
+    data-active-color=""
+    data-color=""
+    data-disabled="{{false}}"
+    data-loading="{{false}}"
+    data-value="{{null}}"
+    style=";width:70rpx;height:40rpx;padding:0 6rpx;border-radius:40rpx"
+    value="{{true}}"
+  >
+    <wx-view
+      class="titian-switch-ball"
+      style="width:28rpx;height:28rpx;border-radius:28rpx"
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success props 1`] = `
+<main>
+  <wx-view
+    $gdc="{{[Function]}}"
+    $wxs:bind:tap="{{[Function]}}"
+    $wxs:bind:touchend="{{[Function]}}"
+    $wxs:bind:touchmove="{{[Function]}}"
+    $wxs:bind:touchstart="{{[Function]}}"
+    $wxs:change:value="{{[Function]}}"
+    class="titian-switch  ext-class"
+    data-active-color=""
+    data-color=""
+    data-disabled="{{false}}"
+    data-loading="{{false}}"
+    data-value="{{true}}"
+    style=";width:70rpx;height:40rpx;padding:0 6rpx;border-radius:40rpx"
+    value="{{true}}"
+  >
+    <wx-view
+      class="titian-switch-ball"
+      style="width:28rpx;height:28rpx;border-radius:28rpx"
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success props 2`] = `
+<main>
+  <wx-view
+    $gdc="{{[Function]}}"
+    $wxs:bind:tap="{{[Function]}}"
+    $wxs:bind:touchend="{{[Function]}}"
+    $wxs:bind:touchmove="{{[Function]}}"
+    $wxs:bind:touchstart="{{[Function]}}"
+    $wxs:change:value="{{[Function]}}"
+    class="titian-switch  ext-class"
+    data-active-color=""
+    data-color=""
+    data-disabled="{{false}}"
+    data-loading="{{false}}"
+    data-value="{{false}}"
+    style=";width:70rpx;height:40rpx;padding:0 6rpx;border-radius:40rpx"
+    value="{{false}}"
+  >
+    <wx-view
+      class="titian-switch-ball"
+      style="width:28rpx;height:28rpx;border-radius:28rpx"
+    />
+  </wx-view>
+</main>
+`;

@@ -1,0 +1,99 @@
+.swipe-action {
+  display: flex;
+  align-items: center;
+  padding: 0 12rpx;
+}
+
+.swipe-action.left {
+  padding-left: 0;
+}
+
+.swipe-action.right {
+  padding-right: 0;
+}
+
+.swipe-cell-btn {
+  height: calc(100% - 24rpx) !important;
+}
+
+.swipe-cell-column {
+  padding-right: 36rpx;
+  padding-left: 36rpx;
+}
+
+.btn-column {
+  flex-direction: column;
+}
+
+.prefix-icon {
+  margin-right: 0;
+  margin-bottom: 10rpx;
+
+  font-size: 36rpx !important;
+}
+
+.prefix-icon-h {
+  margin-right: 8rpx;
+
+  font-size: 28rpx !important;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.left .btn {
+  margin-right: 12rpx;
+}
+
+.right .btn {
+  margin-left: 12rpx;
+}
+
+.page-swipe-cell {
+  width: 100%;
+  margin: 0 28rpx;
+}
+
+.good-card {
+  display: flex;
+  padding: 28rpx;
+
+  border-radius: 20rpx;
+
+  background: #fff;
+}
+
+.good-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 0 24rpx;
+}
+
+.good-title {
+  color: #212121;
+  font-family: PingFangSC-Regular, 'PingFang SC';
+  font-size: 28rpx;
+  font-weight: 400;
+}
+
+.good-img {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.good-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.good-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

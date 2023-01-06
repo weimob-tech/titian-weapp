@@ -1,0 +1,27 @@
+.picker-hairline {
+  /* border: 2px solid rgb(207 122 122) !important; */
+}
+
+.picker-option-item {
+  /* background-color: rgba(0, 0, 10, 30%);
+
+  color: azure !important; */
+}
+
+.picker-ext {
+  /* outline: 1px solid #999; */
+}
+
+.picker-option {
+  /* outline: 1px solid #000; */
+}
+
+.picker-picker-mask {
+  /* background-color: rgba(225, 225, 10, 30%); */
+}
+
+.picker {
+  /* --picker-row-color: yellow;
+  --picker-row-selected-color: blue;
+  --picker-row-disabled-color: red; */
+}

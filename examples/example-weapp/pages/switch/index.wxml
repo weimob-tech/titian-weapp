@@ -1,0 +1,14 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="switch-box">
+    <ti-switch
+      wx:if="{{ refresh }}"
+      bind:select="onSelect3"
+      size="{{ attr.size }}"
+      loading="{{ attr.loading }}"
+      active-color="{{ attr.color }}"
+      disabled="{{ attr.disabled }}"
+      bind:change="onSwitchChange"
+    />
+  </view>
+</ti-page>
+

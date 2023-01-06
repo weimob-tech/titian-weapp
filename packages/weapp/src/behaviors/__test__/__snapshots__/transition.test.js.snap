@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test transition behavior should hide transition success 1`] = `
+<main>
+  <wx-view
+    class="transition titian-fade-exit titian-fade-exit-active exit-class exit-active-class"
+  />
+</main>
+`;
+
+exports[`test transition behavior should hide transition success 2`] = `
+<main>
+  <wx-view
+    class="transition titian-fade-enter-done titian-fade-enter-active enter-done-class enter-active-class"
+  />
+</main>
+`;
+
+exports[`test transition behavior should hide transition success 3`] = `
+<main>
+  <wx-view
+    class="transition titian-fade-exit-done titian-fade-exit-active exit-done-class exit-active-class"
+  />
+</main>
+`;
+
+exports[`test transition behavior should hide transition success 4`] = `
+<main>
+  <wx-view
+    class="transition "
+  />
+</main>
+`;
+
+exports[`test transition behavior should show transition success 1`] = `
+<main>
+  <wx-view
+    class="transition titian-fade-enter titian-fade-enter-active enter-class enter-active-class"
+  />
+</main>
+`;

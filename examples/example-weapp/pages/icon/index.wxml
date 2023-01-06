@@ -1,0 +1,29 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view
+    class="icon-group"
+    style="--icon-color:{{ attrs.color }};--icon-font-size:{{ attrs.size }}rpx;--svg-path-view-size:{{ attrs.size }}rpx"
+  >
+    <block wx:for="{{ attrs.iconGroup }}" wx:key="index">
+      <ti-svg-path-view
+        wx:if="{{ item === 'close-double' }}"
+        name="{{ item }}"
+        fills="{{ attrs.color }}"
+        ext-class="icon-box"
+        rotate="{{ attrs.rotate }}deg"
+        spin="{{ attrs.spin }}"
+      />
+      <ti-icon
+        wx:else
+        name="{{ item }}"
+        ext-class="icon-box"
+        rotate="{{ attrs.rotate }}deg"
+        spin="{{ attrs.spin }}"
+        icon-style="{{ attrs.style }}"
+      />
+    </block>
+  </view>
+  <!-- <view>
+    <ti-icon ext-class="icon-box i-ecbianji" prefix="iconfont-ec" rotate="{{ attrs.rotate }}deg" spin="{{ attrs.spin }}" />
+  </view> -->
+</ti-page>
+

@@ -1,0 +1,5 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view style="--loading-color:{{ attrs.color }}">
+    <ti-loading mode="{{ attrs.mode }}" direction="{{ attrs.direction }}" text="{{ attrs.text }}" />
+  </view>
+</ti-page>

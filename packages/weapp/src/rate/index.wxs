@@ -1,0 +1,11 @@
+function getClass(condition) {
+  if (condition) {
+    return 'filled';
+  } else {
+    return 'empty';
+  }
+}
+
+module.exports = {
+  getClass: getClass
+};

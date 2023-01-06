@@ -1,0 +1,22 @@
+<ti-page options="{{ options }}" center="{{ false }}" bind:change="onChange">
+  <view class="tabs-container" style="--tabs-active-line-color: {{ attrs.color }}">
+    <ti-tabs
+      wx:if="{{ refresh }}"
+      tabs="{{ attrs.tabs }}"
+      divider="{{ attrs.divider }}"
+      variant="{{ attrs.variant || 'pure' }}"
+      tabs-class="{{ attrs.tabsClass }}"
+      swiper-class="swiper-class"
+      count="{{ attrs.count }}"
+      tab-width="{{ attrs.tabWidth }}"
+      gap="{{ attrs.gap }}"
+      ext-style="{{ attrs.extStyle }}"
+      use-slot
+    >
+      <block wx:for="{{ attrs.tabs }}" wx:key="index">
+        <view class="item" slot="tab-content-{{ index }}">- {{ item.label || item }} -</view>
+      </block>
+    </ti-tabs>
+  </view>
+</ti-page>
+

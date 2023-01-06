@@ -1,0 +1,16 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="tooltip-page" style="justify-content: {{ attr.justifyContent }}">
+    <view class="text" style="order: {{ attr.order }};margin-left: {{ attr.marginLeft }}">{{ attr.text }}</view>
+    <ti-tooltip
+      close-on-click="{{ true }}"
+      direction="{{ attr.direction }}"
+      slot="right-icon"
+      content="每行文字限制十二个中文字每行文字限制十二个中文字每行文字限制十二个中文字"
+    >
+      <view style="margin:0px {{ attr.style }}px;">
+        <ti-icon name="info" size="28" />
+      </view>
+    </ti-tooltip>
+  </view>
+</ti-page>
+

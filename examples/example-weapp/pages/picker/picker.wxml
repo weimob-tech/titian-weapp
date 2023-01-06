@@ -1,0 +1,17 @@
+<ti-page options="{{ opt }}" bind:change="onChange">
+  <ti-button bind:tap="toggleVisible">点击演示</ti-button>
+  <ti-popup visible="{{ visible }}" position="bottom" bind:close="toggleVisible">
+    <ti-picker
+      row-alias="{{ rowAlias }}"
+      label="{{ label }}"
+      value="{{ value }}"
+      options="{{ options }}"
+      use-row-index="{{ useRowIndex }}"
+      visible-item-count="5"
+      cascade="{{ cascade || 'children' }}"
+      bind:change="onPickerChange"
+      bind:cancel="toggleVisible"
+      bind:confirm="toggleVisible"
+    />
+  </ti-popup>
+</ti-page>

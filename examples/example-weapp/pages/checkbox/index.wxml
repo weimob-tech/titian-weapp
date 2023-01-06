@@ -1,0 +1,38 @@
+<ti-page options="{{ options }}" page-class="checkbox-button-page" bind:change="onChange">
+  <ti-checkbox-group
+    max="{{ attr.limit }}"
+    default-value="0"
+    bind:change="onCheckboxChange"
+    style="--checkbox-radius: {{ attr.radius }}rpx;--checkbox-icon-color:{{ attr.color }}"
+    icon="{{ attr.iconName }}"
+  >
+    <block wx:for="{{ attr.group }}" wx:key="index">
+      <ti-checkbox-button
+        wx:if="{{ attr.type === 'TiCheckboxButton' }}"
+        label="{{ item }}"
+        value="{{ index + '' }}"
+        size="{{ attr.size }}"
+        disabled="{{ attr.disabled }}"
+        color="{{ attr.color }}"
+        icon="{{ attr.iconName }}"
+      >
+        <ti-image
+          ext-style="margin-right: 12rpx"
+          wx:if="{{ attr.ext === 'image' }}"
+          slot="prefix"
+          width="40"
+          radius="{{ 4 }}"
+          height="40"
+          src="https://image-c-dev.weimobwmc.com/qa-On6X/8b97cd488593474ba4a8ccaa3c1a493f.png"
+        />
+      </ti-checkbox-button>
+      <ti-checkbox
+        wx:else
+        label="{{ item }}"
+        value="{{ index + '' }}"
+        size="{{ attr.size }}"
+        disabled="{{ attr.disabled }}"
+      />
+    </block>
+  </ti-checkbox-group>
+</ti-page>

@@ -1,0 +1,15 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view
+  class="{{ namespace.join('tag') }} {{ namespace.handle('tag-variant', [ variant ]) }} {{ namespace.handle('tag-size', [ size ]) }} {{ namespace.handle('tag-shape', [ shape ]) }} ext-class"
+  style="{{ extStyle }};{{ cssVariable }}"
+>
+  <ti-icon wx:if="{{ leftIcon }}" name="{{ leftIcon }}" ext-class="{{ namespace.join('tag', 'icon') }}" />
+  <slot name="prefix" />
+  <view class="{{ namespace.join('tag-text', { left: leftIcon, right: rightIcon }) }}">
+    <slot />
+  </view>
+  <slot name="suffix" />
+  <ti-icon wx:if="{{ rightIcon }}" name="{{ rightIcon }}" ext-class="{{ namespace.join('tag', 'icon') }}" />
+</view>
+

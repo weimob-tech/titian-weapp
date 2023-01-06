@@ -1,0 +1,30 @@
+.demo-collapse-title-box {
+  display: flex;
+  height: 114rpx;
+  margin: 0 0 0 28rpx;
+
+  line-height: 114rpx;
+}
+
+.demo-collapse-title {
+  color: #212121;
+  font-family: PingFangSC-Medium, 'PingFang SC';
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.demo-collapse-sub-title {
+  color: #757575;
+  font-family: PingFangSC-Regular, 'PingFang SC';
+  font-size: 24rpx;
+  font-weight: 400;
+}
+
+.container {
+  /* --collapse-cell-padding-v: 150rpx;
+  --collapse-text-color: #000; */
+
+  /* --collapse-text-color: #000;
+  --collapse-padding-h: 1px;
+  --collapse-padding-v: 1px; */
+}

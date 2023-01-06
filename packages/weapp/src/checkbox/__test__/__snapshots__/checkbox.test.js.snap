@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should checked do success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-checkbox-checked titian-checkbox-horizontal titian-checkbox"
+    style=""
+  >
+    <wx-view
+      class="titian-checkbox-icon-wrap-checked titian-checkbox-icon-wrap"
+      style="--base-radius-size:999px; height: 32rpx"
+      bind:tap="onChange"
+    >
+      <ti-icon
+        extClass="icon-class titian-checkbox-icon-zoom-in titian-checkbox-icon-checked titian-checkbox-icon-animation titian-checkbox-icon"
+      >
+        <wx-view
+          class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
+          style="line-height:32rpx;height:32rpx;width:32rpx;font-size:32rpx"
+          bind:tap="onClick"
+        />
+      </ti-icon>
+    </wx-view>
+    <wx-view
+      class="titian-checkbox-label"
+      bind:tap="onClick"
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should disabled do success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-checkbox-disabled titian-checkbox-horizontal titian-checkbox"
+    style=""
+  >
+    <wx-view
+      class="titian-checkbox-icon-wrap"
+      style="--base-radius-size:999px; height: 32rpx"
+      bind:tap="onChange"
+    >
+      <ti-icon
+        extClass="icon-class titian-checkbox-icon-animation titian-checkbox-icon"
+      >
+        <wx-view
+          class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
+          style="line-height:32rpx;height:32rpx;width:32rpx;font-size:32rpx"
+          bind:tap="onClick"
+        />
+      </ti-icon>
+    </wx-view>
+    <wx-view
+      class="titian-checkbox-label"
+      bind:tap="onClick"
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should labelDisabled do success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-checkbox-horizontal titian-checkbox"
+    style=""
+  >
+    <wx-view
+      class="titian-checkbox-icon-wrap"
+      style="--base-radius-size:999px; height: 32rpx"
+      bind:tap="onChange"
+    >
+      <ti-icon
+        extClass="icon-class titian-checkbox-icon-animation titian-checkbox-icon"
+      >
+        <wx-view
+          class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
+          style="line-height:32rpx;height:32rpx;width:32rpx;font-size:32rpx"
+          bind:tap="onClick"
+        />
+      </ti-icon>
+    </wx-view>
+    <wx-view
+      class="titian-checkbox-label"
+      bind:tap="onClick"
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render label, icon, color, size, shape props success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-checkbox-horizontal titian-checkbox"
+    style=""
+  >
+    <wx-view
+      class="titian-checkbox-icon-wrap"
+      style="height:64rpx;--base-radius-size:0rpx"
+      bind:tap="onChange"
+    >
+      <ti-icon
+        extClass="icon-class titian-checkbox-icon-zoom-out titian-checkbox-icon-animation titian-checkbox-icon"
+      >
+        <wx-view
+          class="titian-icon-base titian-icon titian-icon-icon ext-class"
+          style="background-color:red;line-height:64rpx;height:64rpx;width:64rpx;font-size:64rpx"
+          bind:tap="onClick"
+        />
+      </ti-icon>
+    </wx-view>
+    <wx-view
+      class="titian-checkbox-label"
+      bind:tap="onClick"
+    >
+      label
+    </wx-view>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-checkbox-horizontal titian-checkbox"
+    style=""
+  >
+    <wx-view
+      class="titian-checkbox-icon-wrap"
+      style="--base-radius-size:999px; height: 32rpx"
+      bind:tap="onChange"
+    >
+      <ti-icon
+        extClass="icon-class titian-checkbox-icon-animation titian-checkbox-icon"
+      >
+        <wx-view
+          class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
+          style="line-height:32rpx;height:32rpx;width:32rpx;font-size:32rpx"
+          bind:tap="onClick"
+        />
+      </ti-icon>
+    </wx-view>
+    <wx-view
+      class="titian-checkbox-label"
+      bind:tap="onClick"
+    />
+  </wx-view>
+</main>
+`;

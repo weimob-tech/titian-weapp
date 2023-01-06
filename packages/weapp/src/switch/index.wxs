@@ -1,0 +1,117 @@
+var utils = require('./switch.wxs');
+var reset = utils.reset,
+  setSize = utils.setSize,
+  setStatus = utils.setStatus,
+  left = utils.left,
+  right = utils.right;
+
+function click(event, ownerInstance) {
+  var state = event.instance.getState();
+  var dataSet = event.instance.getDataset();
+  var val = dataSet.value;
+  var disabled = dataSet.disabled;
+  var loading = dataSet.loading;
+  if (typeof val === 'boolean') {
+    ownerInstance.callMethod('change', !val);
+    return;
+  }
+  state.disabled = disabled || false;
+  state.loading = loading || false;
+
+  if (state.disabled || state.loading) {
+    return;
+  }
+  setSize(state, event.instance, ownerInstance);
+  setStatus(state, event.instance, !state.status);
+  ownerInstance.callMethod('change', state.status);
+}
+
+function touchstart(event, ownerInstance) {
+  var state = event.instance.getState();
+  var dataSet = event.instance.getDataset();
+  var disabled = dataSet.disabled;
+  var loading = dataSet.loading;
+  state.disabled = disabled || false;
+  state.loading = loading || false;
+  if (state.disabled || state.loading) {
+    return;
+  }
+  var bounds = event.touches[0];
+  reset(state, bounds);
+  setSize(state, event.instance, ownerInstance);
+  if (typeof dataSet.value === 'boolean') {
+    state.controlled = true;
+  }
+}
+
+function touchmove(event, ownerInstance) {
+  var state = event.instance.getState();
+  state.isMove = true;
+  if (state.disabled || state.loading) {
+    return;
+  }
+  var bounds = event.changedTouches[0];
+  var clientX = bounds.clientX;
+  var clientY = bounds.clientY;
+  state.end.x = clientX;
+  state.end.y = clientY;
+  state.moveVector.x = clientX - state.start.x;
+  state.moveVector.y = clientY - state.start.y;
+  state.move.x = Math.abs(clientX - state.start.x);
+  state.move.y = Math.abs(clientY - state.start.y);
+
+  if (typeof state.middle === 'undefined') {
+    state.middle = state.status;
+  }
+  if (state.middle) {
+    left(state, function () {
+      state.middle = false;
+      state.isMove = false;
+      if (state.middle !== state.status) {
+        ownerInstance.callMethod('change', state.middle);
+      }
+      if (!state.controlled) {
+        setStatus(state, event.instance, state.middle);
+      }
+    });
+    return false;
+  }
+  right(state, function () {
+    state.middle = true;
+    state.isMove = false;
+    if (state.middle !== state.status) {
+      ownerInstance.callMethod('change', state.middle);
+    }
+    if (!state.controlled) {
+      setStatus(state, event.instance, state.middle);
+    }
+  });
+  return false;
+}
+function touchend(event, ownerInstance) {
+  var state = event.instance.getState();
+  if (typeof state.transformX === 'undefined' || state.disabled || state.loading || !state.isMove) {
+    return;
+  }
+  setStatus(state, event.instance, state.status);
+}
+
+function handleValue(nextState, prevState, ownerInstance, instance) {
+  var state = instance.getState();
+  if (nextState === prevState) {
+    return;
+  }
+  if (nextState === undefined) {
+    return;
+  }
+  setSize(state, instance, ownerInstance);
+  setStatus(state, instance, nextState);
+}
+
+module.exports = {
+  click: click,
+  touchstart: touchstart,
+  touchmove: touchmove,
+  touchend: touchend,
+  handleValue: handleValue
+};

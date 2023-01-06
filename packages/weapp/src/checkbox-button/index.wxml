@@ -1,0 +1,14 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view
+  class="ext-class {{ namespace.join('checkbox-button', [ { disabled, checked: privateChecked } ]) }}"
+  style="{{ styles }} {{ extStyle }}"
+>
+  <ti-tag bind:tap="handleTagClick" left-icon="{{ leftIcon }}" right-icon="{{ icon }}">
+    <slot name="prefix" slot="prefix" />
+    <block wx:if="{{ label }}">{{ label }}</block>
+    <slot wx:else />
+    <slot name="suffix" slot="suffix" />
+  </ti-tag>
+</view>
+

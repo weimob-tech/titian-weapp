@@ -1,0 +1,14 @@
+node_modules
+miniprogram_npm
+packages/weapp/esm/*
+packages/weapp/dist-titan/*
+packages/weapp/types/*
+*.lock
+.husky/*
+.vscode/*
+.idea/*
+coverage
+*.test.js.snap
+packages/weapp/src/input/index.wxml
+packages/weapp/src/input-number/index.wxml
+packages/weapp/src/button/index.wxml

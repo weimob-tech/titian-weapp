@@ -1,0 +1,11 @@
+<ti-page options="{{ options }}" bind:change="onChange" center="{{ false }}">
+  <view class="content">
+    <ti-steps
+      options="{{ attrs.table }}"
+      active-color="{{ attrs.activeColor }}"
+      icon="{{ attrs.iconName }}"
+      subtitle-align="{{ attrs.subtitleAlign }}"
+    />
+  </view>
+</ti-page>
+

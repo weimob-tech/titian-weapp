@@ -1,0 +1,10 @@
+'use strict';
+
+function completedStyle(gutter) {
+  var num = gutter / 2;
+  return 'margin-left: -'.concat(num, 'rpx; margin-right: -').concat(num, 'rpx;');
+}
+
+module.exports = {
+  completedStyle: completedStyle
+};

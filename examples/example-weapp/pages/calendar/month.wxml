@@ -1,0 +1,204 @@
+<view>
+  <button
+    bind:tap="onTap"
+    data-key="type"
+    data-value="single"
+    class="btn-cal {{ type === 'single' ? 'btn-primary' : '' }}"
+  >
+    单选
+  </button>
+  <button
+    bind:tap="onTap"
+    data-key="type"
+    data-value="multiple"
+    class="btn-cal {{ type === 'multiple' ? 'btn-primary' : '' }}"
+  >
+    多选
+  </button>
+
+  <button
+    bind:tap="onTap"
+    data-key="type"
+    data-value="range"
+    class="btn-cal {{ type === 'range' ? 'btn-primary' : '' }}"
+  >
+    范围
+  </button>
+</view>
+<view>
+  <button bind:tap="onTap" data-key="round" data-value="{{ true }}" class="btn-cal {{ round ? 'btn-primary' : '' }}">
+    圆角
+  </button>
+  <button bind:tap="onTap" data-key="round" data-value="{{ false }}" class="btn-cal {{ !round ? 'btn-primary':'' }}">
+    直角
+  </button>
+</view>
+<view>
+  <button
+    bind:tap="onTap"
+    data-key="color"
+    data-value="#2580FF"
+    class="btn-cal {{ color === '#2580FF' ? 'btn-primary' : '' }}"
+  >
+    蓝色
+  </button>
+  <button
+    bind:tap="onTap"
+    data-key="color"
+    data-value="#DB2B13"
+    class="btn-cal {{ color === '#DB2B13' ? 'btn-primary' : '' }}"
+  >
+    红色
+  </button>
+</view>
+
+<view>
+  <button
+    bind:tap="onTap"
+    data-key="position"
+    data-value="left"
+    class="btn-cal {{ position === 'left' ? 'btn-primary' : '' }}"
+  >
+    left
+  </button>
+  <button
+    bind:tap="onTap"
+    data-key="position"
+    data-value="bottom"
+    class="btn-cal {{ position === 'bottom' ? 'btn-primary' : '' }}"
+  >
+    bottom
+  </button>
+</view>
+<view>
+  <button
+    bind:tap="onTap"
+    data-key="maxSize"
+    data-value="{{ 0 }}"
+    class="btn-cal {{ maxSize <= 0 ? 'btn-primary' : '' }}"
+  >
+    不设最大数量
+  </button>
+  <button
+    bind:tap="onTap"
+    data-key="maxSize"
+    data-value="{{ 3 }}"
+    class="btn-cal {{ maxSize > 0 ? 'btn-primary' : '' }}"
+  >
+    设置最多3个
+  </button>
+</view>
+
+<view>
+  <button
+    bind:tap="onRange"
+    data-value="{{ ['2010/01/07','2011/10/07'] }}"
+    data-range="{{ 0 }}"
+    class="btn-cal {{ range === 0 ? 'btn-primary' : '' }}"
+  >
+    2010/01/07-2011/10/07
+  </button>
+  <button
+    bind:tap="onRange"
+    data-range="{{ 1 }}"
+    data-value="{{ ['2021/01/07','2022/10/07'] }}"
+    class="btn-cal {{ range !== 0 ? 'btn-primary' : '' }}"
+  >
+    2020/01/07-2021/10/07
+  </button>
+</view>
+
+<view>
+  <button
+    bind:tap="onTap"
+    data-key="maxRange"
+    data-value="{{ 0 }}"
+    class="btn-cal {{ maxRange <= 0 ? 'btn-primary' : '' }}"
+  >
+    不设最大范围
+  </button>
+  <button
+    bind:tap="onTap"
+    data-key="maxRange"
+    data-value="{{ 3 }}"
+    class="btn-cal {{ maxRange > 0 ? 'btn-primary' : '' }}"
+  >
+    三天最大范围
+  </button>
+</view>
+
+<view>
+  <button
+    bind:tap="onTap"
+    data-key="allowSameDay"
+    data-value="{{ true }}"
+    class="btn-cal {{ allowSameDay ? 'btn-primary' : '' }}"
+  >
+    起止日期同天
+  </button>
+  <button
+    bind:tap="onTap"
+    data-key="allowSameDay"
+    data-value="{{ false }}"
+    class="btn-cal {{ !allowSameDay  ? 'btn-primary':'' }}"
+  >
+    起止日期不同天
+  </button>
+</view>
+
+<view>
+  <button bind:tap="onOpen" class="btn-cal  " data-controlled="{{ false }}">
+    打开非受控日历
+  </button>
+
+  <button bind:tap="onOpen" class="btn-cal  " data-controlled="{{ true }}">
+    打开受控日历
+  </button>
+</view>
+<view class="tiled-calendar">
+  <ti-calendar
+    bind:close="onClose"
+    visible="{{ visible }}"
+    formatter="{{ formatter }}"
+    class-name="t1"
+    position="{{ position }}"
+    mode="{{ type }}"
+    default-value="{{ defaultDate }}"
+    min-date="{{ minDate }}"
+    max-date="{{ maxDate }}"
+    bind:confirm="onConfirm"
+    bind:select="onSelect"
+    bind:error="onError"
+    color="{{ color }}"
+    round="{{ round }}"
+    data-controlled="{{ false }}"
+    max-range="{{ maxRange }}"
+    max-size="{{ maxSize }}"
+    allow-same-day="{{ allowSameDay }}"
+  />
+</view>
+
+<view class="tiled-calendar">
+  <ti-calendar
+    visible="{{ visibleControlled }}"
+    formatter="{{ formatter }}"
+    position="{{ position }}"
+    mode="{{ type }}"
+    value="{{ controlledValue }}"
+    min-date="{{ minDate }}"
+    max-date="{{ maxDate }}"
+    color="{{ color }}"
+    round="{{ round }}"
+    max-range="{{ maxRange }}"
+    max-size="{{ maxSize }}"
+    allow-same-day="{{ allowSameDay }}"
+    data-controlled="{{ true }}"
+    bind:close="onClose"
+    bind:confirm="onConfirm"
+    bind:select="onControlledSelect"
+    bind:error="onError"
+  />
+</view>
+
+<ti-toast id="titian-toast" />
+

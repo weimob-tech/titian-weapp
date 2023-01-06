@@ -1,0 +1,19 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <ti-input-number
+      value="{{ 0 }}"
+      size="{{ attrs.size }}"
+      variant="{{ attrs.variant }}"
+      border="{{ attrs.border }}"
+      ext-style="{{ attrs.extStyle }}"
+      thumbnail="{{ attrs.thumbnail }}"
+      auto-width="{{ attrs.autoWidth }}"
+      max="{{ attrs.max }}"
+      min="{{ attrs.min }}"
+      step="{{ attrs.step }}"
+      ext-plus-class="{{ attrs.extPlusClass }}"
+      ext-minus-class="{{ attrs.extMinusClass }}"
+      ext-input-class="{{ attrs.extInputClass }}"
+    />
+  </view>
+</ti-page>

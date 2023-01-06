@@ -1,0 +1,10 @@
+node_modules
+packages/alipay/*
+packages/taro/*
+packages/weapp/esm/*
+packages/weapp/dist-titan/*
+packages/weapp/example/components/*
+*.lock
+.husky/*
+.vscode/*
+.*

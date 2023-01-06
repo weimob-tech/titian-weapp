@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-button": "../button/index",
+    "ti-popup": "../popup/index",
+    "ti-popup-titlebar": "../popup-title-bar/index"
+  }
+}

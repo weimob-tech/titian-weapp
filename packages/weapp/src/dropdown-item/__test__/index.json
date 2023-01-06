@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-dropdown-menu": "../../dropdown-menu/index",
+    "ti-dropdown-item": "../index"
+  }
+}

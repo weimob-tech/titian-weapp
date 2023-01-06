@@ -1,0 +1,20 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <ti-button
+      type="{{ attrs.type || 'primary' }}"
+      variant="{{ attrs.variant }}"
+      color="{{ attrs.type ? '' : attrs.color }}"
+      disabled="{{ attrs.disabled }}"
+      suffix-icon="{{ attrs.suffixIcon }}"
+      prefix-icon="{{ attrs.prefixIcon }}"
+      loading="{{ attrs.loading }}"
+      size="{{ attrs.size }}"
+      ext-style="{{ attrs.extStyle }}"
+      block="{{ attrs.block }}"
+      hairline
+    >
+      {{ attrs.text }}
+    </ti-button>
+  </view>
+</ti-page>
+

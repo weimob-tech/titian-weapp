@@ -1,0 +1,8 @@
+function computedScrollLeft(item) {
+  var itemWidth = 140;
+  var itemGap = 12;
+  return (itemWidth + itemGap) * (item.currentIndex - 1) + 'rpx';
+}
+module.exports = {
+  computedScrollLeft: computedScrollLeft
+};

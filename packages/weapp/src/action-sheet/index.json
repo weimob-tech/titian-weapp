@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-icon": "../icon/index",
+    "ti-popup": "../popup/index",
+    "ti-loading": "../loading/index",
+    "ti-badge": "../badge/index"
+  }
+}

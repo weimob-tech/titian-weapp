@@ -1,0 +1,18 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200rpx;
+
+  border-bottom: 1px solid #ccc;
+
+  background-color: #fff;
+}
+
+.menu {
+  height: auto;
+}
+
+.footer {
+  padding-bottom: 0;
+}

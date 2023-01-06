@@ -1,0 +1,6 @@
+.radio-button-page {
+  background-color: #fff;
+
+  --radio-button-padding-h: 12rpx;
+  --radio-padding-h: 12rpx;
+}

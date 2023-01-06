@@ -1,0 +1,59 @@
+.icon-group {
+  display: flex;
+}
+
+.icon-box {
+  margin: 40rpx;
+}
+
+@font-face {
+  font-family: iconfont-ec; /* Project id 2773272 */
+  src: url('https://cdn2.weimob.com/saas/@assets/saas-fe-retail-h5-stc/mall/font/ec/iconfont.woff?v=20220726')
+      format('woff'),
+    url('https://cdn2.weimob.com/saas/@assets/saas-fe-retail-h5-stc/mall/font/ec/iconfont.ttf?v=20220726')
+      format('truetype');
+}
+
+.iconfont-ec {
+  font-family: iconfont-ec !important;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+}
+
+.i-ecbianji::before {
+  content: '\e628';
+}
+
+.i-ecbiaoqianlan-shaixuan::before {
+  content: '\e629';
+}
+
+.i-ecbujinqi-zengjia::before {
+  content: '\e62a';
+}
+
+.i-eccuowu::before {
+  content: '\e62b';
+}
+
+.i-ecdanfuxuan-xuanzhong::before {
+  content: '\e62c';
+}
+
+.i-ecbujinqi-jianshao::before {
+  content: '\e62d';
+}
+
+.i-eca-danyuangeshurukuang-bitianxiang::before {
+  content: '\e62e';
+}
+
+.i-ecdingdanshouhou-shenfenxinxi::before {
+  content: '\e62f';
+}
+
+.i-ecdingwei-mian::before {
+  content: '\e630';
+}

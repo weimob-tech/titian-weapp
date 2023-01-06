@@ -1,0 +1,11 @@
+<ti-page options="{{ options }}" bind:change="onChange" style="{{ cssVariable }}">
+  <ti-price
+    label="销售价"
+    unit="$"
+    prefix="{{ attrs.prefix }}"
+    value="{{ 29.99 }}"
+    suffix="{{ attrs.suffix }}"
+  />
+
+</ti-page>
+

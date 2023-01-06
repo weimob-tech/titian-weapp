@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="titian-empty titian-empty-medium ext-class"
+    style=""
+    bind:tap="onClick"
+  >
+    <wx-image
+      class="titian-empty-image"
+      src="https://cdn2.weimob.com/saas/saas-fe-sirius-orion-node/production/145/searchwithnoresult.png"
+    />
+  </wx-view>
+</main>
+`;

@@ -1,0 +1,20 @@
+.rate-wrap {
+  margin-bottom: 30rpx;
+}
+
+.rate-label {
+  margin-left: 20rpx;
+
+  color: red;
+}
+
+.rate-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100rpx;
+
+  /* --rate-color: #000;
+  --rate-empty-color: blue;
+  --rate-gap: 10px; */
+}

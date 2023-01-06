@@ -1,0 +1,2 @@
+<ti-page options="{{ options }}" bind:change="onChange" bind:repeat="onChange" />
+<ti-toast id="titian-toast" />

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-icon": "../icon/index",
+    "ti-progress": "../progress/index",
+    "ti-loading": "../loading/index",
+    "ti-svg-path-view": "../svg-path-view/index"
+  }
+}

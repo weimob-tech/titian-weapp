@@ -1,0 +1,15 @@
+.slot-desc {
+  display: flex;
+  align-items: center;
+
+  font-size: 24rpx;
+  font-weight: 500;
+}
+
+.container {
+  --checkbox-padding-h: 0;
+}
+
+.desc-content {
+  max-height: 42rpx;
+}

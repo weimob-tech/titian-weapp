@@ -1,0 +1,15 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-popup": "../popup/index",
+    "ti-popup-titlebar": "../popup-title-bar/index",
+    "ti-image": "../image/index",
+    "ti-button": "../button/index",
+    "ti-sku-selector": "../sku-selector/index",
+    "ti-input-number": "../input-number/index",
+    "ti-safe-area": "../safe-area/index",
+    "ti-divider": "../divider/index",
+    "ti-price": "../price/index",
+    "ti-goods-card": "../goods-card/index"
+  }
+}

@@ -1,0 +1,4 @@
+.calendar {
+  /* --calendar-date-text-select-color: #ccc;
+  --calendar-popup-radius: 50%; */
+}

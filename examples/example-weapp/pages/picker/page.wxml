@@ -1,0 +1,63 @@
+<wxs src="./index.wxs" module="utils" />
+<view class="page">
+  <view class="page-container {{ center ? 'center' : '' }}">
+    <slot />
+  </view>
+  <scroll-view class="menu" scroll-y>
+    <view style="height: 50rpx" />
+    <block wx:for="{{ newOption }}" wx:key="index">
+      <view wx:if="{{ item.show }}" class="drawer">
+        <view class="title">
+          <view class="desc">{{ item.desc }}</view>
+          <view class="name">{{ item.name }}</view>
+        </view>
+        <view
+          wx:if="{{ item.type === 'radio' }}"
+          class="radio-box"
+          scroll-x
+          scroll-left="{{ utils.computedScrollLeft(item) }}"
+          scroll-with-animation
+          enhanced="{{ true }}"
+          show-scrollbar="{{ false }}"
+        >
+          <view
+            wx:for="{{ item.list }}"
+            wx:for-item="radio"
+            wx:for-index="idx"
+            wx:key="idx"
+            id="item-{{ idx }}"
+            data-item="{{ radio }}"
+            data-key="{{ item.key }}"
+            class="radio {{ item.value === radio.value ? 'checked' : '' }}"
+            bind:tap="onClick"
+          >
+            {{ radio.label }}
+          </view>
+        </view>
+        <view wx:elif="{{ item.type === 'color' }}" class="colors">
+          <view
+            class="color {{ item.value === color.value ? 'checked' : '' }}"
+            style="color: {{ color.value }};background: {{ color.value }}"
+            wx:for="{{ item.list || colors }}"
+            wx:key="color"
+            wx:for-item="color"
+            data-item="{{ color }}"
+            data-key="{{ item.key }}"
+            bind:tap="onClick"
+          />
+        </view>
+        <view wx:elif="{{ item.type === 'radius' }}" class="radius">
+          <ti-slider
+            max="{{ item.max || 100 }}"
+            min="{{ item.min || 0 }}"
+            value="{{ item.value }}"
+            data-key="{{ item.key }}"
+            bind:change="onChangeRadius"
+          />
+        </view>
+
+      </view>
+    </block>
+    <view class="footer" />
+  </scroll-view>
+</view>

@@ -1,0 +1,14 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <ti-button bind:tap="open">点击演示</ti-button>
+</ti-page>
+<ti-action-sheet
+  visible="{{ visible }}"
+  title="{{ attrs.titleText }}"
+  actions="{{ actions }}"
+  cancel-text="{{ attrs.cancelText }}"
+  bind:select="onSelect"
+  bind:close="onClose"
+  bind:cancel="onClose"
+  style="--action-sheet-button-color:{{ attrs.color }};--action-sheet-title-color:{{ attrs.color }};--loading-color:{{ attrs.color }}"
+/>
+

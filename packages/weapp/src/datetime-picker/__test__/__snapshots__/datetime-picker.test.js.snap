@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <ti-picker
+    class="titian-datetime-picker"
+    extClass="ext-class"
+    extHairlineClass="ext-hairline-class"
+    extMaskClass="ext-mask-class"
+    catch:cancel="onCalendarCancel"
+    catch:change="onCalendarChange"
+    catch:confirm="onCalendarConfirm"
+    catch:reach-bottom="noop"
+    catch:reach-top="noop"
+  >
+    <wx-view
+      class="titian-picker"
+    >
+      <ti-popup-titlebar
+        onlyCancel="{{true}}"
+        catch:cancel="onCancel"
+        catch:confirm="onConfirm"
+      >
+        <ti-title-bar
+          extClass="ext-class"
+          extLeftClass="ext-left-class titian-popup-titlebar-cancel"
+          extRightClass="ext-right-class titian-popup-titlebar-confirm"
+          extRightIconClass="ext-right-icon-class "
+          extTitleClass="ext-title-class "
+          bind:click="onClick"
+        >
+          <wx-view
+            class="ext-class titian-titlebar"
+            style=""
+          >
+            <wx-view
+              class="ext-left-class titian-titlebar-left"
+              bind:tap="onClickLeft"
+            />
+            <wx-view
+              class="ext-title-class titian-titlebar-title"
+            >
+              <wx-view
+                class="ext-main-title-class titian-titlebar-main-title"
+                bind:tap="onClickTitle"
+              >
+                标题
+              </wx-view>
+            </wx-view>
+            <wx-view
+              class="ext-right-class titian-titlebar-right"
+              bind:tap="onClickRight"
+            />
+          </wx-view>
+        </ti-title-bar>
+      </ti-popup-titlebar>
+      <wx-view
+        class="titian-picker-content ext-class"
+        disableScroll="{{true}}"
+        style=";height:0px"
+      >
+        <wx-view
+          class="titian-picker-loading"
+        >
+          <ti-loading>
+            <wx-view
+              class="titian-loading-wrap"
+              style=""
+            >
+              <wx-view
+                class="ext-class titian-loading-circular titian-loading"
+                style="padding:6rpx;width:60rpx;height:60rpx"
+              >
+                <wx-view
+                  class="titian-loading-view-circular titian-loading-view"
+                  style="width:60rpx;height:60rpx"
+                >
+                  <wx-view
+                    class="titian-loading-view-item"
+                    style="width:60rpx;height:60rpx;border-width:5rpx"
+                  />
+                </wx-view>
+                <wx-view
+                  class="titian-loading-view-circular titian-loading-view"
+                  style="width:60rpx;height:60rpx"
+                >
+                  <wx-view
+                    class="titian-loading-view-item"
+                    style="width:60rpx;height:60rpx;border-width:5rpx"
+                  />
+                </wx-view>
+                <wx-view
+                  class="titian-loading-view-circular titian-loading-view"
+                  style="width:60rpx;height:60rpx"
+                >
+                  <wx-view
+                    class="titian-loading-view-item"
+                    style="width:60rpx;height:60rpx;border-width:5rpx"
+                  />
+                </wx-view>
+                <wx-view
+                  class="titian-loading-view-circular titian-loading-view"
+                  style="width:60rpx;height:60rpx"
+                >
+                  <wx-view
+                    class="titian-loading-view-item"
+                    style="width:60rpx;height:60rpx;border-width:5rpx"
+                  />
+                </wx-view>
+                <wx-view
+                  class="titian-loading-view-circular titian-loading-view"
+                  style="width:60rpx;height:60rpx"
+                >
+                  <wx-view
+                    class="titian-loading-view-item"
+                    style="width:60rpx;height:60rpx;border-width:5rpx"
+                  />
+                </wx-view>
+              </wx-view>
+              <wx-view
+                class="titian-loading-text"
+                style=""
+              />
+            </wx-view>
+          </ti-loading>
+        </wx-view>
+        <wx-view
+          class="titian-picker-mask ext-mask-class"
+        />
+        <wx-view
+          class="titian-picker-hairline ext-hairline-class"
+          style=" height:0px;top : 0px"
+        />
+        <wx-view
+          class="titian-picker-column-box"
+        />
+      </wx-view>
+    </wx-view>
+  </ti-picker>
+</main>
+`;

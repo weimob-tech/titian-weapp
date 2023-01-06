@@ -1,0 +1,93 @@
+'use strict';
+var utils = require('./index.wxs');
+
+var PREFIX = 'titian';
+
+function filterRealKey(obj) {
+  if (utils.isPlainObject(obj)) {
+    return utils.keys(obj).filter(function (value) {
+      return !!obj[value];
+    });
+  }
+
+  return obj;
+}
+
+function mappingRealValue(obj, name) {
+  var array = [PREFIX, name];
+
+  return obj
+    .filter(function (item) {
+      item = ''.concat(item).trim();
+      return item != null && item !== '';
+    })
+    .map(function (item) {
+      return [].concat(array, [item]).join('-');
+    });
+}
+
+module.exports = {
+  /**
+   *
+   * namespace.join('grid') ===> 'titian-grid'
+   * namespace.join('grid', 'item') ===> 'titian-grid-item'
+   * namespace.join('grid-item', ['content']) ===> 'titian-grid titian-grid-content'
+   * namespace.join('grid-item', { s1: true, s2: false, s3: '', s4: '1231', s5: ['1231'] } )
+   *           ===> 'grid-item grid-item-s1 grid-item-s4 grid-item-s5'
+   *
+   * @param name
+   * @param mods
+   * @returns {string|*}
+   */
+  join: function join(name, mods) {
+    var array = [PREFIX, name];
+
+    if (typeof mods === 'undefined') {
+      return array.join('-');
+    }
+
+    if (utils.isPlainObject(mods)) {
+      mods = filterRealKey(mods);
+    }
+
+    if (utils.isPlainArray(mods)) {
+      mods = mods.reduce(function (prev, curr) {
+        return prev.concat(filterRealKey(curr));
+      }, []);
+
+      mods = mappingRealValue(mods, name);
+
+      return mods.concat(array.join('-')).join(' ');
+    }
+
+    array = array.concat(mods);
+    return array.join('-');
+  },
+  /**
+   * namespace.handle('grid-item') ===> ''
+   * namespace.handle('grid-item', ['content']) ===> 'titian-grid-content'
+   * namespace.handle('grid-item', { s1: true, s2: false, s3: '', s4: '1231', s5: ['1231'] } )
+   *           ===> 'grid-item-s1 grid-item-s4 grid-item-s5'
+   *
+   * @param name
+   * @param mods
+   * @returns {string}
+   */
+  handle: function handle(name, mods) {
+    if (!(utils.isPlainObject(mods) || utils.isPlainArray(mods))) {
+      return '';
+    }
+
+    if (utils.isPlainObject(mods)) {
+      mods = filterRealKey(mods);
+    } else if (utils.isPlainArray(mods)) {
+      mods = mods.reduce(function (prev, curr) {
+        return prev.concat(filterRealKey(curr));
+      }, []);
+    }
+
+    mods = mappingRealValue(mods, name);
+
+    return mods.join(' ');
+  }
+};

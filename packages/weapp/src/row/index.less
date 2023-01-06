@@ -1,0 +1,18 @@
+@import '../common/static/utils';
+@import '../common/static/var.less';
+@import '../common/static/mixins/index.less';
+@row: ~'@{project}-row';
+
+.@{row} {
+  &-flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &::after {
+    content: '';
+
+    display: table;
+    clear: both;
+  }
+}

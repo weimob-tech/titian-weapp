@@ -1,0 +1,447 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="titian-picker"
+  >
+    <ti-popup-titlebar
+      onlyCancel="{{true}}"
+      catch:cancel="onCancel"
+      catch:confirm="onConfirm"
+    >
+      <ti-title-bar
+        extClass="ext-class"
+        extLeftClass="ext-left-class titian-popup-titlebar-cancel"
+        extRightClass="ext-right-class titian-popup-titlebar-confirm"
+        extRightIconClass="ext-right-icon-class "
+        extTitleClass="ext-title-class "
+        bind:click="onClick"
+      >
+        <wx-view
+          class="ext-class titian-titlebar"
+          style=""
+        >
+          <wx-view
+            class="ext-left-class titian-titlebar-left"
+            bind:tap="onClickLeft"
+          />
+          <wx-view
+            class="ext-title-class titian-titlebar-title"
+          >
+            <wx-view
+              class="ext-main-title-class titian-titlebar-main-title"
+              bind:tap="onClickTitle"
+            >
+              标题
+            </wx-view>
+          </wx-view>
+          <wx-view
+            class="ext-right-class titian-titlebar-right"
+            bind:tap="onClickRight"
+          />
+        </wx-view>
+      </ti-title-bar>
+    </ti-popup-titlebar>
+    <wx-view
+      class="titian-picker-content ext-class"
+      disableScroll="{{true}}"
+      style=";"
+    >
+      <wx-view
+        class="titian-picker-loading"
+      >
+        <ti-loading>
+          <wx-view
+            class="titian-loading-wrap"
+            style=""
+          >
+            <wx-view
+              class="ext-class titian-loading-circular titian-loading"
+              style="padding:6rpx;width:60rpx;height:60rpx"
+            >
+              <wx-view
+                class="titian-loading-view-circular titian-loading-view"
+                style="width:60rpx;height:60rpx"
+              >
+                <wx-view
+                  class="titian-loading-view-item"
+                  style="width:60rpx;height:60rpx;border-width:5rpx"
+                />
+              </wx-view>
+              <wx-view
+                class="titian-loading-view-circular titian-loading-view"
+                style="width:60rpx;height:60rpx"
+              >
+                <wx-view
+                  class="titian-loading-view-item"
+                  style="width:60rpx;height:60rpx;border-width:5rpx"
+                />
+              </wx-view>
+              <wx-view
+                class="titian-loading-view-circular titian-loading-view"
+                style="width:60rpx;height:60rpx"
+              >
+                <wx-view
+                  class="titian-loading-view-item"
+                  style="width:60rpx;height:60rpx;border-width:5rpx"
+                />
+              </wx-view>
+              <wx-view
+                class="titian-loading-view-circular titian-loading-view"
+                style="width:60rpx;height:60rpx"
+              >
+                <wx-view
+                  class="titian-loading-view-item"
+                  style="width:60rpx;height:60rpx;border-width:5rpx"
+                />
+              </wx-view>
+              <wx-view
+                class="titian-loading-view-circular titian-loading-view"
+                style="width:60rpx;height:60rpx"
+              >
+                <wx-view
+                  class="titian-loading-view-item"
+                  style="width:60rpx;height:60rpx;border-width:5rpx"
+                />
+              </wx-view>
+            </wx-view>
+            <wx-view
+              class="titian-loading-text"
+              style=""
+            />
+          </wx-view>
+        </ti-loading>
+      </wx-view>
+      <wx-view
+        class="titian-picker-mask ext-mask-class"
+      />
+      <wx-view
+        class="titian-picker-hairline ext-hairline-class"
+        style=" height:0px;top : 0px"
+      />
+      <wx-view
+        class="titian-picker-column-box"
+      />
+    </wx-view>
+  </wx-view>
+</main>
+`;
+
+exports[`test component 定制 optionItemHeight number  1`] = `
+<main>
+  <wx-view
+    class="titian-picker"
+  >
+    <ti-popup-titlebar
+      onlyCancel="{{true}}"
+      catch:cancel="onCancel"
+      catch:confirm="onConfirm"
+    >
+      <ti-title-bar
+        extClass="ext-class"
+        extLeftClass="ext-left-class titian-popup-titlebar-cancel"
+        extRightClass="ext-right-class titian-popup-titlebar-confirm"
+        extRightIconClass="ext-right-icon-class "
+        extTitleClass="ext-title-class "
+        bind:click="onClick"
+      >
+        <wx-view
+          class="ext-class titian-titlebar"
+          style=""
+        >
+          <wx-view
+            class="ext-left-class titian-titlebar-left"
+            bind:tap="onClickLeft"
+          />
+          <wx-view
+            class="ext-title-class titian-titlebar-title"
+          >
+            <wx-view
+              class="ext-main-title-class titian-titlebar-main-title"
+              bind:tap="onClickTitle"
+            >
+              标题
+            </wx-view>
+          </wx-view>
+          <wx-view
+            class="ext-right-class titian-titlebar-right"
+            bind:tap="onClickRight"
+          />
+        </wx-view>
+      </ti-title-bar>
+    </ti-popup-titlebar>
+    <wx-view
+      class="titian-picker-content ext-class"
+      disableScroll="{{true}}"
+      style=";height:330px"
+    >
+      <wx-view
+        class="titian-picker-mask ext-mask-class"
+      />
+      <wx-view
+        class="titian-picker-hairline ext-hairline-class"
+        style=" height:110px;top : 110px"
+      />
+      <wx-view
+        class="titian-picker-column-box"
+      >
+        <ti-picker-column
+          data-col-index="{{0}}"
+          extClass="ext-option-class"
+          extOptionItemClass="ext-option-item-class"
+          bind:reach-bottom="onReachBottom"
+          bind:reach-top="onReachTop"
+          bind:select="onSelect"
+        >
+          <wx-view
+            $gdc="{{[Function]}}"
+            $wxs:bind:touchend="{{[Function]}}"
+            $wxs:bind:touchmove="{{[Function]}}"
+            $wxs:bind:touchstart="{{[Function]}}"
+            $wxs:change:y="{{[Function]}}"
+            class="titian-picker-column-item-box ext-class"
+            data-col-alias="{{0}}"
+            data-height="{{110}}"
+            data-row="{{0}}"
+            data-size="{{5}}"
+            data-sports="{{false}}"
+            style=";top:110px"
+            y="{{-0}}"
+          >
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item titian-picker-column-item-selected ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{0}}"
+              disabled=""
+              style="height:110px"
+            >
+              
+      选项一
+    
+            </wx-view>
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item  ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{1}}"
+              disabled=""
+              style="height:110px"
+            >
+              
+      选项二
+    
+            </wx-view>
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item  ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{2}}"
+              disabled=""
+              style="height:110px"
+            >
+              
+      选项三
+    
+            </wx-view>
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item  ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{3}}"
+              disabled=""
+              style="height:110px"
+            >
+              
+      选项四
+    
+            </wx-view>
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item  ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{4}}"
+              disabled=""
+              style="height:110px"
+            >
+              
+      选项五
+    
+            </wx-view>
+          </wx-view>
+        </ti-picker-column>
+      </wx-view>
+    </wx-view>
+  </wx-view>
+</main>
+`;
+
+exports[`test component 定制 optionItemHeight string 1`] = `
+<main>
+  <wx-view
+    class="titian-picker"
+  >
+    <ti-popup-titlebar
+      onlyCancel="{{true}}"
+      catch:cancel="onCancel"
+      catch:confirm="onConfirm"
+    >
+      <ti-title-bar
+        extClass="ext-class"
+        extLeftClass="ext-left-class titian-popup-titlebar-cancel"
+        extRightClass="ext-right-class titian-popup-titlebar-confirm"
+        extRightIconClass="ext-right-icon-class "
+        extTitleClass="ext-title-class "
+        bind:click="onClick"
+      >
+        <wx-view
+          class="ext-class titian-titlebar"
+          style=""
+        >
+          <wx-view
+            class="ext-left-class titian-titlebar-left"
+            bind:tap="onClickLeft"
+          />
+          <wx-view
+            class="ext-title-class titian-titlebar-title"
+          >
+            <wx-view
+              class="ext-main-title-class titian-titlebar-main-title"
+              bind:tap="onClickTitle"
+            >
+              标题
+            </wx-view>
+          </wx-view>
+          <wx-view
+            class="ext-right-class titian-titlebar-right"
+            bind:tap="onClickRight"
+          />
+        </wx-view>
+      </ti-title-bar>
+    </ti-popup-titlebar>
+    <wx-view
+      class="titian-picker-content ext-class"
+      disableScroll="{{true}}"
+      style=";height:0px"
+    >
+      <wx-view
+        class="titian-picker-mask ext-mask-class"
+      />
+      <wx-view
+        class="titian-picker-hairline ext-hairline-class"
+        style=" height:0px;top : 0px"
+      />
+      <wx-view
+        class="titian-picker-column-box"
+      >
+        <ti-picker-column
+          data-col-index="{{0}}"
+          extClass="ext-option-class"
+          extOptionItemClass="ext-option-item-class"
+          bind:reach-bottom="onReachBottom"
+          bind:reach-top="onReachTop"
+          bind:select="onSelect"
+        >
+          <wx-view
+            $gdc="{{[Function]}}"
+            $wxs:bind:touchend="{{[Function]}}"
+            $wxs:bind:touchmove="{{[Function]}}"
+            $wxs:bind:touchstart="{{[Function]}}"
+            $wxs:change:y="{{[Function]}}"
+            class="titian-picker-column-item-box ext-class"
+            data-col-alias="{{0}}"
+            data-height="{{0}}"
+            data-row="{{0}}"
+            data-size="{{5}}"
+            data-sports="{{false}}"
+            style=";top:0px"
+            y="{{-0}}"
+          >
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item titian-picker-column-item-selected ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{0}}"
+              disabled=""
+              style="height:0px"
+            >
+              
+      选项一
+    
+            </wx-view>
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item  ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{1}}"
+              disabled=""
+              style="height:0px"
+            >
+              
+      选项二
+    
+            </wx-view>
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item  ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{2}}"
+              disabled=""
+              style="height:0px"
+            >
+              
+      选项三
+    
+            </wx-view>
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item  ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{3}}"
+              disabled=""
+              style="height:0px"
+            >
+              
+      选项四
+    
+            </wx-view>
+            <wx-view
+              $gdc="{{[Function]}}"
+              $wxs:bind:tap="{{[Function]}}"
+              $wxs:change:disabled="{{[Function]}}"
+              class="titian-picker-column-item  ext-option-item-class"
+              data-col-alias="{{0}}"
+              data-row="{{4}}"
+              disabled=""
+              style="height:0px"
+            >
+              
+      选项五
+    
+            </wx-view>
+          </wx-view>
+        </ti-picker-column>
+      </wx-view>
+    </wx-view>
+  </wx-view>
+</main>
+`;

@@ -1,0 +1,60 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+
+<view class="ext-class {{ namespace.join('dropdown-item', { visible: show }) }}" style="{{ maskStyle }}">
+  <ti-popup
+    visible="{{ visible }}"
+    position="{{ direction === 'down' ? 'top' : 'bottom' }}"
+    transition="{{ direction === 'down' ? 'fade-down' : 'fade-up' }}"
+    bind:close="onPopupClose"
+    close-on-mask="{{ closeOnMask || hasSubmit }}"
+    has-mask="{{ hasMask }}"
+    safe-area="{{ false }}"
+    bind:enter="onEnter"
+    bind:entered="onEntered"
+    bind:exit="onExit"
+    bind:exited="onExited"
+  >
+    <block wx:if="{{ options.length !== 0 }}">
+      <ti-cell
+        wx:for="{{ options }}"
+        wx:key="index"
+        data-item="{{ item }}"
+        title="{{ item.title }}"
+        label="{{ item.label }}"
+        desc="{{ item.desc }}"
+        arrow="{{ false }}"
+        ext-class="item-class {{ namespace.handle('dropdown-item-cell', { active: utils.getActiveStatus({ value, itemVal: item.value }) }) }}"
+        bind:click="onCellTap"
+      >
+        <block wx:if="{{ type === 'checkbox' && utils.getActiveStatus({ value, itemVal: item.value }) }}">
+          <ti-icon
+            slot="right-icon"
+            name="{{ icon }}"
+            size="{{ 32 }}"
+            color="{{ activeColor }}"
+            ext-class="{{ namespace.join('dropdown-item', 'select-icon') }}"
+          />
+        </block>
+        <block wx:elif="{{ type === 'switch' }}">
+          <ti-switch
+            slot="right-icon"
+            active-color="{{ activeColor }}"
+            value="{{ utils.getActiveStatus({ value, itemVal: item.value }) }}"
+          />
+        </block>
+      </ti-cell>
+    </block>
+    <slot wx:else />
+
+    <block wx:if="{{ hasSubmit }}">
+      <ti-button
+        ext-class="{{ namespace.join('dropdown-item', 'submit') }}"
+        color="{{ activeColor || 'primary' }}"
+        bind:tap="onSubmit"
+      >
+        {{ submitText }}
+      </ti-button>
+    </block>
+  </ti-popup>
+</view>

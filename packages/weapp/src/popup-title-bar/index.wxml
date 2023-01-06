@@ -1,0 +1,21 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+<ti-title-bar
+  left-text="{{ leftText }}"
+  left-icon="{{ leftIcon }}"
+  right-text="{{ rightText }}"
+  right-icon="{{ rightIcon }}"
+  use-left="{{ useLeft }}"
+  use-right="{{ useRight }}"
+  use-container="{{ useContainer }}"
+  use-title="{{ useTitle }}"
+  title="{{ title }}"
+  sub-title="{{ subTitle }}"
+  ext-class="ext-class"
+  ext-title-class="ext-title-class {{ utils.getTitleClass(variant) }}"
+  ext-left-class="ext-left-class {{ utils.getLeftClass(variant) }}"
+  ext-right-class="ext-right-class {{ utils.getRightClass(variant) }}"
+  ext-right-icon-class="ext-right-icon-class {{ utils.getRightClassIcon(variant) }}"
+  bind:click="onClick"
+/>
+

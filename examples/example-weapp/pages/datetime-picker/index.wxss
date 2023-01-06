@@ -1,0 +1,27 @@
+.datetime-picker-hairline {
+  /* border: 2px solid rgb(207 122 122) !important; */
+}
+
+.datetime-option-item {
+  /* background-color: rgba(0, 0, 10, 30%);
+
+  color: azure !important; */
+}
+
+.datetime-picker-ext {
+  /* outline: 1px solid #999; */
+}
+
+.datetime-option {
+  /* outline: 1px solid #000; */
+}
+
+.datetime-picker-mask {
+  /* background-color: rgba(225, 225, 10, 30%); */
+}
+
+.datetime-picker {
+  /* --datetime-picker-row-color: yellow;
+  --datetime-picker-row-selected-color: blue;
+  --datetime-picker-row-disabled-color: red; */
+}

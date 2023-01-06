@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-circle-progress"
+  >
+    <wx-canvas
+      class="titian-circle-progress-canvas"
+      style="width:160rpx;height:160rpx"
+      type="2d"
+    />
+  </wx-view>
+</main>
+`;

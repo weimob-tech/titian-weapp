@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-svg-path-view": "../svg-path-view/index"
+  }
+}

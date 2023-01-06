@@ -1,0 +1,36 @@
+'use strict';
+
+var tools = require('../common/utils/wxs/convertStyles.wxs');
+
+function computedSize(size, extStyle) {
+  var style = {};
+  if (size === 'big') {
+    style = {
+      '--input-number-size': 56 + 'rpx'
+    };
+  }
+
+  return tools.convertStyles([style, extStyle]);
+}
+
+function computedInputWidth(size, inputWidth, autoWidth, variant) {
+  var curInputWidth = 60;
+  if (size === 'big') {
+    curInputWidth = 64;
+  }
+  if (variant === 'bright') {
+    curInputWidth = 36;
+  }
+  if (inputWidth) {
+    curInputWidth = inputWidth;
+  }
+  if (autoWidth) {
+    return 'width: 100%;' + 'min-width:' + curInputWidth + 'rpx';
+  } else {
+    return 'width:' + curInputWidth + 'rpx';
+  }
+}
+module.exports = {
+  computedSize: computedSize,
+  computedInputWidth: computedInputWidth
+};

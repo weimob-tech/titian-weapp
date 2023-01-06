@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="titian-badge"
+  >
+    <wx-view
+      class="ext-class titian-badge-container-hidden titian-badge-container"
+      style=""
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success with content 1`] = `
+<main>
+  <wx-view
+    class="titian-badge"
+  >
+    <wx-view
+      class="ext-class titian-badge-container-circle titian-badge-container"
+      style=""
+    >
+      1
+    </wx-view>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success with dot 1`] = `
+<main>
+  <wx-view
+    class="titian-badge"
+  >
+    <wx-view
+      class="ext-class titian-badge-container-dot titian-badge-container"
+      style=""
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success with icon 1`] = `
+<main>
+  <wx-view
+    class="titian-badge"
+  >
+    <wx-view
+      class="ext-class titian-badge-container-circle titian-badge-container"
+      style=""
+    >
+      <ti-icon>
+        <wx-view
+          class="titian-icon-base titian-icon titian-icon-home ext-class"
+          style="font-size:20rpx"
+          bind:tap="onClick"
+        />
+      </ti-icon>
+    </wx-view>
+  </wx-view>
+</main>
+`;

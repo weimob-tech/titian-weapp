@@ -1,0 +1,31 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 40rpx;
+  background: #fa2c19;
+}
+
+.item3 {
+  opacity: 0.7;
+}
+.container {
+  width: 100%;
+  margin: 0 68rpx;
+  box-sizing: border-box;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.item12 {
+  opacity: 0.49;
+}
+.item12.index1 {
+  opacity: 0.7;
+}
+.item8.index1 {
+  opacity: 0.49;
+}

@@ -1,0 +1,31 @@
+/* .page {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+
+}
+.container {
+  height: 80vh;
+} */
+.swiper-class {
+  height: 320rpx;
+
+  background: #fff;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  color: #9e9e9e;
+  font-size: 24rpx;
+}
+
+.tabs-container {
+  width: 100vw;
+
+  background-color: #fff;
+}

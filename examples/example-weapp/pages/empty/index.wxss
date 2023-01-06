@@ -1,0 +1,7 @@
+.button {
+  margin-top: 36rpx;
+}
+
+.button-big {
+  margin-top: 48rpx;
+}
