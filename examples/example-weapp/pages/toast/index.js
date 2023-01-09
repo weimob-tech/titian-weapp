@@ -2,7 +2,7 @@
 import { mergeOptionIntoAttrs } from '../../util/index.js';
 
 // eslint-disable-next-line no-undef
-import { $tiToast } from 'titian-mp/index';
+import { $tiToast } from '@titian-design/weapp/index';
 
 Page({
   data: {

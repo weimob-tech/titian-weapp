@@ -32,10 +32,10 @@
 
 ```shell
 # 通过 npm 安装
-npm i titian-mp --save
+npm i @titian-design/weapp --save
 
 # 通过 yarn 安装
-yarn add titian-mp
+yarn add @titian-design/weapp
 ```
 
 ### 引用组件
@@ -44,7 +44,7 @@ yarn add titian-mp
 // json
 {
   "usingComponents": {
-    "ti-button": "titian-mp/button/index"
+    "ti-button": "@titian-design/weapp/button/index"
   }
 }
 ```

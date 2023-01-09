@@ -1,7 +1,7 @@
 {
   "Import Toast": {
     "prefix": "import titoast",
-    "body": ["import { $tiToast } from 'titian-mp/index';"],
+    "body": ["import { $tiToast } from '@titian-design/weapp/index';"],
     "description": "Titian import ti-toast"
   },
   "Toast info": {
@@ -31,7 +31,7 @@
   },
   "Import Dialog": {
     "prefix": "import tidialog",
-    "body": ["import { $tiDialog } from 'titian-mp/index';"],
+    "body": ["import { $tiDialog } from '@titian-design/weapp/index';"],
     "description": "Titian import ti-dialog"
   },
   "Dialog show": {

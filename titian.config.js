@@ -26,5 +26,5 @@ module.exports = (config) => ({
   tsconfig: './tsconfig.json',
   typesDir: path.join(__dirname, 'packages', 'weapp', 'types'),
   hooks: [watch],
-  mainPackage: 'titian-mp'
+  mainPackage: '@titian-design/weapp'
 });
