@@ -18,7 +18,7 @@ function watch(hook) {
 module.exports = (config) => ({
   basedir: __dirname,
   compiler: config.command === 'release' ? '@titian-design/compiler' : path.join(__dirname, 'packages/compiler'),
-  version: '0.1.4',
+  version: '0.1.0',
   entryPath: path.resolve(__dirname, 'packages', 'weapp', 'src'),
   output: {
     path: path.join(__dirname, 'packages', 'weapp', 'esm')
