@@ -54,13 +54,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/weimob-tech/titian-mp"
+    "url": "https://github.com/weimob-tech/titian-weapp"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "issues": {
-    "url": "https://github.com/weimob-tech/titian-mp/issues"
+    "url": "https://github.com/weimob-tech/titian-weapp/issues"
   },
   "config": {
     "commitizen": {
