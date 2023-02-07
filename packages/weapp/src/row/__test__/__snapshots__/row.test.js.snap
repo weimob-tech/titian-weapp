@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should flex prop render success 1`] = `
+<main>
+  <wx-view
+    class="titian-row"
+    style="margin-left: -0rpx; margin-right: -0rpx;"
+  />
+</main>
+`;
+
+exports[`test component should gutter prop render success 1`] = `
+<main>
+  <wx-view
+    class="titian-row-flex titian-row"
+    style="margin-left: -4rpx; margin-right: -4rpx;"
+  />
+</main>
+`;
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="titian-row-flex titian-row"
+    style="margin-left: -0rpx; margin-right: -0rpx;"
+  />
+</main>
+`;

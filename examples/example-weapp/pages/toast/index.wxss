@@ -1,0 +1,4 @@
+/* stylelint-disable-next-line selector-type-no-unknown */
+page {
+  /* --toast-popup-radius: 50%; */
+}

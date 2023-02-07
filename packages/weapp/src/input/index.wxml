@@ -1,0 +1,77 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view
+  class="ext-class {{ namespace.join('input', [ { disabled, readOnly, borderless: !divider } ]) }}"
+  style="{{ extStyle }}"
+>
+  <view wx:if="{{ label }}" class="{{ namespace.join('input-label-container') }}">
+    <ti-icon
+      wx:if="{{ prefixIcon }}"
+      name="{{ prefixIcon }}"
+      color="#9e9e9e"
+      size="28"
+      ext-class="{{ namespace.join('input-left-icon') }}"
+    />
+    <slot wx:else name="prefix-icon" />
+    <view class="label-class {{ namespace.join('input-title') }}">{{ label }}</view>
+    <view wx:if="{{ required }}" class="{{ namespace.join('input-required-icon') }}">
+      <ti-icon name="required" size="24" ext-class="{{ namespace.join('input-icon') }}" />
+    </view>
+  </view>
+  <view class="{{ namespace.join('input-slot') }}">
+    <slot name="prefix" />
+  </view>
+  <view style="flex: 1">
+    <input
+      class="input-class {{ namespace.join('input-input', [ { error } ]) }} {{ 'input-text-align-' + textAlign }}"
+      type="{{ type }}"
+      model:value="{{ value }}"
+      password="{{ password }}"
+      placeholder="{{ placeholder }}"
+      placeholder-class="{{ namespace.join('input-placeholder-class', [ { error } ]) }}"
+      placeholder-style="{{ placeholderStyle }}"
+      disabled="{{ disabled || readOnly }}"
+      maxlength="{{ maxlength }}"
+      cursor-spacing="{{ cursorSpacing }}"
+      focus="{{ focus }}"
+      confirm-type="{{ confirmType }}"
+      always-embed="{{ alwaysEmbed }}"
+      confirm-hold="{{ confirmHold }}"
+      cursor="{{ cursor }}"
+      selection-start="{{ selectionStart }}"
+      selection-end="{{ selectionEnd }}"
+      adjust-position="{{ adjustPosition }}"
+      hold-keyboard="{{ holdKeyboard }}"
+      safe-password-cert-path="{{ safePasswordCertPath }}"
+      safe-password-length="{{ safePasswordLength }}"
+      safe-password-time-stamp="{{ safePasswordTimeStamp }}"
+      safe-password-nonce="{{ safePasswordNonce }}"
+      safe-password-salt="{{ safePasswordSalt }}"
+      safe-password-custom-hash="{{ safePasswordCustomHash }}"
+      bind:input="onInput"
+      bind:focus="onFocus"
+      bind:blur="onBlur"
+      bind:confirm="onConfirm"
+      bind:keyboardheightchange="onKeyboardheightchange"
+    />
+    <view
+      wx:if="{{ errorMessage }}"
+      class="{{ namespace.join('input-error-message') }} {{ 'input-text-align-' + textAlign }}"
+    >
+      <ti-icon wx:if="{{ errorMessage }}" name="warning" size="24" ext-class="{{ namespace.join('input-warning-icon') }}" />
+      <text>{{ errorMessage }}</text>
+    </view>
+  </view>
+  <view
+    wx:if="{{ clearable && showClearIcon }}"
+    class="{{ namespace.join('input-icon-box') }}"
+    catch:touchstart="onClear"
+  >
+    <ti-icon name="clear" color="#9e9e9e" size="36" ext-class="{{ namespace.join('input-clear-icon') }}" />
+  </view>
+
+  <view class="{{ namespace.join('input-slot') }}">
+    <slot name="suffix" />
+  </view>
+</view>
+

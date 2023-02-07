@@ -1,0 +1,6 @@
+.checkbox-button-page {
+  background-color: #fff;
+
+  --checkbox-button-padding-h: 12rpx;
+  --checkbox-padding-h: 12rpx;
+}

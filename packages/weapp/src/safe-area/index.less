@@ -1,0 +1,29 @@
+@import '../common/static/utils';
+@import '../common/static/var';
+@import '../common/static/mixins/index.less';
+@safe: ~'@{project}-safe';
+
+@keyframes iosfix {
+  from {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  to {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+.@{safe} {
+  background-color: @safe-bg-color;
+
+  &-top {
+    padding-top: env(safe-area-inset-top);
+
+    animation: iosfix infinite 1s;
+  }
+
+  &-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+
+    animation: iosfix infinite 1s;
+  }
+}

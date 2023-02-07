@@ -1,0 +1,21 @@
+'use strict';
+
+var UploadLoadComponentType = {
+  NULL: '',
+  LOADING: 'loading',
+  PROGRESS: 'progress'
+};
+module.exports = {
+  isLoadStatus: function (loading) {
+    return loading !== UploadLoadComponentType.NULL;
+  },
+  isLoadComponent: function (loading) {
+    return loading === UploadLoadComponentType.LOADING;
+  },
+  getFile: function (fileMap, fileKey) {
+    return fileMap[fileKey];
+  },
+  showAction: function (fileLength, count) {
+    return fileLength < count;
+  }
+};

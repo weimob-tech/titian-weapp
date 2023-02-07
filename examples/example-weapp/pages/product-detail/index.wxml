@@ -1,0 +1,423 @@
+<view class="detail-container">
+  <view class="navigation-bar" style="height: {{ navigationBarHeight }}px;padding-top: {{ statusBarHeight }}px">商品详情</view>
+  <view class="content">
+    <view style="height: 760rpx">
+      <image class="image" style="width:100%; height: 760rpx;" src="/assets/images/placeholder.jpeg" />
+    </view>
+    <view class="product-content">
+      <view class="product-price">
+        <view>
+          <view class="price-info">
+            <view class="price-title">销售价</view>
+            <view class="price-wrap">
+              <view class="price">
+                <text class="price-symbol">￥</text>
+                <text>8986</text>
+                <text class="price-decimal">.56起</text>
+              </view>
+            </view>
+          </view>
+
+          <view class="invalid-price-info">
+            <view class="price-title">销售价</view>
+            <view class="price invalid-price">
+              ￥128.68
+            </view>
+          </view>
+        </view>
+
+        <view class="sall-info">已售<text class="sell-number">4562</text>件</view>
+      </view>
+      <view class="product-info">
+        <view class="desc">娜扎明星同款新款卫衣多色可选全面同款面宽松三色拼</view>
+        <view style="display:flex; flex-direction: column; align-items: center">
+          <ti-icon name="link" />
+          <text style="white-space: nowrap; font-size: 20rpx; line-height: 24rpx; color: #212121;margin-top: 8rpx">分享</text>
+        </view>
+      </view>
+      <view class="product-sub-info">
+        采用开放式环保涂漆保留木质天然手感，会触到的木质纹理，更加细腻，更加柔软，更加舒适。
+      </view>
+      <ti-cell-group>
+        <ti-cell ext-class="vip-card" desc="立即领卡">
+          <view slot="title" class="title">至尊会员卡 最高省￥88</view>
+        </ti-cell>
+      </ti-cell-group>
+    </view>
+    <view class="select-content">
+      <ti-cell-group>
+        <ti-cell>
+          <view slot="icon" class="select-title">
+            <text>积分</text>
+          </view>
+          <view slot="title" class="select-value">
+            <text>积分可低</text>
+            <text style="color: #FA2C19">9.9</text>
+            <text>元</text>
+          </view>
+        </ti-cell>
+        <ti-cell>
+          <view slot="icon" class="select-title">
+            <text>领券</text>
+          </view>
+          <view slot="title" class="select-value">
+            <ti-tag ext-style="margin-right: 16rpx;" variant="filled">满500减20</ti-tag>
+            <ti-tag ext-style="margin-right: 16rpx;" variant="filled">满60减8</ti-tag>
+            <ti-tag variant="filled">满20减19</ti-tag>
+          </view>
+        </ti-cell>
+        <ti-cell align-items="start" ext-class="cuxiao">
+          <view slot="icon" class="select-title">
+            <text>促销</text>
+          </view>
+          <view slot="title" class="select-value" style="display: flex; align-items: center; margin-bottom: 28rpx">
+            <ti-tag ext-style="margin-right: 16rpx;" variant="outlined">满送</ti-tag>
+            <text>满50减10了全店满100减25</text>
+          </view>
+          <view slot="label" class="select-value" style="display: flex; align-items: center">
+            <ti-tag ext-style="margin-right: 16rpx;" variant="outlined">满包邮</ti-tag>
+            <text>满50部分地区包邮；满100全国包邮</text>
+          </view>
+        </ti-cell>
+      </ti-cell-group>
+    </view>
+    <view class="select-content">
+      <ti-cell-group>
+        <ti-cell>
+          <view slot="icon" class="select-title">
+            <text>已选</text>
+          </view>
+          <view slot="title" class="select-value">
+            红色 · 39 · 1件 · 2XXL
+          </view>
+        </ti-cell>
+        <ti-cell>
+          <view slot="icon" class="select-title">
+            <text>参数</text>
+          </view>
+          <view slot="title" class="select-value">
+            品牌 · 主材含量 · 涤纶含量 · 尺码 · 图…
+          </view>
+        </ti-cell>
+        <ti-cell>
+          <view slot="icon" class="select-title">
+            <text>配送</text>
+          </view>
+          <view slot="title" class="select-value">
+            商家配送 · 同城限时达 · 到店自提
+          </view>
+        </ti-cell>
+        <ti-cell arrow="{{ false }}">
+          <view slot="icon" class="select-title">
+            <text class="title-value">服务</text>
+          </view>
+          <view slot="title" class="select-value">
+            <ti-checkbox-group
+              ext-style="display:flex"
+              icon="right"
+              color="#9e9e9e"
+              size="{{ 24 }}"
+              value="{{[ '1', '2', '3' ]}}"
+            >
+              <ti-checkbox value="1">
+                <text class="item-value">下单赠键盘</text>
+              </ti-checkbox>
+              <ti-checkbox value="2">
+                <text class="item-value">可配送港澳台</text>
+              </ti-checkbox>
+              <ti-checkbox value="3">
+                <text class="item-value">7天无理由退换</text>
+              </ti-checkbox>
+            </ti-checkbox-group>
+          </view>
+        </ti-cell>
+      </ti-cell-group>
+    </view>
+    <view class="discount-package">
+      <ti-cell-group>
+        <ti-cell title="优惠套装">
+          <view slot="desc" class="package-price">
+            <text>最多可省</text>
+            <text class="price">￥58.88</text>
+          </view>
+        </ti-cell>
+      </ti-cell-group>
+      <view class="discount-content">
+        <scroll-view scroll-x="{{ true }}">
+          <view class="discount-section" style="display: flex">
+            <view class="discount-item">
+              <view style="display: flex;">
+                <ti-image ext-class="discount-item-img" src="/assets/images/placeholder.jpeg" />
+                <ti-image ext-class="discount-item-img" src="/assets/images/placeholder.jpeg" />
+                <ti-image ext-class="discount-item-img last" src="/assets/images/placeholder.jpeg" />
+              </view>
+              <view>
+                <view class="package-price">
+                  <text>最多可省</text>
+                  <text class="price">￥20.88</text>
+                </view>
+              </view>
+            </view>
+            <view class="discount-item">
+              <view style="display: flex;">
+                <ti-image width="160" height="160" src="/assets/images/placeholder.jpeg" />
+                <ti-image width="160" height="160" src="/assets/images/placeholder.jpeg" />
+                <ti-image width="160" height="160" src="/assets/images/placeholder.jpeg" />
+              </view>
+              <view>
+                <view class="package-price">
+                  <text>最多可省</text>
+                  <text class="price">￥30.00</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class="buyer-content">
+      <view class="buyer-section">
+        <ti-cell-group>
+          <ti-cell title="评价 3564" sub-desc="98%好评" use-sub-arrow />
+        </ti-cell-group>
+        <view class="info-content">
+          <view class="evaluate-item">
+            <view class="show-item-info">
+              <view style="display: flex; justify-content: space-between; margin-bottom: 16rpx">
+                <view style="display: flex; align-items: center;">
+                  <ti-image ext-class="user-image" width="40" height="40" src="/assets/images/placeholder.jpeg" />
+                  <text class="user-name">黄***师</text>
+                </view>
+                <view class="show-time">2020-02-01</view>
+              </view>
+              <text class="show-text">在店里试过尺码，正好在双十一，看到优惠价马上上手一套</text>
+            </view>
+          </view>
+          <view class="evaluate-item">
+            <view class="show-item-info">
+              <view style="display: flex; justify-content: space-between; margin-bottom: 16rpx">
+                <view style="display: flex; align-items: center;">
+                  <ti-image ext-class="user-image" width="40" height="40" src="/assets/images/placeholder.jpeg" />
+                  <text class="user-name">黄***师</text>
+                </view>
+                <view class="show-time">2020-02-01</view>
+              </view>
+              <text class="show-text">在店里试过尺码，正好在双十一，看到优惠价马上上手一套</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="show-list">
+        <ti-cell-group>
+          <ti-cell title="买家秀 35" sub-desc="查看全部" use-sub-arrow />
+        </ti-cell-group>
+        <view style="padding:28rpx">
+          <ti-row gutter="16">
+            <ti-col span="{{ 6 }}">
+              <ti-image ext-class="show-item-img" src="/assets/images/placeholder.jpeg" />
+            </ti-col>
+            <ti-col span="{{ 6 }}">
+              <ti-image ext-class="show-item-img" src="/assets/images/placeholder.jpeg" />
+            </ti-col>
+            <ti-col span="{{ 6 }}">
+              <ti-image ext-class="show-item-img" src="/assets/images/placeholder.jpeg" />
+            </ti-col>
+            <ti-col span="{{ 6 }}">
+              <ti-image ext-class="show-item-img" src="/assets/images/placeholder.jpeg" />
+            </ti-col>
+          </ti-row>
+        </view>
+      </view>
+    </view>
+    <view class=" certification-content">
+      <ti-cell-group>
+        <ti-cell
+          color="#009b52"
+          icon="selected"
+          icon-size="56"
+          ext-class="cert-item"
+          title="微信交易保障"
+          label="商家认证·交易监督·无忧售后·争议处理·快速发货"
+          arrow="{{ false }}"
+        />
+      </ti-cell-group>
+    </view>
+    <view class="introduce-content">
+      <view class="introduce-title-wrap">
+        <ti-divider ext-style="width: 80%" border-color="linear-gradient(90deg, #fff 0%, #c4c4c4 100%)">
+          <text class="introduce-title">详情介绍</text>
+        </ti-divider>
+      </view>
+      <image src="/assets/images/placeholder.jpeg" style="width: 100%; height: 750rpx" />
+    </view>
+    <view class="topic-content">
+      <ti-cell-group>
+        <ti-cell title-class="topic-title" desc-class="topic-title-desc" title="专题文章" desc="查看全部" />
+      </ti-cell-group>
+      <view class="topic-item">
+        <view class="topic-item-content">
+          <view class="topic-info">
+            <view class="topic-item-title">娜扎明星同款新款卫衣款多色可选</view>
+            <view class="topic-item-desc">
+              <view class="topic-item-user">
+                <ti-image ext-class="user-image" width="40" height="40" src="/assets/images/placeholder.jpeg" />
+                <text>南斌</text>
+              </view>
+              <view class="topic-item-actions">
+                <view class="topic-action">
+                  <ti-icon name="view" />
+                  <text class="action-number">1123</text>
+                </view>
+                <view class="topic-action">
+                  <ti-icon name="recommend" />
+                  <text class="action-number">1123</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="topic-item-img">
+            <ti-image ext-class="topic-img" height="{{ 160 }}" width="214" src="/assets/images/placeholder.jpeg" />
+          </view>
+        </view>
+      </view>
+      <view class="topic-item">
+        <view class="topic-item-content">
+          <view class="topic-info">
+            <view class="topic-item-title">娜扎明星同款新款卫衣款多色可选</view>
+            <view class="topic-item-desc">
+              <view class="topic-item-user">
+                <ti-image ext-class="user-image" width="40" height="40" src="/assets/images/placeholder.jpeg" />
+                <text>南斌</text>
+              </view>
+              <view class="topic-item-actions">
+                <view class="topic-action">
+                  <ti-icon name="view" />
+                  <text class="action-number">1123</text>
+                </view>
+                <view class="topic-action">
+                  <ti-icon name="recommend" />
+                  <text class="action-number">1123</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="topic-item-img">
+            <ti-image ext-class="topic-img" height="{{ 160 }}" width="214" src="/assets/images/placeholder.jpeg" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="recommand-content">
+      <view class="title-wrap">
+        <ti-divider
+          ext-style="width: 50%"
+          border-width="{{ 4 }}"
+          border-color="linear-gradient(90deg, #fff 0%, #c4c4c4 100%)"
+        >
+          <text class="recommand-title">推荐商品</text>
+        </ti-divider>
+      </view>
+      <view style="padding: 28rpx 28rpx 0;">
+        <ti-row gutter="{{ 16 }}">
+          <ti-col span="12">
+            <view class="recommand-item">
+              <ti-image ext-style="height: 340rpx" src="/assets/images/placeholder.jpeg" />
+              <view class="recommand-item-content">
+                <text class="recommand-item-title">水洗棉系列整套卧室三件套，快快入手</text>
+                <view class="price-wrap">
+                  <view class="price">
+                    <text class="price-symbol">￥</text>
+                    <text>235</text>
+                    <text class="price-decimal">.88</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </ti-col>
+          <ti-col span="12">
+            <view class="recommand-item">
+              <ti-image ext-style="height: 340rpx" src="/assets/images/placeholder.jpeg" />
+              <view class="recommand-item-content">
+                <text class="recommand-item-title">水洗棉系列整套卧室</text>
+                <view class="item-tags">
+                  <ti-tag style="margin-right: 8rpx" variant="outlined">标签样式</ti-tag>
+                  <ti-tag variant="outlined">标签</ti-tag>
+                </view>
+                <view class="price-wrap">
+                  <view class="price">
+                    <text class="price-symbol">￥</text>
+                    <text>235</text>
+                    <text class="price-decimal">.88</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </ti-col>
+          <ti-col span="12">
+            <view class="recommand-item">
+              <ti-image ext-style="height: 340rpx" src="/assets/images/placeholder.jpeg" />
+              <view class="recommand-item-content">
+                <text class="recommand-item-title">水洗棉系列整套卧室三件套，快快入手</text>
+                <view class="price-wrap">
+                  <view class="price">
+                    <text class="price-symbol">￥</text>
+                    <text>235</text>
+                    <text class="price-decimal">.88</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </ti-col>
+          <ti-col span="12">
+            <view class="recommand-item">
+              <ti-image ext-style="height: 340rpx" src="/assets/images/placeholder.jpeg" />
+              <view class="recommand-item-content">
+                <text class="recommand-item-title">水洗棉系列整套卧室</text>
+                <view class="item-tags">
+                  <ti-tag style="margin-right: 8rpx" variant="outlined">标签样式</ti-tag>
+                  <ti-tag variant="outlined">标签</ti-tag>
+                </view>
+                <view class="price-wrap">
+                  <view class="price">
+                    <text class="price-symbol">￥</text>
+                    <text>235</text>
+                    <text class="price-decimal">.88</text>
+                  </view>
+                  <view class="price invalid-price">
+                    ￥128.68
+                  </view>
+                </view>
+              </view>
+            </view>
+          </ti-col>
+        </ti-row>
+      </view>
+    </view>
+    <view class="no-more">
+      <ti-divider>没有更多了~</ti-divider>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="footer-content">
+      <view class="footer-actions">
+        <view class="action-wrap">
+          <ti-icon name="home" />
+          <text class="action-text">首页</text>
+        </view>
+        <view class="action-wrap">
+          <ti-icon name="cart" />
+          <text class="action-text">购物车</text>
+        </view>
+        <view class="action-wrap">
+          <ti-icon name="profile" />
+          <text class="action-text">我的</text>
+        </view>
+      </view>
+      <view class="footer-btns">
+        <ti-button ext-class="btn" variant="outlined">加入购物车</ti-button>
+        <ti-button ext-class="btn">加入购物车</ti-button>
+      </view>
+    </view>
+    <ti-safe-area />
+  </view>
+</view>

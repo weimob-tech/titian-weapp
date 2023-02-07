@@ -1,0 +1,46 @@
+var namespace = require('../common/utils/wxs/namespace.wxs');
+var EPopupTitleBarVariantType = {
+  WithConfirm: 'with-confirm',
+  CancelOnly: 'cancel-only',
+  BackTitleClose: 'back-title-cancel',
+  MiniClose: 'mini-close',
+  LeftTitleClose: 'left-title-close'
+};
+module.exports = {
+  getLeftClass: function (type) {
+    if (type === EPopupTitleBarVariantType.WithConfirm) {
+      return namespace.handle('popup-titlebar', ['cancel']);
+    } else if (type === EPopupTitleBarVariantType.BackTitleClose) {
+      return namespace.handle('popup-titlebar', ['back']);
+    }
+    return '';
+  },
+  getRightClass: function (type) {
+    if (type === EPopupTitleBarVariantType.WithConfirm) {
+      return namespace.handle('popup-titlebar', ['confirm']);
+    }
+    if (
+      type === EPopupTitleBarVariantType.CancelOnly ||
+      type === EPopupTitleBarVariantType.BackTitleClose ||
+      type === EPopupTitleBarVariantType.LeftTitleClose
+    ) {
+      return namespace.handle('popup-titlebar', ['close']);
+    }
+    if (type === EPopupTitleBarVariantType.MiniClose) {
+      return namespace.handle('popup-titlebar', ['mini-close']) + ' ext-class';
+    }
+    return '';
+  },
+  getRightClassIcon: function (type) {
+    if (type === EPopupTitleBarVariantType.MiniClose) {
+      return namespace.handle('popup-titlebar', ['mini-close-icon']);
+    }
+    return '';
+  },
+  getTitleClass: function (type) {
+    if (type === EPopupTitleBarVariantType.LeftTitleClose) {
+      return namespace.handle('popup-titlebar', ['space-between']);
+    }
+    return '';
+  }
+};

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.text {
+  font-size: 24rpx;
+  color: #757575;
+  line-height: 1.2;
+}

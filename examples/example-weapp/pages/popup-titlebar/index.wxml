@@ -1,0 +1,17 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="group">
+    <view class="group-item">
+      <ti-popup-titlebar
+        title="标题"
+        sub-title="{{ attrs.subtitle ? '副标题' : '' }}"
+        variant="{{ attrs.variant }}"
+        ext-class="ext-class"
+        bind:confirm="onConfirm"
+        bind:close="onClose"
+        bind:cancel="onCancel"
+        bind:back="onBack"
+      />
+    </view>
+  </view>
+</ti-page>
+

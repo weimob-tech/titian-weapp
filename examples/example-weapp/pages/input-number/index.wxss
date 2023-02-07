@@ -1,0 +1,16 @@
+.container {
+  width: auto;
+  padding: 40rpx 80rpx;
+
+  background-color: #fff;
+}
+
+.ext-input-class {
+  --input-number-background: #fff;
+  font-family: font-wemo;
+}
+
+.ext-minus-class,
+.ext-plus-class {
+  --base-radius-size: var(--input-number-radius-size, 0);
+}

@@ -1,0 +1,16 @@
+/* stylelint-disable-next-line selector-type-no-unknown */
+page {
+  /* --dialog-popup-mask-bg-color: blue; */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 484rpx;
+  height: 252rpx;
+
+  background-color: #f2f2f2;
+
+  color: #9e9e9e;
+}

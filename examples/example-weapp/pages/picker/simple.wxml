@@ -1,0 +1,67 @@
+<view class="page">
+  <!-- <view class="panel">
+    <view class="panel-title">
+      <text>行下标</text>
+    </view>
+    <view>
+      <ti-picker
+        options="{{ column_1 }}"
+        bind:confirm="onSimConfirm"
+        bind:change="onSimChange"
+        value="{{ value_1_1 }}"
+        use-row-index
+      />
+    </view>
+  </view>
+  <view class="panel">
+    <view class="panel-title">
+      <text>行全等</text>
+    </view>
+    <view>
+      <ti-picker options="{{ column_1 }}" bind:confirm="onSimConfirm" bind:change="onSimChange" value="{{ value_1 }}" />
+    </view>
+  </view>
+  <view class="panel">
+    <view class="panel-title">
+      <text>行别名</text>
+    </view>
+    <view>
+      <ti-picker
+        options="{{ column_1_1 }}"
+        bind:confirm="onSimConfirm"
+        bind:change="onSimChange"
+        value="{{ value_1 }}"
+        row-alias="txt"
+      />
+    </view>
+  </view>
+
+  <view class="panel">
+    <view class="panel-title">
+      <text>行别名-组合</text>
+    </view>
+    <view>
+      <ti-picker bind:confirm="onSimConfirm" bind:change="onSimChange1">
+        <ti-picker-column columns="{{ column }}" col-alias="first" value="{{ value_4 }}" />
+        <ti-picker-column columns="{{ column }}" col-alias="sed" value="{{ value_4 }}" />
+      </ti-picker>
+    </view>
+  </view> -->
+
+  <view class="demo-pecker-title">多列级联选择器</view>
+  <ti-picker
+    options="{{ cascade.options }}"
+    value="{{ cascade.value }}"
+    bind:change="onCascadeChange"
+    bind:cancel="onCascadeCancel"
+    bind:confirm="onCascadeConfirm"
+    bind:reach-top="onCascadeTop"
+    bind:reach-bottom="onCascadeBottom"
+    ext-class="demo-picker-box1"
+    option-item-class="demo-picker-column"
+    hairline-class="demo-picker-hairline"
+    row-alias="{{ cascade.cascadeKey }}"
+    sports
+    use-row-index
+  />
+</view>

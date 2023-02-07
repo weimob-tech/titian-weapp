@@ -1,0 +1,20 @@
+<ti-page options="{{ options }}" bind:change="onChange" center="{{ false }}">
+  <ti-notice-bar
+    content="登录同步各渠道购物车中的商品"
+    color="{{ attrs.color }}"
+    scrollable="{{ attrs.scrollable || false }}"
+    variant="{{ attrs.variant || 'horizontal' }}"
+    left-icon="{{ attrs.leftIcon }}"
+    right-icon="{{ attrs.rightIcon }}"
+    ext-style="{{ attrs.extStyle }}"
+  >
+    <ti-button
+      wx:if="{{ attrs.slotName !== undefined }}"
+      slot="after"
+      size="tiny"
+      variant="outlined"
+      color="{{ attrs.mode === 'custom' ? '#fff' : '' }}"
+    >按钮</ti-button>
+  </ti-notice-bar>
+</ti-page>
+

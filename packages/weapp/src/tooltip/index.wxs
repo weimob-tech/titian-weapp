@@ -1,0 +1,54 @@
+'use strict';
+
+var utils = require('../common/utils/wxs/convertStyles.wxs');
+
+function calcPythagorean(size) {
+  var number = Math.sqrt(Math.pow(size, 2) * 2);
+  return 'width:' + number + 'rpx;' + 'height:' + number + 'rpx;';
+}
+
+function completedContentStyle(data) {
+  var innerStyle = { top: data.top + 'px', left: data.left + 'px' };
+  if (data.isLeft || data.isRight) {
+    var key = 'border-';
+    if (data.down) {
+      key += 'bottom-';
+    } else {
+      key += 'top-';
+    }
+    if (data.isLeft) {
+      key += 'left-';
+    } else {
+      key += 'right-';
+    }
+    key += 'radius';
+    innerStyle[key] = '0';
+  }
+  return utils.convertStyles(innerStyle);
+}
+
+function completedArrowStyle(data) {
+  var arrowStyle = {};
+  if (data.down) {
+    arrowStyle.bottom = '1rpx';
+  } else {
+    arrowStyle.top = '1rpx';
+  }
+  if (data.isLeft || data.isRight) {
+    if (data.isLeft) {
+      arrowStyle.left = 0;
+    } else {
+      arrowStyle.right = 0;
+    }
+  } else {
+    arrowStyle.left = data.arrayLeft + 'px';
+  }
+  var str = utils.convertStyles(arrowStyle);
+  return str;
+}
+
+module.exports = {
+  calcPythagorean: calcPythagorean,
+  completedContentStyle: completedContentStyle,
+  completedArrowStyle: completedArrowStyle
+};

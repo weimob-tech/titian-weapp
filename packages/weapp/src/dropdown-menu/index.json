@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-button": "../button/index",
+    "ti-icon": "../icon/index"
+  }
+}

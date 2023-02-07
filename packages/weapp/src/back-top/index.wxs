@@ -1,0 +1,12 @@
+'use strict';
+
+var _require = require('../common/utils/wxs/convertStyles.wxs');
+var convertStyles = _require.convertStyles;
+
+var completedStyles = function completedStyles(data) {
+  return convertStyles([data.display ? null : 'display: none']);
+};
+
+module.exports = {
+  completedStyles: completedStyles
+};

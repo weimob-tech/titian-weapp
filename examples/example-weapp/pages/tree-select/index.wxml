@@ -1,0 +1,16 @@
+<ti-page options="{{ options }}" bind:change="onChange" center="{{ false }}">
+  <view
+    class="container"
+    style="--tree-select-active-color: {{ attrs.color }}; {{ attrs.mode==='custom' ? '--sidebar-active-color:' + attrs.color : '' }}"
+  >
+    <ti-tree-select
+      style="--sidebar-active-text-color: {{ attrs.color }};--sidebar-radius:{{ attrs.radius }}rpx"
+      options="{{ treeOption }}"
+      bind:change-nav="onChangeNav"
+    >
+      <view wx:if="{{ attrs.mode === 'custom' }}" class="content">- {{ text }} -</view>
+    </ti-tree-select>
+
+  </view>
+</ti-page>
+

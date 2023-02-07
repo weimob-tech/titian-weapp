@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should basic 1`] = `
+<main>
+  <main
+    id="swiper-cell"
+  >
+    <wx-view
+      class="ext-class titian-swipe-cell"
+      data-key="cell"
+      catch:tap="onClick"
+      bind:touchcancel="onTouchcancel"
+      bind:touchend="onTouchEnd"
+      capture-bind:touchmove="onTouchMove"
+      bind:touchstart="onTouchStart"
+    >
+      <wx-view
+        class="titian-swipe-cell-wrap"
+        style="
+        -webkit-transform: translate3d(0rpx, 0, 0);
+        -webkit-transition: transform .6s cubic-bezier(0.18, 0.89, 0.32, 1);
+        transform: translate3d(0rpx, 0, 0);
+        transition: transform .6s cubic-bezier(0.18, 0.89, 0.32, 1);
+      "
+      >
+        <wx-view
+          class="left-class titian-swipe-cell-left"
+          data-key="left"
+          catch:tap="onClick"
+        >
+          <wx-view
+            slot="left"
+          >
+            <wx-text>
+              left
+            </wx-text>
+          </wx-view>
+        </wx-view>
+        <wx-view
+          class="titian-swipe-cell-content"
+        >
+          <wx-view>
+            center
+          </wx-view>
+        </wx-view>
+        <wx-view
+          class="right-class titian-swipe-cell-right"
+          data-key="right"
+          catch:tap="onClick"
+        >
+          <wx-view
+            slot="right"
+          >
+            <wx-text>
+              right
+            </wx-text>
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </wx-view>
+  </main>
+</main>
+`;
+
+exports[`test component should basic 2`] = `
+<main>
+  <main
+    id="swiper-cell"
+  >
+    <wx-view
+      class="ext-class titian-swipe-cell"
+      data-key="cell"
+      catch:tap="onClick"
+      bind:touchcancel="onTouchcancel"
+      bind:touchend="onTouchEnd"
+      capture-bind:touchmove="onTouchMove"
+      bind:touchstart="onTouchStart"
+    >
+      <wx-view
+        class="titian-swipe-cell-wrap"
+        style="
+        -webkit-transform: translate3d(-100rpx, 0, 0);
+        -webkit-transition: transform .6s cubic-bezier(0.18, 0.89, 0.32, 1);
+        transform: translate3d(-100rpx, 0, 0);
+        transition: transform .6s cubic-bezier(0.18, 0.89, 0.32, 1);
+      "
+      >
+        <wx-view
+          class="left-class titian-swipe-cell-left"
+          data-key="left"
+          catch:tap="onClick"
+        >
+          <wx-view
+            slot="left"
+          >
+            <wx-text>
+              left
+            </wx-text>
+          </wx-view>
+        </wx-view>
+        <wx-view
+          class="titian-swipe-cell-content"
+        >
+          <wx-view>
+            center
+          </wx-view>
+        </wx-view>
+        <wx-view
+          class="right-class titian-swipe-cell-right"
+          data-key="right"
+          catch:tap="onClick"
+        >
+          <wx-view
+            slot="right"
+          >
+            <wx-text>
+              right
+            </wx-text>
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </wx-view>
+  </main>
+</main>
+`;
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-swipe-cell"
+    data-key="cell"
+    catch:tap="onClick"
+    bind:touchcancel="onTouchcancel"
+    bind:touchend="onTouchEnd"
+    capture-bind:touchmove="onTouchMove"
+    bind:touchstart="onTouchStart"
+  >
+    <wx-view
+      class="titian-swipe-cell-wrap"
+      style=""
+    >
+      <wx-view
+        class="left-class titian-swipe-cell-left"
+        data-key="left"
+        catch:tap="onClick"
+      />
+      <wx-view
+        class="titian-swipe-cell-content"
+      />
+      <wx-view
+        class="right-class titian-swipe-cell-right"
+        data-key="right"
+        catch:tap="onClick"
+      />
+    </wx-view>
+  </wx-view>
+</main>
+`;

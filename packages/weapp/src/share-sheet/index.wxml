@@ -1,0 +1,93 @@
+<wxs src="./index.wxs" module="utils" />
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<ti-popup
+  class="{{ namespace.handle('share-sheet', [ 'popup' ]) }}"
+  ext-class="ext-popup-class"
+  ext-content-class="ext-popup-content-class"
+  ext-mask-class="ext-popup-mask-class"
+  visible="{{ visible }}"
+  position="bottom"
+  prevent-scroll="{{ false }}"
+  close-on-mask="{{ closeOnMask }}"
+  bind:close="onClose"
+>
+  <ti-popup-titlebar
+    wx:if="{{ title || subTitle }}"
+    title="{{ title }}"
+    sub-title="{{ subTitle }}"
+    variant="with-confirm"
+    bind:cancel="onClose"
+    bind:confirm="onConfirm"
+  />
+  <view
+    class="{{ namespace.handle('share-sheet', [ 'content' ]) }} ext-class"
+    style="{{ extStyle }}"
+    disable-scroll="{{ true }}"
+  >
+    <view
+      class="{{ namespace.handle('share-sheet', [ 'row' ]) }}"
+      wx:for="{{ utils.completedData(options) }}"
+      wx:for-item="opt"
+      wx:for-index="row"
+      wx:key="row"
+    >
+      <button
+        wx:for="{{ opt }}"
+        wx:for-index="col"
+        wx:key="col"
+        class="{{ namespace.handle('share-sheet', [ 'col', 'btn' ]) }}"
+        style="{{ utils.completedStyles(opt.length) }}"
+        open-type="{{ item.openType }}"
+        bind:tap="onClick"
+        data-row="{{ row }}"
+        data-col="{{ col }}"
+        hover-class
+        bind:getuserinfo="onGetUserInfo"
+        bind:contact="onContact"
+        bind:getphonenumber="onGetPhoneNumber"
+        bind:error="onError"
+        bind:launchapp="onLaunchApp"
+        bind:opensetting="onOpenSetting"
+        session-from="{{ item.sessionFrom }}"
+        send-message-title="{{ item.sendMessageTitle }}"
+        send-message-path="{{ item.sendMessagePath }}"
+        send-message-img="{{ item.sendMessageImg }}"
+        show-message-card="{{ item.showMessageCard }}"
+        app-parameter="{{ item.appParameter }}"
+      >
+        <view class="{{ namespace.handle('share-sheet', [ 'icon' ]) }}" style="{{ utils.completedBgColor(item.bgc) }}">
+          <ti-svg-path-view
+            wx:if="{{ item.isSvgPath }}"
+            name="{{ item.icon }}"
+            fills="{{ item.color }}"
+            paths="{{ item.paths }}"
+            size="{{ item.size || 48 }}"
+            ext-style="{{ item.extStyle }}"
+          />
+          <block wx:else>
+            <image
+              wx:if="{{ utils.isImg(item.icon) }}"
+              src="{{ item.icon }}"
+              style="{{ item.extStyle }};width:{{ item.size || 48 }}rpx;height:{{ item.size || 48 }}rpx;"
+            />
+            <ti-icon
+              wx:else
+              name="{{ item.icon }}"
+              color="{{ item.color }}"
+              size="{{ item.size || 48 }}"
+              ext-style="{{ item.extStyle }}"
+            />
+          </block>
+        </view>
+        <text class="{{ namespace.handle('share-sheet', [ 'text' ]) }} ext-title-class">{{ item.name }}</text>
+      </button>
+    </view>
+  </view>
+  <view class="{{ namespace.handle('share-sheet', [ 'cancel-box' ]) }}">
+    <view class="{{ namespace.handle('share-sheet', [ 'placeholder' ]) }}" />
+    <button class="{{ namespace.handle('share-sheet', [ 'cancel' ]) }}" hover-class bind:tap="onCancel">
+      {{ cancelText }}
+    </button>
+  </view>
+</ti-popup>
+

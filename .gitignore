@@ -1,0 +1,51 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Dependencies
+node_modules/
+
+# Test coverage
+coverage
+.nyc_output
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/*
+
+# Editors and IDEs
+.idea
+.history
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# Misc
+.DS_Store
+package-lock.json
+
+.eslintcache
+
+lerna-debug.log
+
+cjs
+esm
+types
+
+# weapp-example
+miniprogram_npm
+project.private.config.json
+
+# vue press
+.temp
+.cache
+docs/components
+docs/.vuepress/dist
+website
+*.zip
+*.7z
+packages/weapp/dist-titan/*
+packages/weapp/esm-titan/*

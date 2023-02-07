@@ -1,0 +1,26 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <image
+    wx:if="{{ attrs.mode === 'cover' && attrs.selectMode === 'normal' }}"
+    class="bg-pic"
+    src="https://image-c-dev.weimobwmc.com/qa-On6X/8b97cd488593474ba4a8ccaa3c1a493f.png"
+  />
+
+  <view class="container" style="border-radius: {{ attrs.radius }}rpx">
+    <ti-image
+      width="180"
+      mode="{{ attrs.mode }}"
+      radius="{{ attrs.radius }}"
+      height="180"
+      src="{{ attrs.src }}"
+      use-loading-slot="{{ attrs.useLoadingSlot }}"
+      use-error-slot="{{ attrs.useErrorSlot }}"
+      loading-icon="{{ attrs.loadingIcon }}"
+      error-icon="{{ attrs.errorIcon }}"
+    >
+      <ti-loading wx:if="{{ attrs.slotName === 'loading' }}" slot="loading" />
+      <view wx:if="{{ attrs.slotName === 'text' }}" slot="loading">加载中...</view>
+      <view wx:if="{{ attrs.slotName === 'error' }}" slot="error">加载失败</view>
+    </ti-image>
+  </view>
+</ti-page>
+

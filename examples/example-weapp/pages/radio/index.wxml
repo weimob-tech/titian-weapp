@@ -1,0 +1,29 @@
+<ti-page options="{{ options }}" page-class="radio-button-page" bind:change="onChange">
+  <ti-radio-group
+    default-value="0"
+    bind:change="onRadioChange"
+    icon="{{ attr.iconName }}"
+    style="--radio-padding-h: 12rpx; --radio-button-gap:12rpx;--radio-radius: {{ attr.radius }}rpx;--radio-icon-color:{{ attr.color }}"
+  >
+    <block wx:for="{{ attr.group }}" wx:key="index">
+      <ti-radio-button
+        wx:if="{{ attr.type === 'TiRadioButton' }}"
+        label="{{ item }}"
+        value="{{ index + '' }}"
+        disabled="{{ attr.disabled }}"
+        color="{{ attr.color }}"
+      >
+        <ti-image
+          ext-style="margin-right: 12rpx"
+          wx:if="{{ attr.ext === 'image' }}"
+          slot="prefix"
+          width="40"
+          radius="{{ 4 }}"
+          height="40"
+          src="https://image-c-dev.weimobwmc.com/qa-On6X/8b97cd488593474ba4a8ccaa3c1a493f.png"
+        />
+      </ti-radio-button>
+      <ti-radio wx:else label="{{ item }}" value="{{ index + '' }}" disabled="{{ attr.disabled }}" />
+    </block>
+  </ti-radio-group>
+</ti-page>

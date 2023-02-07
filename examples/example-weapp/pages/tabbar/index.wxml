@@ -1,0 +1,10 @@
+<ti-page options="{{ options }}" center="{{ false }}" bind:change="onChange" />
+<ti-tabbar value="{{ 1 }}" separation="{{ attr.separation }}" bind:select="onSelect" ext-class="tab-bar">
+  <ti-tabbar-item
+    wx:for="{{ attr.group }}"
+    wx:key="index"
+    active-color="{{ attr.color }}"
+    icon="{{ item.icon }}"
+    title="{{ item.title }}"
+  />
+</ti-tabbar>

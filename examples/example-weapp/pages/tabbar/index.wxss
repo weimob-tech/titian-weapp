@@ -1,0 +1,5 @@
+/* stylelint-disable-next-line selector-type-no-unknown */
+page {
+  /* --tabbar-padding-v: 30px;
+  --tabbar-item-title-margin-bottom: 10px; */
+}

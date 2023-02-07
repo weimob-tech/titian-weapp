@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render different mode success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-cell-group"
+  >
+    <wx-view
+      class="titian-cell-group-body titian-cell-group-card"
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-cell-group"
+  >
+    <wx-view
+      class="titian-cell-group-body"
+    />
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render title、subTitle success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-cell-group"
+  >
+    <wx-view
+      class="titian-cell-group-title-wrap title-wrap"
+    >
+      <wx-text
+        class="titian-cell-group-title title-class"
+      >
+        标题
+      </wx-text>
+      <wx-text
+        class="titian-cell-group-sub-title sub-title-class"
+      >
+        副标题
+      </wx-text>
+    </wx-view>
+    <wx-view
+      class="titian-cell-group-body"
+    />
+  </wx-view>
+</main>
+`;

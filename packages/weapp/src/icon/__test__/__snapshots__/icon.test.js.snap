@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="titian-icon-base titian-icon titian-icon-checkbox ext-class"
+    style=""
+    bind:tap="onClick"
+  />
+</main>
+`;
+
+exports[`test component should render success 2`] = `
+<main>
+  <wx-view
+    class="titian-icon-base titian-icon titian-icon-rotate ext-class"
+    style="color:#000,#ccc"
+    bind:tap="onClick"
+  />
+</main>
+`;
+
+exports[`test component should render success 3`] = `
+<main>
+  <wx-view
+    class="titian-icon-base titian-icon titian-icon-rotate ext-class"
+    style="color:rgba(0,0,0,1)"
+    bind:tap="onClick"
+  />
+</main>
+`;

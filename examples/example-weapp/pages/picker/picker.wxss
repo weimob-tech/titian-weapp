@@ -1,0 +1,5 @@
+/* pages/picker/picker.wxss */
+
+.drawer {
+  height: 600px;
+}

@@ -1,0 +1,12 @@
+ <ti-page options="{{ options }}" bind:change="onChange">
+   <view class="slider-wrap">
+     <ti-slider
+       thumb-class="{{ attr.extClass }}"
+       min="{{ attr.min || 0 }}"
+       max="{{ attr.max || 100 }}"
+       step="{{ attr.step || 1 }}"
+       value="{{ slider }}"
+       catch:change="onChange3"
+     />
+   </view>
+ </ti-page>

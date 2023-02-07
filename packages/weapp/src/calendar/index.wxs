@@ -1,0 +1,69 @@
+var DateStatusClass = {
+  disabled: {
+    className: ['date-disabled'],
+    roundClassName: ['date-disabled']
+  },
+  single: {
+    className: ['date-selected', 'date-sig'],
+    roundClassName: ['date-selected', 'date-sig-round']
+  },
+  range_start: {
+    className: ['date-selected', 'date-rs-sig'],
+    roundClassName: function (length) {
+      return length > 1 ? ['date-selected', 'date-rs-round'] : ['date-selected', 'date-rs-sig-round'];
+    }
+  },
+  range_full: {
+    className: ['date-selected', 'date-rs-sig'],
+    roundClassName: ['date-selected', 'date-rs-sig-round']
+  },
+  range_end: {
+    className: ['date-selected', 'date-rs-sig'],
+    roundClassName: ['date-selected', 'date-re-round']
+  },
+  multiple: {
+    className: ['date-selected', 'date-m'],
+    roundClassName: ['date-selected', 'date-m-round']
+  },
+  multiple_start: {
+    className: ['date-selected', 'date-ms'],
+    roundClassName: ['date-selected', 'date-ms-round']
+  },
+  multiple_middle: {
+    className: ['date-selected', 'date-mm'],
+    roundClassName: ['date-selected', 'date-mm-round']
+  },
+  multiple_end: {
+    className: ['date-selected', 'date-me'],
+    roundClassName: ['date-selected', 'date-me-round']
+  }
+};
+
+module.exports = {
+  mergeStyle: function (index, offset) {
+    if (index === 0) {
+      return 'margin-left:' + (100 / 7) * offset + '%;';
+    }
+    return '';
+  },
+
+  getClass: function (calDate, round, curData, isCompare) {
+    if (isCompare && curData.length === 2) {
+      if (calDate.fullDateNum > curData[0].fullDateNum && calDate.fullDateNum < curData[1].fullDateNum) {
+        if (round) {
+          return ['date-cover-round'];
+        }
+        return ['date-cover'];
+      }
+    }
+    var gather = DateStatusClass[calDate.status];
+    if (gather) {
+      var className = round ? gather.roundClassName : gather.className;
+      if (typeof className === 'function') {
+        return className(curData.length);
+      }
+      return className;
+    }
+    return [];
+  }
+};

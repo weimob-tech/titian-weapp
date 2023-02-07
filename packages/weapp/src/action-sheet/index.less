@@ -1,0 +1,106 @@
+@import '../common/static/utils.less';
+@import '../common/static/var.less';
+@import '../common/static/mixins/index.less';
+
+@action-sheet:~ '@{project}-action-sheet';
+
+.@{action-sheet} {
+  --protected-popup-box-bg-color: @neutral-color-7;
+
+  &-title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: @gap-36 0;
+
+    background: #fff;
+
+    color: var(--action-sheet-title-color, @neutral-color-3);
+    font-size: @T30;
+    font-weight: @font-weight-bold;
+    line-height: 34px;
+
+    &::before {
+      .hairline();
+    }
+  }
+
+  &-button {
+    // 兼容支付宝 需设置height，border，position
+    position: relative;
+    height: auto;
+    padding: @gap-36 0;
+
+    border: none;
+    border-radius: 0;
+
+    background: #fff;
+
+    color: var(--action-sheet-button-color, @neutral-color-1);
+    font-size: @T28;
+    line-height: 34px;
+
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      .hairline();
+    }
+    &.active:not(.@{action-sheet}-loading) {
+      background: fade(#000, 10%);
+    }
+  }
+
+  &-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-icon {
+    margin-right: @gap-8;
+  }
+
+  &-description {
+    margin-top: @gap-12;
+
+    color: var(--action-sheet-description-color, @neutral-color-3);
+    font-size: @T24;
+    line-height: 28px;
+  }
+
+  &-cancel {
+    position: relative;
+    height: auto;
+    margin-top: @gap-20;
+    padding: @gap-36 0;
+
+    border: none;
+
+    background: #fff;
+
+    color: @neutral-color-2;
+    font-size: @T28;
+    line-height: 34px;
+
+    &::after {
+      content: none;
+    }
+
+    &.active {
+      background: fade(#000, 10%);
+    }
+  }
+
+  &-disabled {
+    background: #fff !important;
+
+    color: @neutral-color-5;
+  }
+
+  &-loading-icon {
+    margin-right: @gap-8;
+  }
+}

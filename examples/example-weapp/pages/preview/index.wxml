@@ -1,0 +1,21 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="preview-content">
+    <ti-image
+      src="https://cdn2.weimob.com/saas/@assets/saas-fe-retail-h5-stc/image/titian/default1.png"
+      width="{{ 180 }}"
+      height="{{ 180 }}"
+      radius="{{ 8 }}"
+      bind:tap="onClick"
+    />
+    <view class="preview-text">点击图片预览</view>
+  </view>
+  <view style="position: relative; z-index: 10">
+    <ti-preview
+      bind:change="imageChange"
+      id="preview"
+      display-number="{{ attrs.displayNumber }}"
+      display-title="{{ attrs.displayTitle }}"
+    />
+  </view>
+</ti-page>
+

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-picker-column": "../picker-column/index",
+    "ti-loading": "../loading/index",
+    "ti-popup-titlebar": "../popup-title-bar/index"
+  }
+}

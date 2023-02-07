@@ -1,0 +1,120 @@
+@import '../common/static/utils';
+@import '../common/static/mixins/index.less';
+@import '../common/static/var.less';
+
+:host {
+  display: contents;
+}
+@transition: ~'@{project}-transition';
+@enter: ~'enter';
+@enterTo: ~'enter-done';
+@exit: ~'exit';
+@exitTo: ~'exit-done';
+
+@fade: ~'fade';
+@fadeInDown: ~'fade-down';
+@fadeInUp: ~'fade-up';
+@fadeInLeft: ~'fade-left';
+@fadeInRight: ~'fade-right';
+@slideInUp: ~'slide-up';
+@slideInDown: ~'slide-down';
+@slideInRight: ~'slide-right';
+@slideInLeft: ~'slide-left';
+@zoom: ~'zoom';
+
+.@{project}-@{fade}-@{enter},
+.@{project}-@{fade}-@{exitTo},
+.@{project}-@{fadeInDown}-@{enter},
+.@{project}-@{fadeInDown}-@{exitTo},
+.@{project}-@{fadeInUp}-@{enter},
+.@{project}-@{fadeInUp}-@{exitTo},
+.@{project}-@{fadeInLeft}-@{enter},
+.@{project}-@{fadeInLeft}-@{exitTo},
+.@{project}-@{fadeInRight}-@{enter},
+.@{project}-@{fadeInRight}-@{exitTo} {
+  opacity: 0;
+}
+
+.@{project}-@{fade}-@{enter}-active,
+.@{project}-@{fade}-@{exit}-active {
+  transition-property: opacity;
+}
+
+.@{project}-@{fadeInDown}-@{enter}-active,
+.@{project}-@{fadeInDown}-@{exit}-active,
+.@{project}-@{fadeInUp}-@{enter}-active,
+.@{project}-@{fadeInUp}-@{exit}-active,
+.@{project}-@{fadeInLeft}-@{enter}-active,
+.@{project}-@{fadeInLeft}-@{exit}-active,
+.@{project}-@{fadeInRight}-@{enter}-active,
+.@{project}-@{fadeInRight}-@{exit}-active,
+.@{project}-@{zoom}-@{enter}-active,
+.@{project}-@{zoom}-@{exit}-active {
+  transition-property: transform, opacity;
+}
+
+.@{project}-@{slideInUp}-@{enter}-active,
+.@{project}-@{slideInUp}-@{exit}-active,
+.@{project}-@{slideInDown}-@{enter}-active,
+.@{project}-@{slideInDown}-@{exit}-active,
+.@{project}-@{slideInRight}-@{enter}-active,
+.@{project}-@{slideInRight}-@{exit}-active,
+.@{project}-@{slideInLeft}-@{enter}-active,
+.@{project}-@{slideInLeft}-@{exit}-active {
+  transition-property: transform, visibility;
+}
+
+.@{project}-@{slideInUp}-@{enter},
+.@{project}-@{slideInUp}-@{exitTo} {
+  visibility: visible;
+
+  transform: translate3d(0, 100%, 0);
+}
+
+.@{project}-@{slideInDown}-@{enter},
+.@{project}-@{slideInDown}-@{exitTo} {
+  visibility: visible;
+
+  transform: translate3d(0, -100%, 0);
+}
+
+.@{project}-@{slideInRight}-@{enter},
+.@{project}-@{slideInRight}-@{exitTo} {
+  visibility: visible;
+
+  transform: translate3d(100%, 0, 0);
+}
+
+.@{project}-@{slideInLeft}-@{enter},
+.@{project}-@{slideInLeft}-@{exitTo} {
+  visibility: visible;
+
+  transform: translate3d(-100%, 0, 0);
+}
+
+.@{project}-@{fadeInLeft}-@{enter},
+.@{project}-@{fadeInLeft}-@{exitTo} {
+  transform: translate3d(-100%, 0, 0);
+}
+
+.@{project}-@{fadeInRight}-@{enter},
+.@{project}-@{fadeInRight}-@{exitTo} {
+  transform: translate3d(100%, 0, 0);
+}
+
+.@{project}-@{fadeInUp}-@{enter},
+.@{project}-@{fadeInUp}-@{exitTo} {
+  transform: translate3d(0, 100%, 0);
+}
+
+.@{project}-@{fadeInDown}-@{enter},
+.@{project}-@{fadeInDown}-@{exitTo} {
+  transform: translate3d(0, -100%, 0);
+}
+
+.@{project}-@{zoom}-@{enter},
+.@{project}-@{zoom}-@{exitTo} {
+  transform: scale3d(0.1, 0.1, 0.1);
+
+  opacity: 0;
+}

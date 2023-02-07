@@ -1,0 +1,36 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="column" />
+
+<view
+  class="{{ namespace.handle('picker-column', [ 'item-box' ]) }} ext-class"
+  style="{{ extStyle }};top:{{ top }}px"
+  bind:touchstart="{{ column.touchstart }}"
+  bind:touchmove="{{ column.touchmove }}"
+  bind:touchend="{{ column.touchend }}"
+  data-height="{{ height }}"
+  data-size="{{ columns.length }}"
+  data-row="{{ row }}"
+  data-col-alias="{{ colAlias }}"
+  data-sports="{{ sports }}"
+  change:y="{{ column.handleY }}"
+  y="{{ y }}"
+>
+  <view
+    wx:for="{{ columns }}"
+    wx:key="index"
+    class="{{ namespace.handle('picker-column', [ 'item', item.disabled ? 'item-disabled' : '' ]) }} {{ namespace.handle('picker-column', [ row === index ? 'item-selected' : '' ]) }} ext-option-item-class"
+    style="height:{{ height }}px"
+    data-row="{{ index }}"
+    bind:tap="{{ column.click }}"
+    change:disabled="{{ column.handleDisabled }}"
+    data-col-alias="{{ colAlias }}"
+    disabled="{{ item.disabled }}"
+  >
+
+    <slot name="select" wx:if="{{ useSelectSlot && row === index }}" />
+    <block wx:else>
+      {{ column.handleText(item,label) }}
+    </block>
+  </view>
+</view>
+

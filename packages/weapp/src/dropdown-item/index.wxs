@@ -1,0 +1,11 @@
+var utils = require('../common/utils/wxs/index.wxs');
+
+function getActiveStatus(data) {
+  var value = data.value.split(',');
+
+  return value.indexOf(data.itemVal) > -1;
+}
+
+module.exports = {
+  getActiveStatus: getActiveStatus
+};

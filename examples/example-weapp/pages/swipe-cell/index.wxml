@@ -1,0 +1,88 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <ti-swipe-cell
+    bind:open="onOpen"
+    left-width="{{ attr.direction === 'left' ? attr.number === 2 ? attr.mode === 2 ? 282 : 340 : attr.mode === 2 ? 152 : 176 : 0 }}"
+    right-width="{{ attr.direction === 'right' ? attr.number === 2 ? attr.mode === 2 ? 282 : 340 : attr.mode === 2 ? 152 : 176 : 0 }}"
+    bind:close="onClose"
+    ext-class="page-swipe-cell"
+  >
+    <view class="swipe-action left" slot="left" wx:if="{{ attr.direction === 'left' }}">
+      <view class="btn">
+        <ti-button
+          ext-class="swipe-cell-btn {{ attr.mode === 2 ? 'swipe-cell-column' : '' }}"
+          prefix-icon-class="{{ attr.mode === 2 ? 'prefix-icon' : 'prefix-icon-h' }}"
+          button-inner-class="{{ attr.mode === 2 ? 'btn-column' : '' }}"
+          bind:tap="onClick"
+          prefix-icon="rate-star"
+          color="#FFA300"
+        >
+          收藏
+        </ti-button>
+      </view>
+      <view class="btn" wx:if="{{ attr.number === 2 }}">
+        <ti-button
+          ext-class="swipe-cell-btn {{ attr.mode === 2 ? 'swipe-cell-column' : '' }}"
+          prefix-icon-class="{{ attr.mode === 2 ? 'prefix-icon' : 'prefix-icon-h' }}"
+          button-inner-class="{{ attr.mode === 2 ? 'btn-column' : '' }}"
+          bind:tap="onClick"
+          prefix-icon="delete"
+        >删除</ti-button>
+      </view>
+    </view>
+    <ti-cell-group wx:if="{{ attr.mode === 1 }}">
+      <ti-cell desc="居右详细内容文字" icon bind:click="onClick">
+        <view slot="title">
+          标题
+          <text style="color:red">*</text>
+        </view>
+      </ti-cell>
+    </ti-cell-group>
+    <view wx:else class="good-card">
+      <view style="display: flex; margin-right: 20rpx">
+        <ti-checkbox ext-style="margin-right: 20rpx" default-checked="{{ true }}" />
+      </view>
+      <ti-image
+        width="180"
+        height="180"
+        radius="12"
+        style="width: auto;"
+        src="https://placemat.imgix.net/placeholder_images/images/000/000/140/original/photo-1416339684178-3a239570f315?ixlib=rb-1.0.0&w=2000&h=1500&fm=auto&crop=faces%2Centropy&fit=crop&txt=2000%C3%971500&txtclr=BFFF&txtalign=middle%2Ccenter&txtfit=max&txtsize=42&txtfont=Avenir+Next+Demi%2CBold&bm=multiply&blend=ACACAC&s=1b48ef9db8a3d3d93756735f5b0cc8e1"
+      />
+      <view class="good-content">
+        <view class="good-title">
+          水洗棉系列整套 卧室三件套包整套满散件包
+        </view>
+        <view class="good-action">
+          <ti-tag variant="filled" size="small" right-icon="arrow-down" color="#FA2C19">
+            短款露脐装
+          </ti-tag>
+          <ti-input-number value="2" />
+        </view>
+      </view>
+    </view>
+    <view class="swipe-action right" slot="right" wx:if="{{ attr.direction === 'right' }}">
+      <view class="btn">
+        <ti-button
+          bind:tap="onClick"
+          ext-class="swipe-cell-btn {{ attr.mode === 2 ? 'swipe-cell-column' : '' }}"
+          prefix-icon-class="{{ attr.mode === 2 ? 'prefix-icon' : 'prefix-icon-h' }}"
+          button-inner-class="{{ attr.mode === 2 ? 'btn-column' : '' }}"
+          prefix-icon="rate-star"
+          color="#FFA300"
+        >
+          收藏
+        </ti-button>
+      </view>
+      <view class="btn" wx:if="{{ attr.number === 2 }}">
+        <ti-button
+          ext-class="swipe-cell-btn {{ attr.mode === 2 ? 'swipe-cell-column' : '' }}"
+          button-inner-class="{{ attr.mode === 2 ? 'btn-column' : '' }}"
+          prefix-icon-class="{{ attr.mode === 2 ? 'prefix-icon' : 'prefix-icon-h' }}"
+          bind:tap="onClick"
+          prefix-icon="delete"
+        >删除</ti-button>
+      </view>
+    </view>
+  </ti-swipe-cell>
+
+</ti-page>

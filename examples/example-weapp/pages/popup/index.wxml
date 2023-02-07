@@ -1,0 +1,28 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <ti-button ext-style="width: 291rpx" bind:click="onClick">
+    点击演示
+  </ti-button>
+</ti-page>
+<ti-popup
+  visible="{{ visible }}"
+  close-on-mask="{{ attr.closeOnMask }}"
+  position="{{ attr.position }}"
+  prevent-scroll="{{ attr.preventScroll }}"
+  ext-content-style="--popup-radius: {{ attr.radius }}rpx"
+  transition="{{ attr.transition }}"
+  bind:close="onClose"
+>
+  <ti-popup-titlebar
+    title="{{ attr.title }}"
+    sub-title="{{ attr.subTitle }}"
+    confirm-text="确认"
+    cancel-text="取消"
+    variant="{{ attr.variant }}"
+    bind:close="onClose"
+    bind:cancel="onClose"
+    bind:confirm="onClose"
+    wx:if="{{ attr.variant }}"
+  />
+  <view class="popup-{{ attr.position }}" />
+</ti-popup>
+

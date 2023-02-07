@@ -1,0 +1,33 @@
+.ellipsis-line1 {
+  display: -webkit-box;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis-line2 {
+  display: -webkit-box;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.suffix-box {
+  margin-left: 28rpx;
+}
+
+.red {
+  color: #fa2c19;
+  font-size: 26rpx;
+  font-weight: 500;
+}
+
+.prefix-box {
+  display: flex;
+  align-items: center;
+  margin-right: 16rpx;
+}

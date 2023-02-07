@@ -1,0 +1,10 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <ti-button custom-style="width: 291rpx" bind:click="onClick">
+    点击演示
+  </ti-button>
+</ti-page>
+
+<ti-dialog id="titian-dialog" bind:close="onClose">
+  <view class="content">- 内容 Content 插槽- </view>
+</ti-dialog>
+

@@ -1,0 +1,30 @@
+.text {
+  display: inline-block;
+  position: relative;
+
+  background: #f2f2f2;
+
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.box {
+  margin: 20px;
+}
+
+.badge-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64rpx;
+  height: 64rpx;
+
+  border-radius: 12rpx;
+
+  background: #f2f2f2;
+
+  color: #212121;
+  font-family: PingFangSC-Medium, 'PingFang SC';
+  font-size: 18rpx;
+  font-weight: 500;
+}

@@ -1,0 +1,8 @@
+<ti-grid title="基本用法" gutter="8">
+  <ti-grid-item class="item" bind:click="itemClick" icon="home" text="Grid" />
+  <ti-grid-item icon="home" text="Grid" />
+  <ti-grid-item icon="home" text="Grid" />
+  <ti-grid-item icon="home" text="Grid" />
+</ti-grid>
+<ti-grid title="基本用法" gutter="8">
+</ti-grid>

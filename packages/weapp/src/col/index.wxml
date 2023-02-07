@@ -1,0 +1,9 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+
+<view
+  class="ext-class {{ namespace.join('col', [span, 'flex-' + span , 'offset-' + offset]) }}"
+  style="{{ utils.completedStyle(gutter) }}"
+>
+  <slot />
+</view>

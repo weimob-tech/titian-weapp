@@ -1,0 +1,15 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <ti-empty title="空态页说明文案" sub-title="{{ attr.subtitle }}" size="{{ attr.size }}">
+    <ti-button
+      ext-class="{{ attr.size === 'medium' ? 'button' : 'button-big' }}"
+      wx:if="{{ attr.button }}"
+      color="#757575"
+      size="medium"
+      slot="bottom"
+      variant="outlined"
+      ext-style="border-color: #C4C4C4"
+      inline
+    >立即前往</ti-button>
+  </ti-empty>
+</ti-page>
+

@@ -1,0 +1,16 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <view class="text" wx:if="{{ attrs.orientation === 'vertical' }}">一级分类</view>
+    <ti-divider
+      color="{{ attrs.color }}"
+      border-width="{{ attrs.borderWidth }}"
+      dashed="{{ attrs.dashed }}"
+      orientation="{{ attrs.orientation }}"
+      text-align="{{ attrs.textAlign }}"
+      hairline="{{ attrs.hairline }}"
+    >
+      <block wx:if="{{ attrs.text }}">{{ attrs.text }}</block>
+    </ti-divider>
+    <view class="text" wx:if="{{ attrs.orientation === 'vertical' }}">二级分类</view>
+  </view>
+</ti-page>

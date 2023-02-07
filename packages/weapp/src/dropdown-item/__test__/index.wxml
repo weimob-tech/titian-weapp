@@ -1,0 +1,17 @@
+<ti-dropdown-menu class="menu">
+  <ti-dropdown-item
+    bind:submit="onSubmit"
+    bind:change="onChange"
+    bind:close="onClose"
+    bind:open="onOpen"
+    mode="{{ multiple ? 'multiple' : 'single' }}"
+    title="选项1"
+    class="item1"
+    has-submit
+    visible="{{ visible }}"
+    options="{{ options }}"
+  />
+  <ti-dropdown-item title="选项2">
+    <text>item1</text>
+  </ti-dropdown-item>
+</ti-dropdown-menu>

@@ -1,0 +1,125 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-param-reassign */
+Component({
+  externalClasses: ['page-class'],
+  options: {
+    styleIsolation: 'apply-shared'
+  },
+  properties: {
+    options: Array,
+    center: {
+      type: Boolean,
+      value: true
+    }
+  },
+  data: {
+    colors: [
+      { label: 'red', value: '#fa2c19' },
+      { label: 'orange', value: '#ffa300' },
+      { label: 'green', value: '#07c160' },
+      { label: 'blue', value: '#2a6ae9' },
+      { label: 'grey', value: '#9e9e9e' }
+    ],
+    newOption: [],
+    sliderKey: ''
+  },
+  observers: {},
+  lifetimes: {
+    attached() {
+      const newOption = this.formatOption(this.data.options);
+      this.setData({ newOption });
+      this.sendEvent();
+    }
+  },
+  methods: {
+    onClick(event) {
+      const {
+        target: {
+          dataset: { item, key }
+        }
+      } = event;
+      const target = this.data.newOption.find((el) => el.key === key);
+      if (!target) return;
+      if (target.value === item.value) {
+        this.sendEvent('repeat');
+        return;
+      }
+      target.value = item.value;
+      this.sendEvent();
+    },
+    clickSlider(event) {
+      const {
+        target: {
+          dataset: { key }
+        }
+      } = event;
+      this.setData({ sliderKey: key });
+    },
+    onChangeRadius(event) {
+      const { value } = event.detail;
+      let { key } = event.target.dataset;
+      key = key || this.data.sliderKey;
+      const target = this.data.newOption.find((el) => el.key === key);
+      target.value = value;
+      this.sendEvent();
+    },
+    sendEvent(eventName = 'change') {
+      const newOption = this.formatOption(this.data.newOption);
+      const attr = newOption.reduce((prev, curr) => {
+        if (!curr.show) return prev;
+        prev[curr.key] = curr.value;
+        if (curr.attr) {
+          prev = { ...prev, ...curr.attr };
+        }
+        if (curr.type === 'radio') {
+          const item = curr.list.find((el) => el.value === curr.value);
+          if (item && item.attr) {
+            prev = { ...prev, ...item.attr };
+          }
+        }
+        return prev;
+      }, {});
+      this.setData({ newOption });
+      if (!this.attrsCache) {
+        this.attrsCache = new Set();
+      }
+      this.attrsCache.forEach((i) => {
+        if (attr[i] === undefined) {
+          attr[i] = null;
+        }
+      });
+      this.attrsCache = new Set(Array.from(this.attrsCache).concat(Object.keys(attr)));
+      this.triggerEvent(eventName, attr);
+    },
+    formatOption(data) {
+      const options = data;
+      options.forEach((item) => {
+        item.show = true;
+      });
+      options.forEach((element) => {
+        if (element.type === 'color') {
+          element.value = element.value || '#fa2c19';
+        } else if (element.type === 'radius') {
+          element.value = element.value || 0;
+        } else if (element.type === 'radio') {
+          const target = element.list.find((item, index) => {
+            if (item.value === element.value) {
+              element.currentIndex = index;
+              return true;
+            }
+            return false;
+          });
+          if (!target?.hiddenItems) return;
+          target.hiddenItems.forEach((it) => {
+            const item = options.find((el) => el.key === it);
+            // 只有当他自己显示的情况下，才能控制他的hiddenItems
+            if (element.show && item) {
+              item.show = false;
+            }
+          });
+        }
+      });
+      return options;
+    }
+  }
+});

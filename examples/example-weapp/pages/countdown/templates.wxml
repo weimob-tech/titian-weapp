@@ -1,0 +1,22 @@
+<template name="actions">
+  <view class="actions-container">
+    <image
+      wx:if="{{ state !== 'start' }}"
+      bind:tap="onStart"
+      class="item"
+      src="https://cdn2.weimob.com/saas/@assets/saas-fe-retail-h5-stc/image/titian/play.svg"
+    />
+    <image
+      wx:if="{{ state !== 'pause' }}"
+      bind:tap="onPause"
+      class="item"
+      src="https://cdn2.weimob.com/saas/@assets/saas-fe-retail-h5-stc/image/titian/pause.svg"
+    />
+    <image
+      bind:tap="onReset"
+      class="item"
+      src="https://cdn2.weimob.com/saas/@assets/saas-fe-retail-h5-stc/image/titian/replay.svg"
+    />
+  </view>
+</template>
+

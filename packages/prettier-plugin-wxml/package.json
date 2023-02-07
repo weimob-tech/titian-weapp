@@ -1,0 +1,30 @@
+{
+  "name": "@titian-design/prettier-plugin-wxml",
+  "version": "0.1.0",
+  "description": "prettier plugin for wechat wxml file",
+  "keywords": [
+    "prettier",
+    "wechat",
+    "wxml"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weimob-tech/titian-weapp.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__test__"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "htmlparser2": "^7.2.0",
+    "prettier": "^2.5.0",
+    "pretty": "^2.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "esModuleInterop": true,
+    "target": "es6",
+    "declaration": true,
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "strict": true,
+    "moduleResolution": "node",
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "types": ["@types/jest", "node", "miniprogram-api-typings"],
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types", "node_modules/miniprogram-api-typings"]
+  }
+}

@@ -1,0 +1,39 @@
+<import src="./templates.wxml" />
+
+<ti-page options="{{ options }}" bind:change="onChange" center="{{ false }}">
+  <view class="container" style="--countdown-color: {{ attrs.color }}">
+    <ti-countdown
+      wx:if="{{ !reload }}"
+      class="control-count-down"
+      time="118888666"
+      format="{{ attrs.format }}"
+      ext-class="countdown"
+      bind:change="timeChange"
+      use-slot="{{ attrs.useSlot }}"
+    >
+      <view wx:if="{{ attrs.useSlot }}" class="custom-panel" style="--time-bg-color: {{ attrs.bgColor }}">
+        <block wx:if="{{ attrs.day }}">
+          <view class="time day-time">{{ time.day < 10 ? '0' : '' }}{{ time.day }}</view>
+          <view class="d day" style="color: {{ attrs.color }}">天</view>
+        </block>
+        <view class="time">{{ time.hour < 10 ? '0' : '' }}{{ time.hour }}</view>
+        <view class="d">
+          <ti-icon size="24" color="{{ attrs.color }}" name="colon" />
+        </view>
+        <view class="time">{{ time.minute < 10 ? '0' : '' }}{{ time.minute }}</view>
+        <view class="d">
+          <ti-icon size="24" color="{{ attrs.color }}" name="colon" />
+        </view>
+        <view class="time">{{ time.second < 10 ? '0' : '' }}{{ time.second }}</view>
+        <block wx:if="{{ attrs.second }}">
+          <view class="d">
+            <ti-icon size="24" color="{{ attrs.color }}" name="colon" />
+          </view>
+          <view class="time ms">{{ time.millisecond }}</view>
+        </block>
+      </view>
+    </ti-countdown>
+    <template is="actions" data="{{ state }}" />
+  </view>
+</ti-page>
+

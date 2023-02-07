@@ -1,0 +1,9 @@
+<ti-page options="{{ options }}" bind:change="onChange" center="{{ true }}">
+  <view class="{{ attrs.containerClass }}" id="container">
+    <ti-sticky wx:if="{{ flag }}" offset-top="{{ attrs.top }}" container="{{ attrs.container }}">
+      <ti-button inline>{{ attrs.text }}</ti-button>
+    </ti-sticky>
+  </view>
+  <view class="tip">- 上滑展示区页面，显示吸顶效果 -</view>
+</ti-page>
+<view class="placeholder" />

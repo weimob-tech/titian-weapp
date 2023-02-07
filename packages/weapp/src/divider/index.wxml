@@ -1,0 +1,9 @@
+<wxs src="./index.wxs" module="utils" />
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view
+  class="ext-class {{ namespace.join('divider', { thick: borderWidth > 2 || !hairline }) }} {{ 'titian-divider-' + textAlign }} {{ 'titian-divider-' + orientation }}"
+  style="{{ utils.computedStyle(color, borderColor, borderWidth, dashed, extStyle) }}"
+>
+  <slot wx:if="{{ orientation === 'horizontal' }}" />
+</view>

@@ -1,0 +1,67 @@
+<wxs src="./index.wxs" module="utils" />
+<view class="page page-class">
+  <view class="page-container {{ center ? 'center' : '' }}">
+    <slot />
+  </view>
+  <view style="position: relative;">
+    <!-- 支付宝上把position: relative;加载scroll-view，定位有问题，会跟随滚动 -->
+    <scroll-view class="menu" scroll-y>
+      <view style="height: 50rpx" />
+      <block wx:for="{{ newOption }}" wx:key="index">
+        <view wx:if="{{ item.show }}" class="drawer">
+          <view class="title">
+            <view class="desc">{{ item.desc }}</view>
+            <view class="name">{{ item.name }}</view>
+          </view>
+          <view wx:if="{{ item.type === 'radio' }}" style="position: relative;">
+            <scroll-view
+              class="radio-box"
+              scroll-x
+              scroll-left="{{ utils.computedScrollLeft(item) }}"
+              scroll-with-animation
+              enhanced="{{ true }}"
+              show-scrollbar="{{ false }}"
+            >
+              <view
+                wx:for="{{ item.list }}"
+                wx:for-item="radio"
+                wx:for-index="idx"
+                wx:key="idx"
+                id="item-{{ idx }}"
+                data-item="{{ radio }}"
+                data-key="{{ item.key }}"
+                class="radio {{ item.value === radio.value ? 'checked' : '' }}"
+                bind:tap="onClick"
+              >
+                {{ radio.label }}
+              </view>
+            </scroll-view>
+          </view>
+          <view wx:elif="{{ item.type === 'color' }}" class="colors">
+            <view
+              class="color {{ item.value === color.value ? 'checked' : '' }}"
+              style="color: {{ color.value }};background: {{ color.value }}"
+              wx:for="{{ item.list || colors }}"
+              wx:key="color"
+              wx:for-item="color"
+              data-item="{{ color }}"
+              data-key="{{ item.key }}"
+              bind:tap="onClick"
+            />
+          </view>
+          <!-- 兼容 支付宝不支持自定义组件上传递dataset -->
+          <view wx:elif="{{ item.type === 'radius' }}" class="radius" data-key="{{ item.key }}" bind:touchstart="clickSlider">
+            <ti-slider
+              max="{{ item.max || 100 }}"
+              min="{{ item.min || 0 }}"
+              value="{{ item.value }}"
+              data-key="{{ item.key }}"
+              bind:change="onChangeRadius"
+            />
+          </view>
+        </view>
+      </block>
+      <view class="footer" />
+    </scroll-view>
+  </view>
+</view>

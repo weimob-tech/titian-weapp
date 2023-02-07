@@ -1,0 +1,40 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+
+<view
+  class="{{ namespace.join('loading', 'wrap') }}"
+  style="{{ direction !== '' ? 'flex-direction: ' + direction : '' }}"
+>
+  <view
+    class="ext-class {{ namespace.join('loading', [ mode ]) }}"
+    style="{{ utils.completedLoadingWrapStyles({ size }) }}"
+  >
+    <block wx:if="{{ mode === 'circular' }}">
+      <view
+        wx:for="{{ circular }}"
+        wx:key="idx"
+        class="{{ namespace.join('loading-view', [ mode ]) }}"
+        style="{{ utils.completedLoadingStyles({ size }) }}"
+      >
+        <view
+          class="{{ namespace.handle('loading-view', [ 'item' ]) }}"
+          style="{{ utils.completedLoadingItemStyles({ size, color }) }}"
+        />
+      </view>
+    </block>
+    <block wx:else>
+      <view
+        wx:for="{{ spinner }}"
+        wx:key="idx"
+        class="{{ namespace.join('loading-view', [ mode ]) }}"
+        style="{{ utils.completedLoadingStyles({ size }) }}"
+      />
+    </block>
+  </view>
+  <view class="{{ namespace.join('loading-text', [ direction ]) }}" style="{{ color ? 'color:' + color : '' }}">
+    <block wx:if="{{ text && text !== '' }}">
+      {{ text }}
+    </block>
+    <slot wx:else />
+  </view>
+</view>

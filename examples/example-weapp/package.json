@@ -1,0 +1,16 @@
+{
+  "name": "example-weapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@titian-design/weapp": "workspace:0.1.0"
+  }
+}

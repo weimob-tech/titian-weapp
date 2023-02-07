@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should has text success 1`] = `
+<main>
+  <wx-view
+    class="ext-class  titian-back-top"
+    style="display: none"
+    bind:tap="onClick"
+  >
+    <ti-icon>
+      <wx-view
+        class="titian-icon-base titian-icon titian-icon-go-to-top ext-class"
+        style="font-size:32rpx"
+        bind:tap="onClick"
+      />
+    </ti-icon>
+    <wx-text
+      class="titian-back-top-text"
+    >
+      返回顶部
+    </wx-text>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="ext-class  titian-back-top"
+    style="display: none"
+    bind:tap="onClick"
+  >
+    <ti-icon>
+      <wx-view
+        class="titian-icon-base titian-icon titian-icon-go-to-top ext-class"
+        style="font-size:48rpx"
+        bind:tap="onClick"
+      />
+    </ti-icon>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should use slot success 1`] = `
+<main>
+  <wx-view
+    class="ext-class  titian-back-top"
+    style="display: none"
+    bind:tap="onClick"
+  />
+</main>
+`;

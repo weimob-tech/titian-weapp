@@ -1,0 +1,25 @@
+var utils = require('../common/utils/wxs/convertStyles.wxs');
+
+function completedStyle(data) {
+  var width = 100 / data.columns + '%';
+  var styles = {};
+
+  styles.width = width;
+
+  if (data.square) {
+    styles['padding-top'] = width;
+  }
+
+  if (data.gutter) {
+    var gutter = data.gutter / 2 + 'px';
+
+    styles['margin-top'] = gutter;
+    styles['padding-right'] = gutter;
+  }
+
+  return utils.convertStyles(styles);
+}
+
+module.exports = {
+  completedStyle: completedStyle
+};

@@ -1,0 +1,29 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="rate-box">
+    <ti-rate
+      wx:if="{{ shouldRender }}"
+      catch:change="onChange1"
+      value="{{ rate1 }}"
+      icon="{{ attrs.icon || 'rate-star-highlight' }}"
+      empty-icon="{{ attrs.icon || 'rate-star-highlight' }}"
+      disabled="{{ attrs.disabled }}"
+      read-only="{{ attrs.readOnly }}"
+      color="{{ attrs.color }}"
+      count="{{ attrs.count }}"
+      allow-half="{{ attrs.allowHalf }}"
+    />
+    <ti-rate
+      style="margin-top: 60rpx;"
+      catch:change="onChange2"
+      wx:if="{{ shouldRender }}"
+      value="{{ rate2 }}"
+      icon="{{ attrs.icon || 'rate-star-highlight' }}"
+      empty-icon="{{ attrs.icon || 'rate-star' }}"
+      disabled="{{ attrs.disabled }}"
+      read-only="{{ attrs.readOnly }}"
+      color="{{ attrs.color }}"
+      count="{{ attrs.count }}"
+      allow-half="{{ attrs.allowHalf }}"
+    />
+  </view>
+</ti-page>

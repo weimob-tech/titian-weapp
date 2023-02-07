@@ -1,0 +1,15 @@
+.group {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.ext-class {
+  margin: 10px 0;
+
+  background: #fff;
+}
+
+.group-item {
+  position: relative;
+}

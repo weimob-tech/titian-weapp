@@ -1,0 +1,57 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view class="container">
+    <block wx:for="{{ attrs.group }}" wx:key="index">
+      <ti-input
+        type="{{ item.type }}"
+        label="{{ attrs.title || item.title }}"
+        prefix-icon="{{ attrs.prefixIcon[ index ]}}"
+        value="{{ item.value }}"
+        label-class="{{ item.titleClass }}"
+        required="{{ attrs.required }}"
+        read-only="{{ item.readonly }}"
+        text-align="{{ attrs.textAlign }}"
+        disabled="{{ item.disabled }}"
+        placeholder="{{ attrs.placeholder || item.placeholder }}"
+        error="{{ item.error }}"
+        error-message="{{ item.errorMessage }}"
+      >
+        <block wx:if="{{ attrs.templateNames }}">
+          <ti-icon wx:if="{{ attrs.templateNames[ index ]=== 'scan' }}" ext-class="suffix-box" slot="suffix" name="scan" />
+          <ti-icon
+            wx:if="{{ attrs.templateNames[ index ]=== 'question' }}"
+            ext-class="suffix-box"
+            slot="suffix"
+            name="question"
+          />
+          <view wx:if="{{ attrs.templateNames[ index ]=== 'qrcode' }}" slot="suffix" class="suffix-box red">发验证码</view>
+          <view wx:if="{{ attrs.templateNames[ index ]=== 'resend' }}" slot="suffix" class="suffix-box red">重新发送</view>
+          <ti-image
+            wx:if="{{ attrs.templateNames[ index ]=== 'image1' }}"
+            slot="suffix"
+            ext-class="suffix-box"
+            width="180"
+            height="64"
+            src="http://img.la/180x64"
+          />
+          <ti-image
+            wx:if="{{ attrs.templateNames[ index ]=== 'image2' }}"
+            slot="suffix"
+            ext-class="suffix-box"
+            width="180"
+            height="64"
+            src="http://img.la/180x64"
+          />
+          <view wx:if="{{ attrs.templateNames[ index ]=== 'tel' }}" class="prefix-box" slot="prefix">
+            +86
+            <ti-icon name="arrow-down" size="28" />
+          </view>
+          <view wx:if="{{ attrs.templateNames[ index ]=== 'city' }}" class="prefix-box" slot="prefix">
+            上海
+            <ti-icon name="arrow-down" size="32" />
+          </view>
+        </block>
+      </ti-input>
+    </block>
+  </view>
+</ti-page>
+

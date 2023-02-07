@@ -1,0 +1,44 @@
+<scroll-view
+  class="page"
+  id="scroller"
+  scroll-y
+  bind:scroll="scrollHandle"
+  scroll-top="{{ scrollTop }}"
+  scroll-with-animation
+>
+  <view class="navigation-bar" style="height: {{ navigationBarHeight }}px;padding-top: {{ statusBarHeight }}px">Titian</view>
+  <view>
+    <image
+      class="root-bg"
+      src="https://cdn2.weimob.com/saas/@assets/saas-fe-retail-h5-stc/image/titian/root-bg.jpg"
+      mode="widthFix"
+    />
+  </view>
+
+  <view class="group" wx:for="{{ list }}" wx:for-item="group" wx:key="index">
+    <ti-cell-group
+      title-wrap-class="title-wrap"
+      title-class="group-title"
+      ext-class="group"
+      title="{{ group.groupName }}"
+      mode="card"
+    >
+      <ti-cell
+        wx:for="{{ group.child }}"
+        wx:for-item="item"
+        wx:key="index"
+        link="/pages{{ item.path }}/index"
+        title="{{ item.title }}"
+        label="{{ item.subTitle }}"
+        ext-class="cell {{ index === group.child.length - 1 ? 'cell-last' : '' }}"
+        title-class="cell-title"
+        label-class="cell-labal"
+        right-icon-size="{{ 24 }}"
+        divider="{{ false }}"
+      />
+    </ti-cell-group>
+  </view>
+  <ti-safe-area />
+  <ti-back-top bind:click="handleBackTopClick" show="{{ showBackTop }}" />
+</scroll-view>
+

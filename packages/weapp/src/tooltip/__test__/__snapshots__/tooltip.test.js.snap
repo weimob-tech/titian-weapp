@@ -1,0 +1,4657 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 2`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 3`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 4`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 5`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 6`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 7`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 8`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 9`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 10`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 11`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 12`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 13`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 14`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 15`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 16`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 17`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 18`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 19`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 20`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 21`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 22`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 23`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 24`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 25`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 26`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 27`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 28`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 29`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 30`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 31`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 32`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 33`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 34`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 35`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 36`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 37`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 38`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 39`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 40`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 41`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 42`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 43`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 44`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 45`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 46`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 47`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 48`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-mask"
+            catch:tap="close"
+            catch:touchstart="close"
+          />
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 49`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 50`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 51`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 52`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 53`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 54`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 55`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 56`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 57`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 58`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 59`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 60`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 61`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 62`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 63`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 64`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 65`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 66`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 67`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 68`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 69`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 70`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 71`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 72`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 73`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 74`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 75`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 76`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 77`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 78`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 79`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 80`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 81`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 82`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 83`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 84`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:0px;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 85`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 86`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 87`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 88`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 89`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 90`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限制十二个中文字每行文
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 91`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 92`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 93`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:0px"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 94`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 95`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;
+
+exports[`test component should render success 96`] = `
+<main>
+  <wx-view
+    id="tooltip"
+    style="margin-left:80vw;margin-top:99vh"
+  >
+    <main>
+      <wx-view
+        class="titian-tooltip ext-class"
+        style=""
+        bind:tap="open"
+        bind:touchstart="open"
+      >
+        每行文字限制十二
+        <wx-view
+          class="titian-tooltip-content titian-tooltip-content-visible ext-content-class"
+          style="top:0px;left:0px;border-top-left-radius:0"
+        >
+          <wx-view
+            class="titian-tooltip-arrow titian-tooltip-half titian-tooltip-placeholder"
+            style="top:1rpx;left:0"
+          />
+          <ti-svg-path-view
+            extClass="titian-tooltip-arrow titian-tooltip-arrow-up titian-tooltip-half"
+            id="svg-path-view"
+          >
+            <wx-view
+              class="titian-svg-path-view  ext-class"
+              style="top:1rpx;left:0;-webkit-mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\");mask-image: url(\\"data:image/svg+xml, %3Csvg viewBox='0 0 18 12' xmlns='http://www.w3.org/2000/svg'  %3E%3Cpath%20 d='M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12' /%3E%3C/svg%3E\\")"
+              bind:tap="onClick"
+            />
+          </ti-svg-path-view>
+          <wx-view
+            class="titian-tooltip-inner ext-inner-class"
+          >
+            
+        每行文字限
+      
+          </wx-view>
+        </wx-view>
+      </wx-view>
+    </main>
+  </wx-view>
+</main>
+`;

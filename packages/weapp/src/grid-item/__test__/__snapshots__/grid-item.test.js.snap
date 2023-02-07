@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should render success 1`] = `
+<main>
+  <wx-view
+    class="ext-class titian-grid-item"
+    style="width:25%"
+    bind:tap="onClick"
+  >
+    <wx-view
+      class="content-class titian-grid-item-content"
+      style="flex-direction: column"
+      bind:tap="onClick"
+    >
+      <wx-view />
+      <wx-view
+        class="text-class titian-grid-item-text"
+      />
+    </wx-view>
+  </wx-view>
+</main>
+`;

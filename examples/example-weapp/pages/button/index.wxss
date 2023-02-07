@@ -1,0 +1,9 @@
+.container {
+  overflow: visible;
+
+  border-radius: 0;
+
+  background-color: transparent;
+
+  text-align: center;
+}

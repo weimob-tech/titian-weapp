@@ -1,0 +1,24 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+<wxs src="./switch.wxs" module="style" />
+
+<view
+  class="{{ namespace.join('switch') }} {{ namespace.handle('switch', [ disabled ? 'disabled' : '' ]) }} ext-class"
+  bind:tap="{{ utils.click }}"
+  bind:touchstart="{{ utils.touchstart }}"
+  bind:touchmove="{{ utils.touchmove }}"
+  bind:touchend="{{ utils.touchend }}"
+  data-value="{{ value }}"
+  data-disabled="{{ disabled }}"
+  data-loading="{{ loading }}"
+  value="{{ curValue }}"
+  change:value="{{ utils.handleValue }}"
+  data-active-color="{{ activeColor }}"
+  data-color="{{ color }}"
+  style="{{ extStyle }};{{ style.handleBox(size) }}"
+>
+  <view class="{{ namespace.handle('switch', [ 'ball' ]) }}" style="{{ style.handleBall(size) }}">
+    <ti-loading wx:if="{{ loading }}" size="{{ (size / 10) * 5 }}" color="{{ activeColor }}" />
+  </view>
+</view>
+

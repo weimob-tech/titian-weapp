@@ -1,0 +1,36 @@
+var utils = require('../common/utils/wxs/convertStyles.wxs');
+var plainUtils = require('../common/utils/wxs/index.wxs');
+
+function completedStyles(data) {
+  var styles = {};
+
+  if (data.value) {
+    var toggleValue = Math.max(0, 100 - data.value);
+    styles.transform = 'translateX(-'.concat(toggleValue, '%)');
+  }
+
+  if (data.height) {
+    styles['height'] = data.height;
+  }
+
+  if (data.bgColor) {
+    styles['background-color'] = data.bgColor;
+  }
+
+  if (plainUtils.isPlainObject(data.gradientColor)) {
+    styles['background-image'] = 'linear-gradient(to right, '
+      .concat(data.gradientColor.from, ', ')
+      .concat(data.gradientColor.to, ')');
+    styles['color'] = data.gradientColor.to;
+  }
+
+  if (data.color) {
+    styles['color'] = data.color;
+  }
+
+  return utils.convertStyles(styles);
+}
+
+module.exports = {
+  completedStyles: completedStyles
+};

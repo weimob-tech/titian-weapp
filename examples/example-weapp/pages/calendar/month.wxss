@@ -1,0 +1,59 @@
+/* stylelint-disable-next-line selector-type-no-unknown */
+page {
+  /* --calendar-date-text-select-color: #fff;
+  --calendar-title-color: #333;
+  --calendar-date-text-color: #999; */
+}
+
+.btn-cal::after {
+  content: none;
+}
+
+.btn-cal {
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  margin: 10rpx;
+  padding: 0 15px;
+  overflow: hidden;
+
+  transition: opacity 0.2s;
+
+  border: 1px solid #ebedf0;
+  border-radius: 8px;
+
+  background: #fff;
+
+  color: #323233;
+  font-size: 14px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  appearance: none;
+  text-size-adjust: 100%;
+}
+
+.btn-primary {
+  border: none;
+
+  background: #07c160;
+
+  color: #fff;
+}
+
+.tiled-calendar {
+  height: 900rpx;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  margin: 0 10rpx;
+}

@@ -1,0 +1,53 @@
+'use strict';
+var suffix = require('../common/utils/wxs/suffix.wxs');
+var namespace = require('../common/utils/wxs/namespace.wxs');
+
+function completedStyles(data) {
+  var style = [];
+  if (data.extStyle) {
+    style.push(data.extStyle);
+  }
+  if (data.rotate) {
+    style.push('transform:rotate(' + data.rotate + ')');
+  }
+  if (data.size) {
+    if (data.size.constructor === 'Number') {
+      style.push('font-size:' + data.size + 'rpx');
+    } else if (data.size.constructor === 'String') {
+      style.push('font-size:' + suffix.addUnit(data.size));
+    }
+  }
+  if (data.iconStyle && ['lovely', 'popular'].indexOf(data.iconStyle) !== -1) {
+    style.push('--icon-family:' + namespace.handle('icon', [data.iconStyle]));
+  }
+  if (data.color) {
+    style.push('color:' + data.color);
+  }
+  return style.join(';');
+}
+
+function completedClasses(data) {
+  var root = namespace.join('icon-base');
+  var fontFamily = '';
+
+  var className = [root];
+  if (data.prefix) {
+    fontFamily = data.prefix;
+  } else {
+    fontFamily = namespace.join('icon');
+  }
+  className.push(fontFamily);
+
+  if (data.name) {
+    className.push(fontFamily + data.hyphen + data.name);
+  }
+
+  if (data.spin) {
+    className.push(root + '-spin');
+  }
+  return className.join(' ');
+}
+module.exports = {
+  completedStyles: completedStyles,
+  completedClasses: completedClasses
+};

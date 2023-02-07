@@ -1,0 +1,23 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <view style="width:534rpx;" wx:if="{{ attrs.mode === 'line' }}">
+    <ti-progress
+      data-attrs="{{ attrs.mode }}"
+      value="{{ attrs.value }}"
+      color="{{ attrs.color }}"
+      show-progress="{{ attrs.showProgress }}"
+      stroke-width="{{ attrs.strokeWidth }}"
+    />
+  </view>
+  <view style="width:534rpx;display:flex;justify-content:center;align-items: center;" wx:else>
+    <block wx:if="{{ loaded }}">
+      <ti-circle-progress
+        data-attrs="{{ attrs.mode }}"
+        value="{{ attrs.value }}"
+        color="{{ attrs.color }}"
+        show-progress="{{ attrs.showProgress }}"
+        stroke-width="{{ attrs.strokeWidth }}"
+      />
+    </block>
+  </view>
+</ti-page>
+

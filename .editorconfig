@@ -1,0 +1,10 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf # 换行符  cr，crlf，lf，unset
+trim_trailing_whitespace = true # 去除多余的空格
+insert_final_newline = true # 在尾部插入一行
+indent_style = space # 缩进方式 tab，space，unset
+indent_size = 2 # 缩进大小
+

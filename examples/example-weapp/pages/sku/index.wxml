@@ -1,0 +1,16 @@
+<ti-page options="{{ options }}" bind:change="onChange">
+  <ti-button bind:click="onTap">展示sku</ti-button>
+</ti-page>
+<ti-popup visible="{{ visible }}" position="bottom" bind:close="onClose">
+  <view class="sku-wrapper">
+    <ti-sku-selector
+      skus="{{ skus }}"
+      specs="{{ specs }}"
+      value="{{ attrs.value }}"
+      option-ids="{{ attrs.optionIds }}"
+      bind:ti-change="onTiChange"
+      bind:ti-option-change="onTiOptionChange"
+    />
+  </view>
+</ti-popup>
+

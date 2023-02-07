@@ -1,0 +1,10 @@
+var REGEXP = getRegExp('{|}|"', 'g'); // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+var toTypeString = function toTypeString(val) {
+  return val && val.constructor;
+};
+
+module.exports = {
+  toTypeString: toTypeString,
+  REGEXP: REGEXP
+};

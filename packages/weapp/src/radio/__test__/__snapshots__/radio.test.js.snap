@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test component should checked control component success 1`] = `
+<main>
+  <main
+    id="radio"
+  >
+    <wx-view
+      class="ext-class titian-radio-horizontal titian-radio"
+    >
+      <wx-view
+        class="titian-radio-icon-wrap"
+        style="--base-radius-size:999px; height: 32rpx"
+        bind:tap="onChange"
+      >
+        <ti-icon
+          extClass="icon-class titian-radio-icon-zoom-out titian-radio-icon-animation titian-radio-icon"
+        >
+          <wx-view
+            class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
+            style="line-height:32rpx;height:32rpx;width:32rpx;font-size:32rpx"
+            bind:tap="onClick"
+          />
+        </ti-icon>
+      </wx-view>
+      <wx-view
+        class="titian-radio-label"
+        bind:tap="onClick"
+      >
+        a
+      </wx-view>
+    </wx-view>
+  </main>
+</main>
+`;
+
+exports[`test component should defaultValue setting success 1`] = `
+<main>
+  <main
+    id="radio"
+    bind:change="onChange"
+  >
+    <wx-view
+      class="ext-class titian-radio-horizontal titian-radio"
+    >
+      <wx-view
+        class="titian-radio-icon-wrap"
+        style="--base-radius-size:999px; height: 32rpx"
+        bind:tap="onChange"
+      >
+        <ti-icon
+          extClass="icon-class titian-radio-icon-zoom-out titian-radio-icon-animation titian-radio-icon"
+        >
+          <wx-view
+            class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
+            style="line-height:32rpx;height:32rpx;width:32rpx;font-size:32rpx"
+            bind:tap="onClick"
+          />
+        </ti-icon>
+      </wx-view>
+      <wx-view
+        class="titian-radio-label"
+        bind:tap="onClick"
+      >
+        a
+      </wx-view>
+    </wx-view>
+  </main>
+</main>
+`;
+
+exports[`test component should defaultValue setting success 2`] = `
+<main>
+  <main
+    id="radio"
+    bind:change="onChange"
+  >
+    <wx-view
+      class="ext-class titian-radio-checked titian-radio-horizontal titian-radio"
+    >
+      <wx-view
+        class="titian-radio-icon-wrap-checked titian-radio-icon-wrap"
+        style="--base-radius-size:999px; height: 32rpx"
+        bind:tap="onChange"
+      >
+        <ti-icon
+          extClass="icon-class titian-radio-icon-zoom-in titian-radio-icon-checked titian-radio-icon-animation titian-radio-icon"
+        >
+          <wx-view
+            class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
+            style="line-height:32rpx;height:32rpx;width:32rpx;font-size:32rpx"
+            bind:tap="onClick"
+          />
+        </ti-icon>
+      </wx-view>
+      <wx-view
+        class="titian-radio-label"
+        bind:tap="onClick"
+      >
+        a
+      </wx-view>
+    </wx-view>
+  </main>
+</main>
+`;
