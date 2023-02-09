@@ -11,7 +11,8 @@ import getCurYear, {
   DateTimePickerEnum,
   DateTimePickerHelper,
   getOrderPickerValue,
-  getOrderValue
+  getOrderValue,
+  DateTimeTypeMapping
 } from './utils';
 
 const currentYear = getCurYear();
@@ -191,24 +192,19 @@ BasicComponent<
         this.helper.setPickValue();
         this.helper.setScope();
         this.helper.setPickColumns();
-        const update = {
-          ...(colAlias === DateTimePickerColumnEnum.YEAR
-            ? {
-                monthOption: this.helper.monthOption,
-                monthValue: this.helper.monthValue
-              }
-            : {}),
-          dayOption: this.helper.dayOption,
-          dayValue: this.helper.dayValue,
-          ...(type === DateTimePickerEnum.DATETIME
-            ? {
-                hourOption: this.helper.hourOption,
-                hourValue: this.helper.hourValue,
-                minuteOption: this.helper.minuteOption,
-                minuteValue: this.helper.minuteValue
-              }
-            : {})
-        };
+        let list = DateTimeTypeMapping[type as DateTimePickerEnum];
+        const start = list.findIndex((item: any) => item === colAlias);
+        if (start === list.length - 1) {
+          return;
+        }
+        list = list.slice(start + 1, list.length);
+        const update = list.reduce((target: { [x: string]: any }, item: any) => {
+          const optionKey = `${item}Option`;
+          const valueKey = `${item}Value`;
+          target[optionKey] = this.helper[optionKey as keyof DateTimePickerHelper];
+          target[valueKey] = this.helper[valueKey as keyof DateTimePickerHelper];
+          return target;
+        }, {});
         this.max = Object.keys(update).length / 2;
         this.setData(update);
         return;

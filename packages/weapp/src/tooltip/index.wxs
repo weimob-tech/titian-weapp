@@ -29,17 +29,10 @@ function completedContentStyle(data) {
 
 function completedArrowStyle(data) {
   var arrowStyle = {};
-  if (data.down) {
-    arrowStyle.bottom = '1rpx';
-  } else {
-    arrowStyle.top = '1rpx';
-  }
-  if (data.isLeft || data.isRight) {
-    if (data.isLeft) {
-      arrowStyle.left = 0;
-    } else {
-      arrowStyle.right = 0;
-    }
+  if (data.isLeft) {
+    arrowStyle.left = 0;
+  } else if (data.isRight) {
+    arrowStyle.right = 0;
   } else {
     arrowStyle.left = data.arrayLeft + 'px';
   }

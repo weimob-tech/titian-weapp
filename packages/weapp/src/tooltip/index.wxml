@@ -2,41 +2,32 @@
 <wxs src="./index.wxs" module="utils" />
 
 <view
-  class="{{ namespace.join('tooltip') }} ext-class"
-  bind:tap="open"
-  bind:touchstart="open"
-  style="{{ extStyle }}"
+ class="{{ namespace.join('tooltip') }} ext-class"
+ bind:tap="open"
+ bind:touchstart="open"
+ style="{{ extStyle }}"
 >
-  <slot />
-  <view
-    class="{{ namespace.handle('tooltip', [ 'content', vis ? 'content-visible' : '' ]) }} ext-content-class"
-    style="{{ utils.completedContentStyle({ top, left, isLeft, isRight, down }) }}"
-  >
-    <view
-      class="{{ namespace.handle('tooltip', [ 'arrow', isLeft || isRight ? 'half' : 'all', 'placeholder' ]) }}"
-      style="{{ utils.completedArrowStyle({ down, arrayLeft, isLeft, isRight }) }}"
-    />
-    <ti-svg-path-view
-      ext-class="{{ namespace.handle('tooltip', [ 'arrow', down ? 'arrow-down' : 'arrow-up', isLeft || isRight ? 'half' : 'all' ]) }}"
-      ext-style="{{ utils.completedArrowStyle({ down, arrayLeft, isLeft, isRight }) }}"
-      view-box="{{ isLeft || isRight ? '0 0 18 12' : '0 0 36 12' }}"
-      paths="{{[ { d: clipPath } ]}}"
-      use-mask
-      id="svg-path-view"
-      fills="{{ undefined }}"
-    />
-    <view
-      wx:if="{{ closeOnClick }}"
-      class="{{ namespace.handle('tooltip', [ 'mask' ]) }}"
-      catch:tap="close"
-      catch:touchstart="close"
-    />
-    <view class="{{ namespace.handle('tooltip', [ 'inner' ]) }} ext-inner-class">
-      <block wx:if="{{ content }}">
-        {{ content }}
-      </block>
-      <slot wx:else name="content" />
-    </view>
-  </view>
+	<slot/>
+	<view class="{{ namespace.handle('tooltip', [ 'content', vis ? 'content-visible' : '' ]) }} ext-content-class" style="{{ utils.completedContentStyle({ top, left, isLeft, isRight, down }) }}">
+		<view class="{{ namespace.handle('tooltip', [ 'arrow', 'placeholder' ]) }}" style="{{ utils.completedArrowStyle({ down, arrayLeft, isLeft, isRight }) }}" />
+		<ti-icon
+		 ext-class="{{ namespace.handle('tooltip', [ 'arrow', down ? 'arrow-down' : 'arrow-up' ]) }}"
+		 ext-style="{{ utils.completedArrowStyle({ down, arrayLeft, isLeft, isRight }) }}"
+		 size="{{ 12 }}"
+		 name="{{ iconName }}"
+		/>
+		<view
+		 wx:if="{{ closeOnClick }}"
+		 class="{{ namespace.handle('tooltip', [ 'mask' ]) }}"
+		 catch:tap="close"
+		 catch:touchstart="close"
+		/>
+		<view class="{{ namespace.handle('tooltip', [ 'inner' ]) }} ext-inner-class">
+			<block wx:if="{{ content }}">
+				{{ content }}
+			</block>
+			<slot wx:else name="content" />
+		</view>
+	</view>
 </view>
 

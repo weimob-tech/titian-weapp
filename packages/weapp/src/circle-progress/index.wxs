@@ -10,7 +10,7 @@ function convertCircleProgressStyle(data) {
     style.height = data.size + 'rpx';
   }
   if (data.font) {
-    style.font = font;
+    style.font = data.font;
   }
   return stylesUtils.convertStyles(style);
 }

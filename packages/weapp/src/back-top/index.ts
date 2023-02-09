@@ -94,7 +94,7 @@ BasicComponent<IAnyObject, BackTopProps, BackTopMethods>({
     attached() {
       const pages = getCurrentPages();
       const page = pages[pages.length - 1];
-      const pageScroll = page.onPageScroll;
+      const pageScroll = page?.onPageScroll?.bind(page);
 
       page.onPageScroll = (e) => {
         if (e) {

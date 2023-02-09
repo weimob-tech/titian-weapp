@@ -129,7 +129,7 @@ BasicComponent({
       const { type } = e.currentTarget.dataset;
       let newValue = +this.data.value;
       newValue = type === 'plus' ? +this.data.value + this.data.step : +this.data.value - this.data.step;
-
+      newValue = parseFloat(newValue.toFixed(10));
       this.onChange(newValue, type);
     },
     inputChange(event: WechatMiniprogram.InputFocus) {
