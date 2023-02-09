@@ -51,7 +51,7 @@
   &-title {
     max-width: var(--input-title-max-width, 140px);
 
-    color: @neutral-color-1;
+    color: var(--input-title-color, @neutral-color-1);
   }
 
   &-box {
@@ -70,6 +70,7 @@
 
     background: transparent;
 
+    color: var(--input-font-color, @neutral-color-1);
     font-size: inherit;
 
     &&-error {

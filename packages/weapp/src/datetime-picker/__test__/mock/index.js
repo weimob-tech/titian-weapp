@@ -5,7 +5,8 @@ function getCurYear(date) {
   return new Date().getFullYear();
 }
 const currentYear = getCurYear();
-const lastYear = getCurYear('2021-01-01');
+
+const lastYear = getCurYear() - 1;
 
 const beforeTenDate = new Date(currentYear - 10, 0, 1).getTime();
 const afterTenDate = new Date(currentYear + 10, 0, 1).getTime();
@@ -14,6 +15,7 @@ const afterTwentyDate = new Date(currentYear + 20, 0, 1).getTime();
 
 const currentDate = new Date(currentYear, 0, 1).getTime();
 const lastDate = new Date(lastYear, 0, 1).getTime();
+
 function formatter(type, value) {
   if (type === 'year') {
     return `${value}年`;
@@ -30,9 +32,9 @@ function formatter(type, value) {
   return `${value}分`;
 }
 function filter(type, options) {
-  if (type === 'year') {
-    return options.filter((opt) => opt.value % 2 === 0);
-  }
+  // if (type === 'year') {
+  //   return options.filter((opt) => opt.value % 2 === 0);
+  // }
   return options;
 }
 const data = [
@@ -69,7 +71,7 @@ const data = [
   },
   {
     label: '年月日-极简 - filter',
-    props: { filter, value: lastDate, minDate: beforeTenDate },
+    props: { filter, value: 2013, minDate: beforeTenDate },
     expect: [{ number: 1, data: { type: 'date', value: beforeTenDate } }]
   },
   {

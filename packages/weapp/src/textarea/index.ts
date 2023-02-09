@@ -62,7 +62,10 @@ BasicComponent<
   },
   observers: {
     value(value) {
-      const count = value ? value.length : 0;
+      let count = 0;
+      if (value) {
+        count = this.data.maxlength > 0 ? Math.min(value.length, this.data.maxlength) : value.length;
+      }
       this.setData({ count });
     }
   },
@@ -71,7 +74,9 @@ BasicComponent<
   },
   methods: {
     onInput(event: WechatMiniprogram.TextareaInput) {
-      this.setData({ count: event.detail.value.length });
+      const len = event.detail.value.length;
+      const count = this.data.maxlength > 0 ? Math.min(len, this.data.maxlength) : len;
+      this.setData({ count });
       this.triggerEvent('input', event.detail);
     },
     onFocus(event: WechatMiniprogram.TextareaFocus) {

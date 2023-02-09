@@ -1,15 +1,9 @@
 import BasicComponent from '../common/basic/BasicComponent';
 
-enum ArrowPathEnum {
-  DownLeft = `M 0 0  0 12 L 8 4 C 10.5 2 15.5 0 18 0`,
-
-  DownRight = `M 0 0 C 2.5 0 7.5 2 10 4 L 18 12 18 0`,
-  DownCenter = `M 0 0  C 2.5 0  7.5  2 10 4 L 18 12 26 4 C 28.5 2  33.5 0  36 0`,
-
-  UpLeft = `M 0 12 0 0 L 8 8 C 10.5 10 15.5 12 18 12`,
-
-  UpRight = `M 0 12 C 2.5 12 7.5 10 10 8 L 18 0  18 12`,
-  UpCenter = `M 0 12 C 2.5 12 7.5 10 10 8 L 18 0  26 8 C 28.5 10 33.5 12 36 12`
+enum ArrowIconNameEnum {
+  Left = 'tooltipsarrow-left',
+  Right = 'tooltipsarrow-right',
+  Center = 'tooltipsarrow-mid'
 }
 
 BasicComponent({
@@ -18,7 +12,10 @@ BasicComponent({
   },
   externalClasses: ['ext-content-class', 'ext-inner-class'],
   properties: {
-    visible: Boolean,
+    visible: {
+      type: null,
+      value: null
+    },
     content: String,
     direction: {
       type: String,
@@ -37,26 +34,25 @@ BasicComponent({
     arrayLeft: 0,
     down: true,
     vis: false,
-    clipPath: '',
+    iconName: '',
     isLeft: false,
     isRight: false
   },
   methods: {
     open() {
-      if (this.data.closeOnClick) {
-        this.setData({
-          visible: true
+      if (typeof this.data.visible !== 'boolean') {
+        this.calculate(() => {
+          this.setData({ vis: true });
         });
       }
     },
     close() {
-      if (this.data.closeOnClick) {
-        this.setData({
-          visible: false
-        });
+      if (typeof this.data.visible !== 'boolean') {
+        this.setData({ vis: false });
+      } else if (this.data.closeOnClick && this.data.visible) {
+        this.triggerEvent('close');
       }
     },
-    noop() {},
     // eslint-disable-next-line class-methods-use-this
     getLocation(
       hostRect: WechatMiniprogram.BoundingClientRectCallbackResult,
@@ -126,13 +122,13 @@ BasicComponent({
           }
           const { isLeft, isRight, left } = this.getLocation(hostRect, arrowRect, contentRect, sysWidth);
 
-          let clipPath: string;
+          let iconName: string;
           let arrayLeft = 0;
           if (isLeft || isRight) {
             if (isLeft) {
               arrayLeft = (arrowRect.width / 2) * -1;
             } else {
-              arrayLeft = contentRect.width / 2 - arrowRect.width / 2;
+              arrayLeft = contentRect.width - arrowRect.width / 2;
             }
           } else {
             arrayLeft = hostRect.left + hostRect.width / 2 - left - arrowRect.width / 2;
@@ -141,39 +137,32 @@ BasicComponent({
           let down = direction === 'top';
           if (direction === 'top') {
             if (contentRect.height + arrowRect.height > hostRect.top) {
-              top = hostRect.height + arrowRect.height;
+              top = hostRect.top + hostRect.height + arrowRect.height;
               down = false;
             } else {
-              top = 0 - contentRect.height - arrowRect.height;
+              top = hostRect.top - contentRect.height - arrowRect.height;
             }
           } else if (sysHeight - hostRect.bottom < contentRect.height + arrowRect.height) {
-            top = 0 - contentRect.height - arrowRect.height;
+            top = hostRect.top - contentRect.height - arrowRect.height;
             down = true;
           } else {
-            top = hostRect.height + arrowRect.height;
+            top = hostRect.top + hostRect.height + arrowRect.height;
           }
-          if (down) {
-            if (isLeft) {
-              clipPath = ArrowPathEnum.DownLeft; // `M 18 0  18 12 L 26 4 C 28.5 2 33.5 0 36 0`;
-            } else if (isRight) {
-              clipPath = ArrowPathEnum.DownRight; // `M 0 0 C 2.5 0 7.5 2 10 4 L 18 12 18 0`;
-            } else {
-              clipPath = ArrowPathEnum.DownCenter; // `M 0 0  C 2.5 0  7.5  2 10 4 L 18 12 26 4 C 28.5 2  33.5 0  36 0`;
-            }
-          } else if (isLeft) {
-            clipPath = ArrowPathEnum.UpLeft; // `M 18 12 18 0 L 26 8 C 28.5 10 33.5 12 36 12`;
+          if (isLeft) {
+            iconName = ArrowIconNameEnum.Left;
           } else if (isRight) {
-            clipPath = ArrowPathEnum.UpRight; // `M 0 12 C 2.5 12 7.5 10 10 8 L 18 0  18 12`;
+            iconName = ArrowIconNameEnum.Right;
           } else {
-            clipPath = ArrowPathEnum.UpCenter; // `M 0 12 C 2.5 12 7.5 10 10 8 L 18 0  26 8 C 28.5 10 33.5 12 36 12`;
+            iconName = ArrowIconNameEnum.Center;
           }
+
           this.setData(
             {
               down,
               top,
-              left: arrowRect.width / 2 - arrayLeft,
+              left,
               arrayLeft,
-              clipPath,
+              iconName,
               isLeft,
               isRight
             },
@@ -185,6 +174,20 @@ BasicComponent({
   lifetimes: {
     ready() {
       this.calculate();
+    },
+    attached() {
+      const pages = getCurrentPages();
+      const page = pages[pages.length - 1];
+      const pageScroll = page?.onPageScroll?.bind(page);
+
+      page.onPageScroll = (e) => {
+        if (e) {
+          this.close();
+        }
+        if (pageScroll) {
+          pageScroll(e);
+        }
+      };
     }
   },
   observers: {

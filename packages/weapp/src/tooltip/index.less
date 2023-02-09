@@ -5,13 +5,11 @@
 
 .@{tooltip} {
   display: inline-flex;
-  position: relative;
 
   &-content {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     z-index: @tooltip-content-z-index;
-    width: max-content;
     max-width: @tooltip-content-max-width;
 
     border-radius: @tooltip-content-radius;
@@ -28,34 +26,27 @@
   }
 
   &-arrow {
-    position: absolute;
+    position: absolute !important;
     z-index: 1;
+    width: 36px !important;
     height: 12px !important;
     overflow: hidden;
 
-    background: @tooltip-arrow-content-bg-color;
+    color: @tooltip-arrow-content-bg-color !important;
 
     pointer-events: none;
   }
 
-  &-all {
-    width: 36px !important;
-  }
-
-  &-half {
-    width: 18px !important;
-  }
-
   &-arrow-up {
-    top: 0;
+    top: 1px;
 
     transform: translate3d(0, -100%, 0);
   }
 
   &-arrow-down {
-    bottom: 0;
+    bottom: -20px;
 
-    transform: translate3d(0, 100%, 0);
+    transform: rotate(180deg) translate3d(0, 100%, 0);
   }
 
   &-inner {

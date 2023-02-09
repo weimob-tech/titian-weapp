@@ -44,8 +44,8 @@ BasicComponent({
     }
   },
   methods: {
-    change(value: boolean) {
-      this.triggerEvent('change', value);
+    change(e: { value: boolean }) {
+      this.triggerEvent('change', e.value);
     }
   }
 });

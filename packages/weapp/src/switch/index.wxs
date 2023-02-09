@@ -12,7 +12,7 @@ function click(event, ownerInstance) {
   var disabled = dataSet.disabled;
   var loading = dataSet.loading;
   if (typeof val === 'boolean') {
-    ownerInstance.callMethod('change', !val);
+    ownerInstance.callMethod('change', { value: !val });
     return;
   }
   state.disabled = disabled || false;
@@ -23,7 +23,7 @@ function click(event, ownerInstance) {
   }
   setSize(state, event.instance, ownerInstance);
   setStatus(state, event.instance, !state.status);
-  ownerInstance.callMethod('change', state.status);
+  ownerInstance.callMethod('change', { value: state.status });
 }
 
 function touchstart(event, ownerInstance) {
@@ -68,7 +68,7 @@ function touchmove(event, ownerInstance) {
       state.middle = false;
       state.isMove = false;
       if (state.middle !== state.status) {
-        ownerInstance.callMethod('change', state.middle);
+        ownerInstance.callMethod('change', { value: state.middle });
       }
       if (!state.controlled) {
         setStatus(state, event.instance, state.middle);
@@ -80,7 +80,7 @@ function touchmove(event, ownerInstance) {
     state.middle = true;
     state.isMove = false;
     if (state.middle !== state.status) {
-      ownerInstance.callMethod('change', state.middle);
+      ownerInstance.callMethod('change', { value: state.middle });
     }
     if (!state.controlled) {
       setStatus(state, event.instance, state.middle);
