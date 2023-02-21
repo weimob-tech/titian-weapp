@@ -22,6 +22,12 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
+    "@pnpm/find-workspace-packages": "^4.0.5",
+    "@pnpm/logger": "^4.0.0",
+    "find-workspace-root": "^1.0.1",
+    "find-yarn-workspace-root": "^2.0.0",
+    "sort-package-json": "^1.57.0",
+    "tiny-glob": "^0.2.9",
     "@deanc/esbuild-plugin-postcss": "^1.0.2",
     "@swc/core": "^1.2.130",
     "@titian-design/cli": "^0.1.0",
