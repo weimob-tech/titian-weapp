@@ -5,7 +5,7 @@ exports[`test component basic 1`] = `
   <wx-view>
     <main>
       <wx-view
-        class="titian-row-flex titian-row"
+        class="ext-class titian-row-flex titian-row"
         style="margin-left: -0rpx; margin-right: -0rpx;"
       >
         <main>
