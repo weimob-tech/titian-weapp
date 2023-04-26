@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/extensions
+import { $tiDialog } from '../../dist/index';
 import { mergeOptionIntoAttrs } from '../../util/index.js';
 
 // eslint-disable-next-line no-undef
-import { $tiDialog } from '@titian-design/weapp/index';
 
 Page({
   data: {

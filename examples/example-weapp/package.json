@@ -9,8 +9,5 @@
   "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@titian-design/weapp": "workspace:0.1.1"
   }
 }
