@@ -49,3 +49,5 @@ website
 *.7z
 packages/weapp/dist-titan/*
 packages/weapp/esm-titan/*
+
+examples/example-weapp/dist

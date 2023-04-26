@@ -3,7 +3,6 @@ const { wxTool } = require('./tasks/watchWxOutput');
 // const { webhook } = require('./tasks/webhook');
 
 function watch(hook) {
-  
   // TODO example 自动构建
   // hook.afterRun.tap('build', wxTool.packNpm);
   // hook.watch.tap('packNpmWatch', wxTool.packNpmDebounce);
@@ -21,7 +20,7 @@ module.exports = (config) => ({
   version: '0.1.0',
   entryPath: path.resolve(__dirname, 'packages', 'weapp', 'src'),
   output: {
-    path: path.join(__dirname, 'packages', 'weapp', 'esm')
+    path: path.join(__dirname, 'examples', 'example-weapp', 'dist')
   },
   tsconfig: './tsconfig.json',
   typesDir: path.join(__dirname, 'packages', 'weapp', 'types'),
