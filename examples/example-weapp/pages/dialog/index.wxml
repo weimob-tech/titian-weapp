@@ -1,10 +1,30 @@
 <ti-page options="{{ options }}" bind:change="onChange">
-  <ti-button custom-style="width: 291rpx" bind:click="onClick">
-    点击演示
-  </ti-button>
+  <view class="wrapper">
+    <ti-button bind:click="onClickForAPI">
+      点击演示 - API 式
+    </ti-button>
+    <ti-button bind:click="onClickForDom">
+      点击演示 - 声明式
+    </ti-button>
+  </view>
+
 </ti-page>
 
-<ti-dialog id="titian-dialog" bind:close="onClose">
+<ti-dialog id="titian-dialog" bind:close="onClose1" bind:confirm="onConfirm1" bind:cancel="onCancel1">
   <view class="content">- 内容 Content 插槽- </view>
 </ti-dialog>
 
+<ti-dialog
+  id="titian-dialog2"
+  visible="{{ visible }}"
+  content="{{ attr.content }}"
+  has-cancel-button="{{ attr.hasCancelButton }}"
+  is-text-button="{{ attr.isTextButton }}"
+  title="{{ attr.title }}"
+  bind:close="onClose1"
+  bind:confirm="onConfirm1"
+  bind:cancel="onCancel1"
+>
+  <view slot="before-dialog">前缀-</view>
+  <view class="content">- 内容 Content 插槽- </view>
+</ti-dialog>

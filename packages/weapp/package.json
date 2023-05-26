@@ -1,12 +1,7 @@
 {
   "name": "@titian-design/weapp",
   "version": "0.1.1",
-  "description": "Titian Weapp mini-program UI Component",
-  "keywords": [
-    "titian",
-    "ui library",
-    "miniprogram"
-  ],
+  "description": "wechat mini program ui component",
   "homepage": "",
   "repository": {
     "type": "git",
@@ -17,6 +12,7 @@
   "types": "types/**/*.d.ts",
   "files": [
     "esm",
+    "dist-titan",
     "types",
     "README.md"
   ],

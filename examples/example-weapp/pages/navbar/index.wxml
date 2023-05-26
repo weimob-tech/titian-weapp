@@ -1,0 +1,42 @@
+<ti-page options="{{ options }}" bind:change="onChange" center="{{ false }}">
+  <scroll-view
+    id="scroller"
+    scroll-x="false"
+    scroll-y
+    style="height: 900rpx"
+    bind:scrolltoupper="bindscrolltoupper"
+  >
+    <ti-navbar
+      background="{{ attrs.color }}"
+      id="titian-navbar"
+      type="{{ attrs.type }}"
+      left-icons="{{ attrs.icons }}"
+      bind:click-icon="clickIcon"
+      bind:back="back"
+      title="{{ attrs.title }}"
+      subtitle="{{ attrs.subtitle }}"
+      font-color="{{ attrs.titleColor }}"
+      frosted-glass="{{ attrs.frostedGlass }}"
+      use-back-button="{{ attrs.useBackButton }}"
+      use-home-button="{{ attrs.useHomeButton }}"
+      use-placeholder="{{ attrs.usePlaceholder }}"
+      home-path="/titian-pages/root"
+      loading="{{ attrs.loading }}"
+    >
+      <view wx:if="{{ attrs.slotName === 1 }}" slot="title">
+        <ti-tabs tabs="{{ ['全部', '热销'] }}" ext-style="width: 160px;--tabs-background-color: transparent" />
+      </view>
+      <view wx:if="{{ attrs.slotName === 2 }}" slot="prefix">
+        城市
+        <ti-icon name="arrow-down" />
+      </view>
+    </ti-navbar>
+    <image
+      class="image"
+      style="width:100%; height: 760rpx;"
+      src="https://image-c-dev.weimobwmc.com/qa-On6X/8b97cd488593474ba4a8ccaa3c1a493f.png"
+    />
+    <view style="height: 200vh" />
+
+  </scroll-view>
+</ti-page>

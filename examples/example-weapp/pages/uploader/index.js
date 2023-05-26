@@ -66,8 +66,8 @@ Page({
         value: 'small',
         desc: '规格',
         list: [
-          { value: 'small', label: 'Medium' },
-          { value: 'large', label: 'Big' }
+          { value: 'small', label: 'small' },
+          { value: 'large', label: 'large' }
         ]
       },
       {

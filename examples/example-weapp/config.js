@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     groupName: '全局组件',
     child: [
@@ -121,6 +121,11 @@ export default [
         path: '/calendar',
         title: '日历',
         subTitle: 'Calendar'
+      },
+      {
+        path: '/cascade',
+        title: '级联组件',
+        subTitle: 'Cascade'
       }
     ]
   },
@@ -147,11 +152,6 @@ export default [
         title: '步骤条',
         subTitle: 'Steps'
       },
-      // {
-      //   path: '/price',
-      //   title: '价格',
-      //   subTitle: 'Price'
-      // },
       {
         path: '/badge',
         title: '徽标',
@@ -162,7 +162,11 @@ export default [
         title: '通告栏',
         subTitle: 'NoticeBar'
       },
-      { path: '/preview', title: '图片预览', subTitle: 'Preview' }
+      {
+        path: '/preview',
+        title: '图片预览',
+        subTitle: 'Preview'
+      }
     ]
   },
   {
@@ -249,10 +253,25 @@ export default [
         subTitle: 'Tabbar'
       },
       {
-        path: '/cascade',
-        title: '级联组件',
-        subTitle: 'Cascade'
+        path: '/navbar',
+        title: '导航栏',
+        subTitle: 'Navbar'
       }
     ]
   },
+  {
+    groupName: '业务组件',
+    child: [
+      {
+        path: '/sku',
+        title: '商品规格/数量',
+        subTitle: 'SKU'
+      },
+      {
+        path: '/price',
+        title: '价格',
+        subTitle: 'Price'
+      }
+    ]
+  }
 ];

@@ -9,7 +9,8 @@
     "Component": true,
     "Behavior": true,
     "wx": true,
-    "getCurrentPages": true
+    "getCurrentPages": true,
+    "__TITAN_CHANNEL__": true
   },
   "rules": {
     // 关闭函数返回指定类型

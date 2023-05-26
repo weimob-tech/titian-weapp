@@ -226,7 +226,15 @@ export type CellMethods = {
 
 BasicComponent<Record<string, never>, CellProps, CellMethods>({
   behaviors: [link],
-  externalClasses: ['hover-class', 'title-class', 'label-class', 'desc-class', 'desc-content-class', 'sub-desc-class'],
+  externalClasses: [
+    'hover-class',
+    'title-class',
+    'title-wrap-class',
+    'label-class',
+    'desc-class',
+    'desc-content-class',
+    'sub-desc-class'
+  ],
   properties: {
     title: String,
     label: String,

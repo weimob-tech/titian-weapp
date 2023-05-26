@@ -196,7 +196,7 @@ describe('test component', () => {
       file: {
         ...changeCallbackJpgFile,
         path: chooseMediaImage.tempFiles[0].tempFilePath,
-        status: 'cacal'
+        status: 'cancel'
       },
       uploading: false,
       fileList: []

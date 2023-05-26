@@ -25,6 +25,8 @@
   white-space: nowrap;
 
   user-select: none;
+  appearance: none;
+  text-size-adjust: 100%;
 
   &::after {
     content: none;
@@ -194,10 +196,5 @@
     justify-content: center;
 
     line-height: 1;
-  }
-
-  // 兼容 style:v2
-  &:not([size='mini']) {
-    width: auto;
   }
 }

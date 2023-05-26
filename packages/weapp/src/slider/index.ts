@@ -160,7 +160,7 @@ BasicComponent({
     },
     onTapSlider(event: WechatMiniprogram.TouchEvent) {
       const { _railPosition, _railSize, isRangeValue, thumbPercent1, thumbPercent2 } = this.data;
-      const { pageX } = event.touches[0];
+      const pageX = event.detail.x || event.detail.pageX;
       const deltaX = pageX - _railPosition[0];
 
       let thumbPercent = Math.round((deltaX / _railSize[0]) * 10000) / 100;

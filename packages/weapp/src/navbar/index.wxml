@@ -1,0 +1,58 @@
+<wxs src="./index.wxs" module="utils" />
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view
+  class="ext-class {{ namespace.join('navbar') }}"
+  style="{{ utils.setNavbarStyle(background, navbarPlaceholderHeight, usePlaceholder, type, opacity, fontColor, frostedGlass, extStyle) }}"
+>
+  <view class="{{ namespace.join('navbar-main') }}" style="{{ utils.setNavbarTop(top) }}">
+    <view style="height: {{ statusBarHeight }}px;" />
+    <view
+      class="{{ namespace.join('navbar-group') }}"
+      style="--navbar-padding-v: {{ (subtitle || subtitleHeight) ? gap : 0 }}px;min-height: 44px;"
+    >
+      <view class="{{ namespace.join('navbar-box') }}" style="height: {{ navbarHeight }}px;">
+        <view class="{{ namespace.join('navbar-prefix') }}">
+          <view
+            class="{{ namespace.join('navbar-icons', { border: prefixIcons.length > 1 }) }}"
+            style="{{ utils.setIconsStyle(menuClientRect, prefixIcons) }}"
+          >
+            <view
+              wx:for="{{ prefixIcons }}"
+              wx:key="*this"
+              class="{{ namespace.join('navbar-icon') }}"
+              data-index="{{ index }}"
+              bind:tap="clickIcon"
+            >
+              <ti-icon name="{{ item }}" size="40" color="{{ fontColor }}" />
+              <view class="{{ namespace.join('navbar-line', { hidden: index === prefixIcons.length - 1 }) }}" />
+            </view>
+          </view>
+          <slot name="prefix" />
+        </view>
+        <ti-loading
+          wx:if="{{ loading }}"
+          ext-class="{{ namespace.join('navbar-loading') }}"
+          size="{{ 40 }}"
+          color="{{ fontColor === '#ffffff' ? '#ffffff' : '#9e9e9e' }}"
+        />
+        <view wx:if="{{ title }}" class="ext-title-class {{ namespace.handle('navbar', [ 'title', 'animate-text' ]) }}">
+          {{ title }}
+        </view>
+        <view wx:else class="{{ namespace.join('navbar-animate-text') }}">
+          <slot name="title" />
+        </view>
+      </view>
+      <view
+        wx:if="{{ subtitle }}"
+        class="ext-subtitle-class {{ namespace.handle('navbar', [ 'subtitle', 'animate-text' ]) }}"
+        style="padding-bottom: 4px"
+      >
+        {{ subtitle }}
+      </view>
+      <view wx:else class="{{ namespace.join('navbar-animate-text') }}">
+        <slot name="subtitle" />
+      </view>
+    </view>
+  </view>
+</view>

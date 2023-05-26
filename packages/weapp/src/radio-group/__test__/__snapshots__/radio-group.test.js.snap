@@ -22,7 +22,7 @@ exports[`test component should render success 1`] = `
             bind:tap="onChange"
           >
             <ti-icon
-              extClass="icon-class titian-radio-icon-zoom-out titian-radio-icon-animation titian-radio-icon"
+              extClass="icon-class titian-radio-icon-animation titian-radio-icon"
             >
               <wx-view
                 class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
@@ -51,7 +51,7 @@ exports[`test component should render success 1`] = `
             bind:tap="onChange"
           >
             <ti-icon
-              extClass="icon-class titian-radio-icon-zoom-out titian-radio-icon-animation titian-radio-icon"
+              extClass="icon-class titian-radio-icon-animation titian-radio-icon"
             >
               <wx-view
                 class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
@@ -151,7 +151,7 @@ exports[`test component should render success 2`] = `
             bind:tap="onChange"
           >
             <ti-icon
-              extClass="icon-class titian-radio-icon-zoom-out titian-radio-icon-animation titian-radio-icon"
+              extClass="icon-class titian-radio-icon-animation titian-radio-icon"
             >
               <wx-view
                 class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
@@ -178,7 +178,7 @@ exports[`test component should render success 2`] = `
             bind:tap="onChange"
           >
             <ti-icon
-              extClass="icon-class titian-radio-icon-zoom-out titian-radio-icon-animation titian-radio-icon"
+              extClass="icon-class titian-radio-icon-animation titian-radio-icon"
             >
               <wx-view
                 class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"
@@ -278,7 +278,7 @@ exports[`test component should render success 3`] = `
             bind:tap="onChange"
           >
             <ti-icon
-              extClass="icon-class titian-radio-icon-zoom-out titian-radio-icon-animation titian-radio-icon"
+              extClass="icon-class titian-radio-icon-animation titian-radio-icon"
             >
               <wx-view
                 class="titian-icon-base titian-icon titian-icon-checkbox-hollow ext-class"

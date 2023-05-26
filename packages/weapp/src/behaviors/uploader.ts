@@ -161,7 +161,7 @@ const uploaderBehavior: WechatMiniprogramUploaderType = {
       delete this.fileMap[fileKey];
       delete this.schedule[fileKey];
       delete this.scheduleObj[fileKey];
-      file.status = UploadStatus.CACAL;
+      file.status = UploadStatus.CANCEL;
 
       if (typeof complete === 'function') {
         const custom = complete(

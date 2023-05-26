@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-types */
 import { IAnyObject, OmitType } from '../interface/index';
 
 export * from './number';
@@ -114,11 +115,32 @@ export function getFieldStyle(
   });
 }
 
-export function debounce(fn: (...agrn: unknown[]) => unknown, ms = 300) {
+export function debounce(fn: Function, ms = 300) {
   let timeoutId: ReturnType<typeof setTimeout>;
   return function debounceFn(this: unknown, ...args: unknown[]) {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => fn.apply(this, args), ms);
+  };
+}
+
+export function throttle(func: Function, delay = 100) {
+  let lastTime = 0;
+  let timeoutId: ReturnType<typeof setTimeout>;
+
+  return function fn(this: unknown, ...args: unknown[]) {
+    const currentTime = Date.now();
+
+    if (currentTime - lastTime >= delay) {
+      clearTimeout(timeoutId);
+      func.apply(this, args);
+      lastTime = currentTime;
+    } else {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        func.apply(this, args);
+        lastTime = Date.now();
+      }, delay - (currentTime - lastTime));
+    }
   };
 }
 

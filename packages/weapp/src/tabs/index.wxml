@@ -30,10 +30,12 @@
           wx:key="*this"
           id="item-{{ index }}"
           data-index="{{ index }}"
-          class="{{ index === activeIndex ? 'tab-active-class' : '' }} {{ namespace.join('tabs-nav', [ index, variant, { active: index === activeIndex }, { disabled: tool.includes(disabledTabs, index) }, { gap: gap >= 0 } ]) }}"
+          class="tab-class {{ index === activeIndex ? 'tab-active-class' : '' }} {{ namespace.join('tabs-nav', [ index, variant, { active: index === activeIndex }, { disabled: tool.includes(disabledTabs, index) }, { gap: gap >= 0 } ]) }}"
           bind:tap="onClick"
         >
-          <view class="{{ namespace.join('tabs-text-label') }} tab-text-class">{{ item[alias.label || tabKey] || item }}</view>
+          <view
+            class="{{ namespace.join('tabs-text-label') }} {{ index === activeIndex ? 'tab-text-active-class' : '' }} tab-text-class"
+          >{{ item[alias.label || tabKey] || item }}</view>
           <view wx:if="{{ item[ alias.description || 'description' ]}}" class="{{ namespace.join('tabs-text-description') }}">{{ item[alias.description || 'description'] }}</view>
           <view
             wx:if="{{ item[alias.date || 'date'] && (index !== activeIndex) && utils.isCurrentDay(item[alias.date || 'date']) }}"

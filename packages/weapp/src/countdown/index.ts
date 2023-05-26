@@ -60,7 +60,6 @@ BasicComponent({
     'useSlot, format, time': function fn(useSlot, format, time) {
       this.formatStr = 'HH:mm:ss';
       if (format) this.formatStr = format;
-      if (useSlot) this.formatStr = 'SSS';
       if (time !== undefined) {
         this.reset();
       }

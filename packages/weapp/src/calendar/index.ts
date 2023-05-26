@@ -1,8 +1,11 @@
 import BasicComponent from '../common/basic/BasicComponent';
 import { requestAnimationFrame } from '../common/utils/index';
+import zIndexTool from '../common/utils/zIndexTool';
 import Calendar from './calendar';
 import type { CalErrorProps } from './const';
 import { CalTypeEnum, DateStatusEnum, WEEK } from './const';
+
+const defaultZIndex = zIndexTool.getZIndex();
 
 BasicComponent<
   WechatMiniprogram.Component.DataOption,
@@ -25,6 +28,13 @@ BasicComponent<
       type: String,
       value: CalTypeEnum.SINGLE
     },
+
+    // 遮罩z-index 层级
+    maskZIndex: { type: Number, value: defaultZIndex },
+
+    // 内容z-index 层级
+    contentZIndex: { type: Number, value: defaultZIndex + 1 },
+
     defaultValue: null,
     value: null,
     minDate: { type: null, value: Date.now() },

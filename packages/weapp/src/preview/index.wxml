@@ -29,7 +29,7 @@
           </block>
           <block wx:else>
             <view class="{{ namespace.join('preview', [ 'file' ]) }}">
-              <video class="{{ namespace.join('preview', [ 'video' ]) }}" />
+              <video catch:tap="fn" src="{{ item.path }}" alt="{{ index }}" class="{{ namespace.join('preview', [ 'video' ]) }}" />
             </view>
           </block>
         </swiper-item>
@@ -54,4 +54,3 @@
   </view>
 
 </ti-transition>
-

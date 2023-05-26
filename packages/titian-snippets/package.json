@@ -1,8 +1,8 @@
 {
   "name": "@titian-design/snippets",
   "displayName": "titian-snippets",
-  "version": "0.1.0",
-  "description": "Titian Weapp Code Snippets for VS Code",
+  "version": "1.0.1",
+  "description": "Weimob-UI Snippets for VS Code",
   "categories": [
     "Snippets"
   ],

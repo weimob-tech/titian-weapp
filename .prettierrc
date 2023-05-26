@@ -19,5 +19,6 @@
     }
   ],
   "htmlWhitespaceSensitivity": "ignore",
-  "tabWidth": 2
+  "tabWidth": 2,
+  "plugins": ["./node_modules/@titian-design/prettier-plugin-wxml/lib/index.js"]
 }

@@ -99,7 +99,7 @@ exports[`test component should render label, icon, color, size, shape props succ
       bind:tap="onChange"
     >
       <ti-icon
-        extClass="icon-class titian-checkbox-icon-zoom-out titian-checkbox-icon-animation titian-checkbox-icon"
+        extClass="icon-class titian-checkbox-icon-animation titian-checkbox-icon"
       >
         <wx-view
           class="titian-icon-base titian-icon titian-icon-icon ext-class"
