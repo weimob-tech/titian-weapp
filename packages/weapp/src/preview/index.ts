@@ -60,6 +60,7 @@ BasicComponent<IPreviewData>({
       this.setData({
         index: e.detail.current
       });
-    }
+    },
+    fn() {}
   }
 });

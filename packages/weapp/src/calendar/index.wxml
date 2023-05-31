@@ -10,12 +10,34 @@
       </view>
       <view class="{{ namespace.handle('calendar', [ 'title' ]) }}">{{ monthTitle }}</view>
     </view>
-    <scroll-view class="{{ namespace.handle('calendar', [ 'scroll' ]) }} ext-scroll-class" scroll-y scroll-into-view="{{ id }}">
-      <view class="{{ namespace.join('calendar-month') }}" wx:for="{{ monthList }}" wx:for-item="month" wx:key="title" id="month{{ index }}" data-title="{{ month.title }}" data-id="month{{ index }}">
+    <scroll-view
+      class="{{ namespace.handle('calendar', [ 'scroll' ]) }} ext-scroll-class"
+      scroll-y
+      scroll-into-view="{{ id }}"
+    >
+      <view
+        class="{{ namespace.join('calendar-month') }}"
+        wx:for="{{ monthList }}"
+        wx:for-item="month"
+        wx:key="title"
+        id="month{{ index }}"
+        data-title="{{ month.title }}"
+        data-id="month{{ index }}"
+      >
         <view class="{{ namespace.handle('calendar', [ 'title' ]) }}">{{ month.title }}</view>
-        <view class="{{ namespace.handle('calendar', [ 'box' ,  month.isCover ? 'box-cover' + (round ? '-round' : '') : '']) }}">
+        <view
+          class="{{ namespace.handle('calendar', [ 'box' ,  month.isCover ? 'box-cover' + (round ? '-round' : '') : '']) }}"
+        >
           <block wx:for="{{ month.dateList }}" wx:for-index="dateIndex" wx:for-item="date" wx:key="dateIndex">
-            <view class="{{ namespace.handle('calendar', [ 'date' ]) }} {{ namespace.handle('calendar', tools.getClass(date, round, month.curDate, month.isCompare)) }}" bind:tap="onSelect" data-date="{{ date.fullDateNum }}" data-month-index="{{ index }}" data-date-index="{{ dateIndex }}" data-status="{{ date.status }}" style="color:{{ color }};{{ tools.mergeStyle(dateIndex, month.offset) }}">
+            <view
+              class="{{ namespace.handle('calendar', [ 'date' ]) }} {{ namespace.handle('calendar', tools.getClass(date, round, month.curDate, month.isCompare)) }}"
+              bind:tap="onSelect"
+              data-date="{{ date.fullDateNum }}"
+              data-month-index="{{ index }}"
+              data-date-index="{{ dateIndex }}"
+              data-status="{{ date.status }}"
+              style="color:{{ color }};{{ tools.mergeStyle(dateIndex, month.offset) }}"
+            >
               <view wx:if="{{ date.topInfo }}" class="{{ namespace.handle('calendar', [ 'date-top-info' ]) }}">
                 {{ date.topInfo }}
               </view>
@@ -31,17 +53,42 @@
         </view>
       </view>
     </scroll-view>
-    <ti-button size="large" color="{{ color }}" wx:if="{{ confirmText }}" ext-class="{{ namespace.handle('calendar', [ 'submit' ]) }}" bind:tap="onConfirm">
+    <ti-button
+      size="big"
+      color="{{ color }}"
+      wx:if="{{ confirmText }}"
+      class="{{ namespace.handle('calendar', [ 'submit' ]) }}"
+      bind:tap="onConfirm"
+    >
       {{ confirmText }}
     </ti-button>
   </view>
 </template>
-<block wx:if="{{usePopup}}">
-  <ti-popup visible="{{ visible }}" position="{{ position }}" close-on-mask="{{ closeOnMask }}" destroy-on-close="{{ destroyOnClose }}" class="{{ namespace.handle('calendar', [ 'popup' ]) }}" ext-class="{{ namespace.handle('calendar', [ 'popup-box' ]) }} ext-popup-class" ext-content-class="{{ namespace.handle('calendar', [ 'popup-content' ]) }} ext-popup-content-class" ext-mask-class="ext-popup-mask-class" bind:close="onClose">
-    <ti-popup-titlebar wx:if="{{ title }}" title="{{ title }}" variant="cancel-only" bind:close="onClose" bind:cancel="onClose" bind:confirm="onClose" />
-    <template is="inner-calendar" data="{{ extStyle,week,monthTitle,id,index,monthList,color,confirmText }}" />
+<block wx:if="{{ usePopup }}">
+  <ti-popup
+    visible="{{ visible }}"
+    mask-z-index="{{ maskZIndex }}"
+    content-z-index="{{ contentZIndex }}"
+    position="{{ position }}"
+    close-on-mask="{{ closeOnMask }}"
+    destroy-on-close="{{ destroyOnClose }}"
+    class="{{ namespace.handle('calendar', [ 'popup' ]) }}"
+    ext-class="{{ namespace.handle('calendar', [ 'popup-box' ]) }} ext-popup-class"
+    ext-content-class="{{ namespace.handle('calendar', [ 'popup-content' ]) }} ext-popup-content-class"
+    ext-mask-class="ext-popup-mask-class"
+    bind:close="onClose"
+  >
+    <ti-popup-titlebar
+      wx:if="{{ title }}"
+      title="{{ title }}"
+      variant="cancel-only"
+      bind:close="onClose"
+      bind:cancel="onClose"
+      bind:confirm="onClose"
+    />
+    <template is="inner-calendar" data="{{ extStyle, week, monthTitle, id, index, monthList, color, confirmText }}" />
   </ti-popup>
 </block>
 <block wx:else>
-  <template is="inner-calendar" data="{{ extStyle,week,monthTitle,id,index,monthList,color,confirmText }}" />
+  <template is="inner-calendar" data="{{ extStyle, week, monthTitle, id, index, monthList, color, confirmText }}" />
 </block>

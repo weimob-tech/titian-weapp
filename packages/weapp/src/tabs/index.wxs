@@ -17,7 +17,7 @@ function computedMarkLeft(index, tabWidth, unit, translateList) {
 
 function computedIntoView(activeIndex, count) {
   var id = activeIndex - parseInt(count / 2);
-  if (id < 0) {
+  if (id < 0 || !count) {
     id = 0;
   }
   if (count === 2) {

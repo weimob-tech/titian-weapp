@@ -10,21 +10,25 @@ exports[`test component should render success 1`] = `
       class="titian-uploader-action ext-action-class"
       bind:tap="onSelect"
     >
-      <ti-icon
-        class="titian-uploader-action-icon"
-        extClass="titian-uploader-icon"
+      <wx-view
+        class="titian-uploader-action-icon-box"
       >
-        <wx-view
-          class="titian-icon-base titian-icon titian-icon-plus ext-class"
-          style="font-size:30rpx"
-          bind:tap="onClick"
-        />
-      </ti-icon>
-      <wx-text
-        class="titian-uploader-action-text"
-      >
-        上传图片
-      </wx-text>
+        <ti-icon
+          class="titian-uploader-action-icon"
+          extClass="titian-uploader-icon"
+        >
+          <wx-view
+            class="titian-icon-base titian-icon titian-icon-plus ext-class"
+            style="font-size:30rpx"
+            bind:tap="onClick"
+          />
+        </ti-icon>
+        <wx-text
+          class="titian-uploader-action-text"
+        >
+          上传图片
+        </wx-text>
+      </wx-view>
     </wx-view>
   </wx-view>
 </main>

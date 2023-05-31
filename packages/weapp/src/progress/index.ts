@@ -13,7 +13,8 @@ BasicComponent({
 
     // 进度条可设置成渐变色
     gradientColor: {
-      type: Object,
+      type: null,
+      optionalTypes: [String, Object],
       observer: 'changeBgColor'
     },
 

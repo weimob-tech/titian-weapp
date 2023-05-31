@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-icon": "../icon/index",
+    "ti-loading": "../loading/index"
+  }
+}

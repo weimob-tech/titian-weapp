@@ -16,12 +16,11 @@
     class="{{ namespace.join('toast-content', [ 'with-text' ]) }} ext-class"
     style="{{ extStyle }}"
   >
-    <text class="{{ namespace.join('toast-text') }}">{{ text }}</text>
+    <text class="{{ namespace.join('toast-text') }} ext-text-class">{{ text }}</text>
   </view>
   <view wx:else class="{{ namespace.join('toast-content', [ 'with-icon' ]) }} ext-class" style="{{ extStyle }}">
     <ti-loading size="{{ 48 }}" wx:if="{{ type === EToastType.Loading }}" />
     <ti-icon size="{{ 48 }}" name="{{ iconName }}" color="{{ color }}" ext-class="{{ namespace.join('toast-icon') }}" />
-    <text class="{{ namespace.join('toast-text') }}">{{ text }}</text>
+    <text class="{{ namespace.join('toast-text') }} ext-text-class">{{ text }}</text>
   </view>
 </ti-popup>
-

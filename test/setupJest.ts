@@ -1,3 +1,6 @@
+/* eslint-disable global-require */
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-underscore-dangle */
 global.getRegExp = (...args) => new RegExp(...args);
 
 global.PREFIX = 'titian';
@@ -8,6 +11,8 @@ global.getCurrentPages = () => [{}];
 
 global.CACHE = {};
 global.ID_CACHE = new Map();
+// eslint-disable-next-line no-underscore-dangle
+global.__TITAN_CHANNEL__ = 'MP-WEIXIN';
 
 jest.mock('j-component/src/tool/utils', () => {
   const originalModule = jest.requireActual('j-component/src/tool/utils');

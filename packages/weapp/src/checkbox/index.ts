@@ -142,7 +142,7 @@ export type CheckboxProps = {
    * @type boolean
    * @default true
    * @example
-   * <ti-checkbox animation="{{ fasle }}"  />
+   * <ti-checkbox animation="{{ false }}"  />
    * @since 0.1.0
    * @memberof CheckboxProps
    */
@@ -254,6 +254,12 @@ BasicComponent<CheckboxData, CheckboxProps>({
             privateChecked = checked;
           }
 
+          let toggleClass = '';
+          if (privateChecked) {
+            toggleClass = 'zoom-in';
+          } else if (this.firstRender) {
+            toggleClass = 'zoom-out';
+          }
           this.setData({
             labelDisabled: labelDisabled || this.data.labelDisabled,
             direction: direction ?? this.data.direction,
@@ -266,7 +272,7 @@ BasicComponent<CheckboxData, CheckboxProps>({
             icon: icon ?? this.data.icon,
             size: size ?? this.data.size,
             animation: animation && this.data.animation,
-            toggleClass: privateChecked ? 'zoom-in' : 'zoom-out'
+            toggleClass
           });
 
           return;
@@ -281,16 +287,22 @@ BasicComponent<CheckboxData, CheckboxProps>({
         if (this.data.checked !== null) {
           checked = this.data.checked;
         }
-
+        let toggleClass = '';
+        if (checked) {
+          toggleClass = 'zoom-in';
+        } else if (this.firstRender) {
+          toggleClass = 'zoom-out';
+        }
         this.setData({
           privateChecked: checked,
-          toggleClass: checked ? 'zoom-in' : 'zoom-out'
+          toggleClass
         });
       });
     },
 
     handleChange() {
       const { value, privateChecked, checked } = this.data;
+      this.firstRender = true;
       const instance = this.parent || this;
 
       if (this.parent) {

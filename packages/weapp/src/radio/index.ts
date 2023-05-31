@@ -142,7 +142,7 @@ export type RadioProps = {
    * @type boolean
    * @default true
    * @example
-   * <ti-checkbox animation="{{ fasle }}"  />
+   * <ti-checkbox animation="{{ false }}"  />
    * @since 0.1.0
    * @memberof CheckboxProps
    */
@@ -252,7 +252,12 @@ BasicComponent<RadioData, RadioProps>({
           if (checked !== null) {
             privateChecked = checked;
           }
-
+          let toggleClass = '';
+          if (privateChecked) {
+            toggleClass = 'zoom-in';
+          } else if (this.firstRender) {
+            toggleClass = 'zoom-out';
+          }
           this.setData({
             labelDisabled: labelDisabled || this.data.labelDisabled,
             direction: direction ?? this.data.direction,
@@ -263,7 +268,7 @@ BasicComponent<RadioData, RadioProps>({
             checked,
             defaultChecked,
             privateChecked,
-            toggleClass: privateChecked ? 'zoom-in' : 'zoom-out'
+            toggleClass
           });
           return;
         }
@@ -279,15 +284,22 @@ BasicComponent<RadioData, RadioProps>({
           privateChecked = checked;
         }
 
+        let toggleClass = '';
+        if (privateChecked) {
+          toggleClass = 'zoom-in';
+        } else if (this.firstRender) {
+          toggleClass = 'zoom-out';
+        }
         this.setData({
           privateChecked,
-          toggleClass: privateChecked ? 'zoom-in' : 'zoom-out'
+          toggleClass
         });
       });
     },
 
     handleChange() {
       const { value, privateChecked, checked } = this.data;
+      this.firstRender = true;
 
       const instance = this.parent || this;
       const nextChecked = !privateChecked;

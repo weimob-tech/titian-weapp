@@ -1,4 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import { PropertyToData } from '../common/interface/index';
 import { isPlainObject, requestAnimationFrame } from '../common/utils/index';
 
@@ -7,22 +8,37 @@ enum TransitionStatus {
   exit
 }
 
-const getTransitions = (name: string) => {
+function getTransitions(name: string) {
   const transitionsMapping = new Map();
+  // 支付宝上externalClasses异步设置，titan-cli支持的有问题，用下面的方法兼容
+  let enterClass = 'enter-class';
+  let enterActiveClass = 'enter-active-class';
+  let enterDoneClass = 'enter-done-class';
+  let exitClass = 'exit-class';
+  let exitActiveClass = 'exit-active-class';
+  let exitDoneClass = 'exit-done-class';
+  // #ifdef MP-ALIPAY
+  enterClass = this.data.enterClass || enterClass;
+  enterActiveClass = this.data.enterActiveClass || enterActiveClass;
+  enterDoneClass = this.data.enterDoneClass || enterDoneClass;
+  exitClass = this.data.exitClass || exitClass;
+  exitActiveClass = this.data.exitActiveClass || exitActiveClass;
+  exitDoneClass = this.data.exitDoneClass || exitDoneClass;
+  // #endif
 
-  transitionsMapping.set('enter', `titian-${name}-enter titian-${name}-enter-active enter-class enter-active-class`);
+  transitionsMapping.set('enter', `titian-${name}-enter titian-${name}-enter-active ${enterClass} ${enterActiveClass}`);
   transitionsMapping.set(
     'enter-done',
-    `titian-${name}-enter-done titian-${name}-enter-active enter-done-class enter-active-class`
+    `titian-${name}-enter-done titian-${name}-enter-active ${enterDoneClass} ${enterActiveClass}`
   );
-  transitionsMapping.set('exit', `titian-${name}-exit titian-${name}-exit-active exit-class exit-active-class`);
+  transitionsMapping.set('exit', `titian-${name}-exit titian-${name}-exit-active ${exitClass} ${exitActiveClass}`);
   transitionsMapping.set(
     'exit-done',
-    `titian-${name}-exit-done titian-${name}-exit-active exit-done-class exit-active-class`
+    `titian-${name}-exit-done titian-${name}-exit-active ${exitDoneClass} ${exitActiveClass}`
   );
 
   return transitionsMapping;
-};
+}
 
 export type TransitionProps = WechatMiniprogram.Component.PropertyOption & {
   /**
@@ -305,7 +321,7 @@ const transition: Transition = (options = {}) => {
         const { name, enterName, timeout } = this.data;
 
         const duration = isPlainObject(timeout) ? timeout.appear || DEFAULT_TIMEOUT : timeout;
-        const transitionsMapping = getTransitions(enterName || name);
+        const transitionsMapping = getTransitions.call(this, enterName || name);
 
         this.status = TransitionStatus.enter;
 
@@ -347,7 +363,7 @@ const transition: Transition = (options = {}) => {
         }
 
         const duration = isPlainObject(timeout) ? timeout.exit || DEFAULT_TIMEOUT : timeout;
-        const transitionsMapping = getTransitions(exitName || name);
+        const transitionsMapping = getTransitions.call(this, exitName || name);
 
         this.status = TransitionStatus.exit;
 

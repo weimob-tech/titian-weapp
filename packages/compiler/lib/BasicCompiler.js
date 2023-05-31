@@ -144,7 +144,7 @@ class BasicCompiler extends Command {
       ? this.config.tsconfig
       : path.join(this.config.root, this.config.tsconfig);
 
-    super.beforeInit();
+    await super.beforeInit();
   }
 
   async init() {
@@ -176,7 +176,7 @@ class BasicCompiler extends Command {
     });
   }
 
-  afterRun() {
+  async afterRun() {
     if (process.env.NODE_ENV === 'development') {
       watch.watchTree(this.entryPath, { interval: 1, ignoreDirectoryPattern: /__test__/ }, (f, curr, prev) => {
         try {
@@ -195,12 +195,14 @@ class BasicCompiler extends Command {
             this.getAllFiles().then(() => {
               if (f.endsWith('.less')) {
                 this.buildLess([f]).then(async () => {
-                  await this.hooks.watch.call(null, f);
+                  this.hooks.watch.call(null, f);
+                  await this.toPromise(this.hooks.watchAsync);
                   this.logger.info('compiler', 'rebuild success');
                 });
               } else {
                 this.buildTs([f]).then(async () => {
-                  await this.hooks.watch.call(null, f);
+                  this.hooks.watch.call(null, f);
+                  await this.toPromise(this.hooks.watchAsync);
                   this.logger.info('compiler', 'rebuild success');
                 });
               }
@@ -213,7 +215,7 @@ class BasicCompiler extends Command {
       });
     }
 
-    super.afterRun();
+    await super.afterRun();
   }
 }
 

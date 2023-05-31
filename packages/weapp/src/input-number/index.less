@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
 
-  color: @neutral-color-1;
+  color: var(--input-number-color, @neutral-color-1);
 
   &-thumbnail,
   &-minus,
@@ -25,7 +25,7 @@
     line-height: normal;
 
     &-disabled {
-      color: @neutral-color-4;
+      color: var(--input-number-disabled-color, @neutral-color-4);
     }
   }
 
@@ -35,7 +35,7 @@
     margin: 0 4px;
     padding: 0 8px;
 
-    background: @neutral-color-7;
+    background: var(--input-number-background, @neutral-color-7);
   }
 
   &-thumbnail {
@@ -44,10 +44,10 @@
     min-width: 56px;
     padding: 14px;
 
-    background: @neutral-color-7;
+    background: var(--input-number-background, @neutral-color-7);
 
-    color: @neutral-color-1;
-    font-size: @T28;
+    color: var(--input-number-color, @neutral-color-1);
+    font-size: var(--input-number-font-size, @T28);
 
     &-border {
       position: relative;
@@ -65,14 +65,14 @@
     // 支付宝上有默认颜色，这里覆盖下
     background: transparent;
 
-    color: @neutral-color-1;
+    color: var(--input-number-color, @neutral-color-1);
     font-family: var(--input-number-font-family, inherit);
-    font-size: @T28;
+    font-size: var(--input-number-font-size, @T28);
     font-weight: @font-weight-bold;
     text-align: center;
 
     &-disabled {
-      color: @neutral-color-4;
+      color: var(--input-number-disabled-color, @neutral-color-4);
     }
 
     &-autoWidth {
@@ -119,7 +119,7 @@
       }
 
       &-disabled {
-        color: @neutral-color-4;
+        color: var(--input-number-disabled-color, @neutral-color-4);
       }
     }
   }

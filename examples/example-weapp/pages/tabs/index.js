@@ -118,7 +118,8 @@ Page({
             label: '居中',
             value: 'center',
             attr: {
-              tabWidth: 160
+              tabWidth: 160,
+              autoGap: false
             }
           }
         ],
@@ -157,6 +158,7 @@ Page({
   },
   onChange(e) {
     const attrs = JSON.parse(JSON.stringify(e.detail));
+    attrs.autoGap = attrs.autoGap ?? true;
     if (attrs.count) {
       attrs.tabs.length = attrs.count;
     }

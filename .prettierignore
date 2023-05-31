@@ -12,3 +12,4 @@ coverage
 packages/weapp/src/input/index.wxml
 packages/weapp/src/input-number/index.wxml
 packages/weapp/src/button/index.wxml
+packages/weapp/src/steps/index.wxml

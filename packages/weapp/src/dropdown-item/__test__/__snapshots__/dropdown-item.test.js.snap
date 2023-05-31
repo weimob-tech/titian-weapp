@@ -208,7 +208,7 @@ exports[`test component should multiple mode do success 1`] = `
                       bind:tap="onClick"
                     >
                       <wx-view
-                        class="titian-cell-title-wrap"
+                        class="title-wrap-class titian-cell-title-wrap"
                         style="align-items:center"
                       >
                         <wx-view
@@ -256,7 +256,7 @@ exports[`test component should multiple mode do success 1`] = `
                       bind:tap="onClick"
                     >
                       <wx-view
-                        class="titian-cell-title-wrap"
+                        class="title-wrap-class titian-cell-title-wrap"
                         style="align-items:center"
                       >
                         <wx-view
@@ -586,7 +586,7 @@ exports[`test component should render success 1`] = `
                       bind:tap="onClick"
                     >
                       <wx-view
-                        class="titian-cell-title-wrap"
+                        class="title-wrap-class titian-cell-title-wrap"
                         style="align-items:center"
                       >
                         <wx-view
@@ -634,7 +634,7 @@ exports[`test component should render success 1`] = `
                       bind:tap="onClick"
                     >
                       <wx-view
-                        class="titian-cell-title-wrap"
+                        class="title-wrap-class titian-cell-title-wrap"
                         style="align-items:center"
                       >
                         <wx-view

@@ -45,7 +45,7 @@ const printWxml = (path, options) => {
 
   result = wxmlParser(result, options); // attrName => attr-name
 
-  return result.replace(/\n*$/, endLine === 'lf' ? '\n' : '\r\n');
+  return result.replace(/\n*$/, endLine === 'lf' ? '\n' : '\n');
 };
 
 const printers = {

@@ -10,7 +10,7 @@ exports[`test component should clickable disable 1`] = `
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view
@@ -52,7 +52,7 @@ exports[`test component should ext style add success 1`] = `
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view
@@ -94,7 +94,7 @@ exports[`test component should render success 1`] = `
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view
@@ -127,7 +127,7 @@ exports[`test component should render success with required 1`] = `
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view
@@ -182,7 +182,7 @@ exports[`test component should render success with title, icon 1`] = `
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view
@@ -234,7 +234,7 @@ exports[`test component should render success with title, label, desc, sub-desc 
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view
@@ -299,7 +299,7 @@ exports[`test component should render success with title, right icon 1`] = `
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view
@@ -351,7 +351,7 @@ exports[`test component should render success without arrow 1`] = `
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view
@@ -393,7 +393,7 @@ exports[`test component should render title width 1`] = `
     bind:tap="onClick"
   >
     <wx-view
-      class="titian-cell-title-wrap"
+      class="title-wrap-class titian-cell-title-wrap"
       style="align-items:center"
     >
       <wx-view

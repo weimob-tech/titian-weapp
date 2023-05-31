@@ -40,7 +40,7 @@ Page({
             attr: { align: false }
           },
           {
-            label: '剧中',
+            label: '居中',
             value: 1,
             attr: { style: 0, align: true },
             hiddenItems: ['style']

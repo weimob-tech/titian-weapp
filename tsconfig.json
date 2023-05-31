@@ -8,10 +8,7 @@
     "baseUrl": ".",
     "strict": true,
     "moduleResolution": "node",
-    "lib": [
-      "ESNext",
-      "dom"
-    ],
+    "lib": ["ESNext", "dom"],
     "types": ["@types/jest", "node", "miniprogram-api-typings"],
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,

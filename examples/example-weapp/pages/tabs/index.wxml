@@ -11,6 +11,7 @@
       tab-width="{{ attrs.tabWidth }}"
       gap="{{ attrs.gap }}"
       ext-style="{{ attrs.extStyle }}"
+      auto-gap="{{ attrs.autoGap }}"
       use-slot
     >
       <block wx:for="{{ attrs.tabs }}" wx:key="index">

@@ -25,12 +25,27 @@ BasicComponent({
     },
 
     // 指定focus时的光标位置
-    cursor: Number,
+    cursor: {
+      type: Number,
+      value: -1
+    },
 
     // 设置键盘右下角按钮的文字，仅在type='text'时生效
     confirmType: {
       type: String,
       value: 'search'
+    },
+
+    // 键盘弹起时，是否自动上推页面
+    adjustPosition: {
+      type: Boolean,
+      value: true
+    },
+
+    // 指定光标与键盘的距离，取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离
+    cursorSpacing: {
+      type: Number,
+      value: 0
     },
 
     // 是否启用清除控件
@@ -125,6 +140,10 @@ BasicComponent({
       this.triggerEvent('click');
       // 和h5组件库统一api,旧的先兼容线上的
       this.triggerEvent('click-input');
+    },
+    onKeyboardheightchange(event: WechatMiniprogram.InputKeyboardHeightChange) {
+      // 键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}
+      this.triggerEvent('keyboardheightchange', event.detail);
     }
   }
 });

@@ -22,6 +22,8 @@ function completedStyles(data) {
       .concat(data.gradientColor.from, ', ')
       .concat(data.gradientColor.to, ')');
     styles['color'] = data.gradientColor.to;
+  } else if (plainUtils.isString(data.gradientColor)) {
+    styles['background-image'] = data.gradientColor;
   }
 
   if (data.color) {

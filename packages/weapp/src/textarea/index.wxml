@@ -1,6 +1,6 @@
 <wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
 
-<view class="ext-class {{ namespace.join('textarea', [ { autoHeight } ]) }}" style="{{ extStyle }}">
+<view class="ext-class titian-field {{ namespace.join('textarea', [ { autoHeight } ]) }}" style="{{ extStyle }}">
   <textarea
     class="textarea-class {{ namespace.handle('textarea', [ 'box' ]) }}"
     value="{{ value }}"

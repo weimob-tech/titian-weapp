@@ -1,4 +1,4 @@
-import config from '../../config';
+const config = require('../../config');
 
 Page({
   data: {
@@ -25,12 +25,14 @@ Page({
       navigationBarHeight: (menuInfo.top - sysInfo.statusBarHeight) * 2 + menuInfo.height,
       statusBarHeight: sysInfo.statusBarHeight
     });
+    // #ifdef MP-WEIXIN
     this.animate('.navigation-bar', [{ opacity: '0' }, { opacity: '1' }], 100, {
       scrollSource: '#scroller',
       timeRange: 100,
       startScrollOffset: 300,
       endScrollOffset: 340
     });
+    // #endif
   },
   onShareAppMessage() {
     return {

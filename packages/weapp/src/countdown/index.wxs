@@ -18,6 +18,11 @@ function show(format, tag, mark) {
   }
 }
 
+function indexOf(str, value) {
+  return str.indexOf(value);
+}
+
 module.exports = {
-  show: show
+  show: show,
+  indexOf: indexOf
 };

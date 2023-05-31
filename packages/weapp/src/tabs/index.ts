@@ -42,7 +42,15 @@ BasicComponent<{
   isReady: boolean;
   activeIndex: number;
 }>({
-  externalClasses: ['tab-active-class', 'swiper-class', 'tabs-class', 'tabs-mark-class', 'tab-text-class'],
+  externalClasses: [
+    'tab-active-class',
+    'swiper-class',
+    'tabs-class',
+    'tab-class',
+    'tabs-mark-class',
+    'tab-text-class',
+    'tab-text-active-class'
+  ],
   options: {
     pureDataPattern: /^_/
   },

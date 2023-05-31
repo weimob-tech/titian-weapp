@@ -8,7 +8,10 @@
   bind:tap="onClick"
 >
   <!-- title wrap -->
-  <view class="{{ namespace.join('cell', 'title-wrap') }}" style="{{ utils.completedStyles({ alignItems }) }}">
+  <view
+    class="title-wrap-class {{ namespace.join('cell', 'title-wrap') }}"
+    style="{{ utils.completedStyles({ alignItems }) }}"
+  >
     <!-- left icon -->
     <view class="{{ namespace.join('cell', 'icon-box') }}">
       <ti-icon
@@ -84,4 +87,3 @@
     <slot wx:else name="sub-desc" />
   </view>
 </view>
-

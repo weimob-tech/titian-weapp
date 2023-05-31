@@ -21,8 +21,10 @@
     <view wx:if="{{ utils.show(format, 's', 'dot') }}" class="{{ namespace.join('countdown-dot') }}">
       <ti-icon name="colon" />
     </view>
-    <view wx:if="{{ utils.show(format, 'S') }}" class="{{ namespace.join('countdown-block', [ 'millisecond' ]) }}">{{ timeData.millisecond }}</view>
+    <view
+      wx:if="{{ utils.show(format, 'S') }}"
+      class="{{ namespace.join('countdown-block', [ utils.indexOf(format, 'SSS') > -1 ? 'millisecond' : '' ]) }}"
+    >{{ timeData.millisecond }}</view>
   </view>
   <block wx:else>{{ formattedTime }}</block>
 </view>
-

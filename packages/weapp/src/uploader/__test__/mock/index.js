@@ -150,7 +150,7 @@ const chooseMediaImageData = {
       fileList: [changeCallbackJpgFileListItem]
     },
     {
-      file: { ...changeCallbackJpgFile, status: 'cacal' },
+      file: { ...changeCallbackJpgFile, status: 'cancel' },
       uploading: false,
       fileList: []
     }
@@ -173,7 +173,7 @@ const chooseMediaVideoErrorData = {
       fileList: [changeCallbackMovFileFailListItemFail]
     },
     {
-      file: { ...changeCallbackMovFileFail, status: 'cacal' },
+      file: { ...changeCallbackMovFileFail, status: 'cancel' },
       uploading: false,
       fileList: []
     }
@@ -229,7 +229,7 @@ module.exports.data = [
             fileList: [changeCallbackJpgFileListItem]
           },
           {
-            file: { ...changeCallbackJpgFile, status: 'cacal' },
+            file: { ...changeCallbackJpgFile, status: 'cancel' },
             uploading: false,
             fileList: []
           }
@@ -258,7 +258,7 @@ module.exports.data = [
             fileList: [changeCallbackJpgFileListItem]
           },
           {
-            file: { ...changeCallbackJpgFile, status: 'cacal' },
+            file: { ...changeCallbackJpgFile, status: 'cancel' },
             uploading: false,
             fileList: []
           }
@@ -287,7 +287,7 @@ module.exports.data = [
             fileList: [changeCallbackMovFileFailListItemDone]
           },
           {
-            file: { ...changeCallbackMovFileDone, status: 'cacal' },
+            file: { ...changeCallbackMovFileDone, status: 'cancel' },
             uploading: false,
             fileList: []
           }
@@ -353,7 +353,7 @@ module.exports.data = [
               name: '96NgI6RvT4el6c7340bed691689395e8b6884c366176.mov',
               duration: 30.571,
               fileType: 'video',
-              status: 'cacal'
+              status: 'cancel'
             },
             uploading: false,
             fileList: []
@@ -400,7 +400,7 @@ module.exports.data = [
             fileList: [changeCallbackMovFileFailListItemDone]
           },
           {
-            file: { ...changeCallbackMovFileDone, status: 'cacal' },
+            file: { ...changeCallbackMovFileDone, status: 'cancel' },
             uploading: false,
             fileList: []
           }
@@ -431,7 +431,7 @@ module.exports.data = [
             fileList: [changeCallbackMovFileFailListItemFail]
           },
           {
-            file: { ...changeCallbackMovFileFail, status: 'cacal' },
+            file: { ...changeCallbackMovFileFail, status: 'cancel' },
             uploading: false,
             fileList: []
           }
@@ -515,7 +515,7 @@ module.exports.data = [
             fileList: [changeCallbackJpgFileListItem]
           },
           {
-            file: { ...changeCallbackJpgFile, status: 'cacal' },
+            file: { ...changeCallbackJpgFile, status: 'cancel' },
             uploading: false,
             fileList: []
           }
@@ -577,7 +577,7 @@ module.exports.data = [
               name: '96NgI6RvT4el6c7340bed691689395e8b6884c366176.mov',
               duration: 30.571,
               fileType: 'video',
-              status: 'cacal'
+              status: 'cancel'
             },
             uploading: false,
             fileList: []
@@ -618,7 +618,7 @@ module.exports.data = [
             fileList: [changeCallbackJpgFileListItem]
           },
           {
-            file: { ...changeCallbackJpgFile, status: 'cacal' },
+            file: { ...changeCallbackJpgFile, status: 'cancel' },
             uploading: false,
             fileList: []
           }
@@ -685,7 +685,7 @@ module.exports.data = [
               name: 'fw8d7iehm94.mov',
               duration: 0,
               fileType: 'video',
-              status: 'cacal'
+              status: 'cancel'
             },
             uploading: false,
             fileList: []
@@ -736,7 +736,7 @@ module.exports.data = [
               name: '新建文本文档.txt',
               duration: 0,
               fileType: 'file',
-              status: 'cacal'
+              status: 'cancel'
             },
             uploading: false,
             fileList: []

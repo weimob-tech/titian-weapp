@@ -40,7 +40,12 @@ BasicComponent<
     size: { type: String, value: UploadActionType.SMALL },
     disabled: Boolean,
     extStyle: String,
-    immediatelyChoose: { type: Boolean, value: true }
+    immediatelyChoose: { type: Boolean, value: true },
+    reverse: {
+      type: Boolean,
+      value: false
+    },
+    cols: Number
   },
   behaviors: [uploaderBehavior, chooseBehavior],
   lifetimes: {
@@ -85,6 +90,7 @@ BasicComponent<
       });
     },
     onSelect(event: WechatMiniprogram.TouchEvent) {
+      this.triggerEvent('click-plus');
       const { fileKeyList, disabled, immediately, immediatelyChoose } = this.data;
       if (disabled) {
         return;

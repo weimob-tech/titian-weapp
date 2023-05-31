@@ -2,8 +2,10 @@ node_modules
 miniprogram_npm/
 packages/weapp/esm/*
 packages/weapp/dist-titan/*
+packages/weapp/esm-titan/*
 *.lock
 .husky/*
 .vscode/*
 *.d.ts
 *.wxs
+examples/example-weapp/dist

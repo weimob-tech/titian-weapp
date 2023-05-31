@@ -1,5 +1,6 @@
 'use strict';
 
+var tools = require('../common/utils/wxs/convertStyles.wxs');
 var UploadLoadComponentType = {
   NULL: '',
   LOADING: 'loading',
@@ -17,5 +18,12 @@ module.exports = {
   },
   showAction: function (fileLength, count) {
     return fileLength < count;
+  },
+  computedStyle: function (cols, extStyle) {
+    var style = {};
+    if (cols) {
+      style['--uploader-columns-count'] = cols < 6 ? cols : 6;
+    }
+    return tools.convertStyles([style, extStyle]);
   }
 };

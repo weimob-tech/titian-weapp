@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 function mergeOptionIntoAttrs(option, attr) {
   const afterAttr = {};
   option.forEach((opt) => {

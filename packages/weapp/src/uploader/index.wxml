@@ -1,9 +1,28 @@
 <wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
 <wxs module="utils" src="./index.wxs" />
 <view
-  class="{{ namespace.join('uploader') }} {{ namespace.handle('uploader', [ disabled ? 'disabled' : '', size === 'large' ? 'large' : 'small' ]) }} ext-class"
-  style="{{ extStyle }}"
+  class="{{ namespace.join('uploader') }} {{ namespace.handle('uploader', [ disabled ? 'disabled' : '', size === 'large' ? 'large' : 'small', cols ? 'cols' : '' ]) }} ext-class"
+  style="{{ utils.computedStyle(cols, extStyle) }}"
 >
+  <view
+    class="{{ namespace.handle('uploader', [ 'action' ]) }} ext-action-class"
+    bind:tap="onSelect"
+    wx:if="{{ utils.showAction(fileKeyList.length, count) && reverse }}"
+  >
+    <view class="{{ namespace.handle('uploader', [ 'action-icon-box' ]) }}">
+      <slot name="upload" wx:if="{{ useChooseSlot }}" />
+      <block wx:else>
+        <ti-icon
+          name="{{ chooseIcon }}"
+          size="{{ size === 'large' ? 40 : 30 }}"
+          class="{{ namespace.handle('uploader', [ 'action-icon' ]) }}"
+          ext-class="{{ namespace.handle('uploader', [ 'icon' ]) }}"
+          wx:if="{{ chooseIcon }}"
+        />
+        <text class="{{ namespace.handle('uploader', [ 'action-text' ]) }}" wx:if="{{ chooseText }}">{{ chooseText }}</text>
+      </block>
+    </view>
+  </view>
   <view
     class="{{ namespace.handle('uploader', [ 'thum' ]) }} ext-thum-box-class"
     wx:for-item="fileKey"
@@ -82,18 +101,20 @@
   <view
     class="{{ namespace.handle('uploader', [ 'action' ]) }} ext-action-class"
     bind:tap="onSelect"
-    wx:if="{{ utils.showAction(fileKeyList.length, count) }}"
+    wx:if="{{ utils.showAction(fileKeyList.length, count) && !reverse }}"
   >
-    <slot name="upload" wx:if="{{ useChooseSlot }}" />
-    <block wx:else>
-      <ti-icon
-        name="{{ chooseIcon }}"
-        size="{{ size === 'large' ? 40 : 30 }}"
-        class="{{ namespace.handle('uploader', [ 'action-icon' ]) }}"
-        ext-class="{{ namespace.handle('uploader', [ 'icon' ]) }}"
-        wx:if="{{ chooseIcon }}"
-      />
-      <text class="{{ namespace.handle('uploader', [ 'action-text' ]) }}" wx:if="{{ chooseText }}">{{ chooseText }}</text>
-    </block>
+    <view class="{{ namespace.handle('uploader', [ 'action-icon-box' ]) }}">
+      <slot name="upload" wx:if="{{ useChooseSlot }}" />
+      <block wx:else>
+        <ti-icon
+          name="{{ chooseIcon }}"
+          size="{{ size === 'large' ? 40 : 30 }}"
+          class="{{ namespace.handle('uploader', [ 'action-icon' ]) }}"
+          ext-class="{{ namespace.handle('uploader', [ 'icon' ]) }}"
+          wx:if="{{ chooseIcon }}"
+        />
+        <text class="{{ namespace.handle('uploader', [ 'action-text' ]) }}" wx:if="{{ chooseText }}">{{ chooseText }}</text>
+      </block>
+    </view>
   </view>
 </view>

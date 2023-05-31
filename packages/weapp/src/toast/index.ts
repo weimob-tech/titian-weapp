@@ -21,7 +21,7 @@ const staticOptions: IToastStaticOptions = {
 };
 
 BasicComponent({
-  externalClasses: ['ext-popup-class', 'ext-popup-content-class'],
+  externalClasses: ['ext-popup-class', 'ext-popup-content-class', 'ext-text-class'],
   properties: {
     extStyle: String,
     zIndex: {

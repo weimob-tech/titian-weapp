@@ -17,9 +17,19 @@
 >
   <view class="ext-class {{ namespace.join('dialog') }}" style="{{ extStyle }}">
     <view class="{{ namespace.join('dialog-inner') }} ext-inner-class">
-      <view wx:if="{{ title }}" class="{{ namespace.join('dialog-title') }} ext-title-class"><text>{{ title }}</text></view>
-      <view wx:if="{{ !useContentSlot }}" class="{{ namespace.join('dialog-content') }} ext-content-class"><text>{{ content }}</text></view>
-      <slot wx:if="{{ useContentSlot }}" />
+      <view wx:if="{{ title }}" class="{{ namespace.join('dialog-title') }} ext-title-class">
+        <view style="display:inline-block;">
+          <slot name="before-title" />
+        </view> <text>{{ title }}</text>
+      </view>
+      <view
+        wx:if="{{ !useContentSlot }}"
+        class="{{ namespace.join('dialog-content', [ title ? 'with-title' : 'no-title' ]) }} ext-content-class"><text>{{ content }}</text>
+      
+      </view>
+      <view wx:if="{{ useContentSlot }}" class="{{ namespace.join('dialog-content') }}">
+        <slot />
+      </view>
     </view>
 
     <view
@@ -28,16 +38,16 @@
     >
       <ti-button
         wx:if="{{ hasCancelButton }}"
-        size="medium"
+        size="big"
         ext-class="{{ namespace.join('dialog-actions-cancel') }} ext-action-cancel-class"
-        variant="{{ isTextButton ? 'text' : 'filled' }}"
+        variant="{{ isTextButton ? 'text' : 'outlined' }}"
         bind:tap="onCancel"
         ext-style="{{ cancelButtonColor ?'color:'+cancelButtonColor+';':'' }}{{ cancelButtonBgColor ?'background-color:'+cancelButtonBgColor+';':'' }}"
       >
         {{ cancelBtnText }}
       </ti-button>
       <ti-button
-        size="medium"
+        size="big"
         ext-class="{{ namespace.join('dialog-actions-confirm') }} ext-action-confirm-class"
         ext-style="{{ confirmButtonColor ?'color:'+confirmButtonColor+';':'' }}{{ confirmButtonBgColor ?'background-color:'+confirmButtonBgColor+';':'' }}"
         variant="{{ isTextButton ? 'text' : 'contained' }}"
@@ -60,7 +70,6 @@
         {{ confirmBtnText }}
       </ti-button>
     </view>
-    <slot wx:if="{{ !useActionsSlot }}" name="actions" />
+    <slot wx:if="{{ useActionsSlot }}" name="actions" />
   </view>
 </ti-popup>
-

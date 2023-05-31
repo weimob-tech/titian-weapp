@@ -31,7 +31,9 @@ export function formatDate(timeData: TimeDataType, formatStr: string, tag?: stri
     m: padLeft(timeData.minute, 1),
     ss: padLeft(timeData.second),
     s: padLeft(timeData.second, 1),
-    SSS: padLeft(timeData.millisecond, 3)
+    SSS: padLeft(timeData.millisecond, 3),
+    SS: padLeft(timeData.millisecond, 3).substring(0, 2),
+    S: padLeft(timeData.millisecond, 3).substring(0, 1)
   };
   // 此tag返回组件内部自定义所用的数据
   if (tag === 'group') {
@@ -46,6 +48,8 @@ export function formatDate(timeData: TimeDataType, formatStr: string, tag?: stri
     keyMap.set('ss', 'second');
     keyMap.set('s', 'second');
     keyMap.set('SSS', 'millisecond');
+    keyMap.set('SS', 'millisecond');
+    keyMap.set('S', 'millisecond');
     // 此处需要保证循环顺序
     keyMap.forEach((value, key) => {
       if (formatStr.includes(key) && !res[value as keyof TimeDataType]) {
@@ -63,7 +67,7 @@ export function formatDate(timeData: TimeDataType, formatStr: string, tag?: stri
 
 export function isDifferentTime(time1: number, time2: number, formatStr: string) {
   const actionsMap = new Map([
-    ['SSS', () => time1 !== time2],
+    ['S', () => time1 !== time2],
     ['s', () => Math.floor(time1 / 1000) !== Math.floor(time2 / 1000)],
     ['m', () => Math.floor(time1 / 60000) !== Math.floor(time2 / 60000)],
     ['H', () => Math.floor(time1 / 3600000) !== Math.floor(time2 / 3600000)],

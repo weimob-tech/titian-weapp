@@ -3,7 +3,8 @@
     label="销售价"
     unit="$"
     prefix="{{ attrs.prefix }}"
-    value="{{ 29.99 }}"
+    value="{{ 29.66666 }}"
+    radix="{{2}}"
     suffix="{{ attrs.suffix }}"
   />
 

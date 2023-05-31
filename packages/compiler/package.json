@@ -23,8 +23,6 @@
   },
   "dependencies": {
     "@deanc/esbuild-plugin-postcss": "^1.0.2",
-    "@pnpm/find-workspace-packages": "^4.0.5",
-    "@pnpm/logger": "^4.0.0",
     "@swc/core": "^1.2.130",
     "@titian-design/cli": "^0.1.0",
     "autoprefixer": "^10.4.0",
@@ -35,8 +33,6 @@
     "esbuild-plugin-d.ts": "^1.0.6",
     "esbuild-plugin-less": "^1.1.6",
     "execa": "5.1.1",
-    "find-workspace-root": "^1.0.1",
-    "find-yarn-workspace-root": "^2.0.0",
     "fs-extra": "^10.0.0",
     "open": "^8.4.0",
     "postcss": "^8.4.4",
@@ -45,7 +41,6 @@
     "prompts": "^2.4.2",
     "read-pkg-up": "7.0.1",
     "semver": "^7.3.5",
-    "sort-package-json": "^1.57.0",
     "tiny-glob": "^0.2.9",
     "watch": "^1.0.2"
   },

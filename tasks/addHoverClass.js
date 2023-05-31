@@ -1,7 +1,11 @@
-const htmlparser2 = require('htmlparser2');
-const render = require('dom-serializer').default;
+// eslint-disable-next-line import/no-extraneous-dependencies
 const CSSselect = require('css-select');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const render = require('dom-serializer').default;
 const fs = require('fs-extra');
+// eslint-disable-next-line import/no-extraneous-dependencies, import/no-unresolved
+const htmlparser2 = require('htmlparser2');
+
 function addHoverClass(wxmlPath) {
   const ignoreList = [
     'transition',
@@ -40,16 +44,20 @@ function addHoverClass(wxmlPath) {
     if (!view[0]) return;
     // 待输入框的组件，hover-class会影响聚焦
     if (wxmlPath.includes('input')) {
-      firstView = view[1];
+      [, firstView] = view;
     } else {
-      firstView = view[0];
+      [firstView] = view;
     }
   }
   if (!firstView) return;
   firstView.attribs['hover-class'] = 'hover-titian-ui';
-  const serilzd = render(dom, { xmlMode: true, selfClosingTags: true, encodeEntities: false });
+  const serilzd = render(dom, {
+    xmlMode: true,
+    selfClosingTags: true,
+    encodeEntities: false
+  });
   fs.writeFileSync(wxmlPath, serilzd);
 }
 module.exports = {
-  addHoverClass: addHoverClass
+  addHoverClass
 };

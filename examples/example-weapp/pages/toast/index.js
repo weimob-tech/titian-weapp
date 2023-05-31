@@ -2,8 +2,6 @@
 import { $tiToast } from '../../dist/index';
 import { mergeOptionIntoAttrs } from '../../util/index.js';
 
-// eslint-disable-next-line no-undef
-
 Page({
   data: {
     options: [
@@ -48,6 +46,7 @@ Page({
           {
             label: '加载',
             value: 1,
+            hiddenItems: ['style'],
             attr: { text: '加载中', action: 'loading' }
           },
           {

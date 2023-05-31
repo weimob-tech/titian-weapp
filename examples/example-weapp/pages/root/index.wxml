@@ -10,7 +10,7 @@
   <view>
     <image
       class="root-bg"
-      src="https://cdn2.weimob.com/saas/@assets/saas-fe-retail-h5-stc/image/titian/root-bg.jpg"
+      src="https://cdn2.weimob.com/saas/saas-fe-sirius-orion-node/production/157/titlepic.png"
       mode="widthFix"
     />
   </view>

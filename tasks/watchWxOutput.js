@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs-extra');
 const ci = require('miniprogram-ci');
 const prompts = require('prompts');
-// const { webhook } = require('./webhook');
+const { webhook } = require('./webhook');
 
 function debounce(fn, wait) {
   let timer = null;
@@ -77,20 +77,20 @@ class WxTool {
       })
       .then((res) => {
         console.log('上传成功', res);
-        // webhook({
-        //   msgtype: 'markdown',
-        //   markdown: {
-        //     content: `小程序<font color="comment"> ${this.projectConfig.projectname}</font><font color="warning"> ${version}</font> 代码发布成功, 请去草稿箱发布\n<font color="info"><@all></font>`
-        //   }
-        // });
+        webhook({
+          msgtype: 'markdown',
+          markdown: {
+            content: `小程序<font color="comment"> ${this.projectConfig.projectname}</font><font color="warning"> ${version}</font> 代码发布成功, 请去草稿箱发布\n<font color="info"><@all></font>`
+          }
+        });
       })
       .catch((e) => {
-        // webhook({
-        //   msgtype: 'markdown',
-        //   markdown: {
-        //     content: `小程序<font color="comment"> ${this.projectConfig.projectname}</font><font color="warning"> ${version}</font> 代码发布失败, ${e.message} \n<font color="info"><@all></font>`
-        //   }
-        // });
+        webhook({
+          msgtype: 'markdown',
+          markdown: {
+            content: `小程序<font color="comment"> ${this.projectConfig.projectname}</font><font color="warning"> ${version}</font> 代码发布失败, ${e.message} \n<font color="info"><@all></font>`
+          }
+        });
       });
   }
 }
