@@ -1,6 +1,7 @@
 import BasicComponent from '../common/basic/BasicComponent';
 
 BasicComponent({
+  children: 'step-item',
   properties: {
     extStyle: String,
     options: Array,
@@ -13,10 +14,7 @@ BasicComponent({
     icon: String,
 
     // 取值 left、right
-    subtitleAlign: {
-      type: String,
-      value: 'left'
-    },
+    subtitleAlign: String,
     alias: {
       type: Object,
       value: {}

@@ -1,5 +1,22 @@
 Page({
   data: {
+    test: [
+      {
+        description: '11详细内容文字，详细内容文字，详细内容文字',
+        icon: 'addressreceiving'
+      },
+      {
+        title: '标题文字',
+        subtitle: '2018.07.06 09:52:42',
+        description: '详细内容文字，详细内容文字，详细内容文字',
+        icon: 'addressright'
+      },
+      {
+        title: '标题文字',
+        subtitle: '2018.07.06 09:52:42',
+        description: '详细内容文字，详细内容文字'
+      }
+    ],
     options: [
       {
         desc: '模式',
@@ -60,7 +77,13 @@ Page({
       },
       { desc: '颜色', key: 'activeColor', type: 'color', name: 'Color' }
     ],
-    attrs: {}
+    attrs: {},
+    current: [1, 2]
+  },
+  onReady() {
+    setTimeout(() => {
+      this.setData({ current: 1 });
+    }, 1000);
   },
   onChange(e) {
     const { detail } = e;

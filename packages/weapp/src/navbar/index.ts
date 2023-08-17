@@ -125,22 +125,40 @@ BasicComponent({
       this.setData({ opacity });
     },
     scrollAnimate(self: any, selector: string, scrollSource: string) {
+      // #ifdef MP-WEIXIN
       const keyframes = Array.from({ length: 11 }, (x, i) => {
         const value = i / 10;
         return {
-          '--navbar-opacity': `${value}`,
+          opacity: value,
           offset: value
         };
       });
-      self.animate(`${selector} >>> .titian-navbar`, keyframes, 1000, {
+      self.animate(`${selector} >>> .titian-navbar-bg`, keyframes, 1000, {
         scrollSource,
         timeRange: 1000,
         startScrollOffset: this.data.transitionStartTop,
         endScrollOffset: this.data.transitionDistance
       });
+      self.animate(`${selector} >>> .titian-navbar-animate-title`, keyframes, 1000, {
+        scrollSource,
+        timeRange: 1000,
+        startScrollOffset: this.data.transitionStartTop,
+        endScrollOffset: this.data.transitionDistance
+      });
+      self.animate(`${selector} >>> .titian-navbar-animate-subtitle`, keyframes, 1000, {
+        scrollSource,
+        timeRange: 1000,
+        startScrollOffset: this.data.transitionStartTop,
+        endScrollOffset: this.data.transitionDistance
+      });
+      // #endif
     },
     clearScrollAnimation(self: any, selector: string) {
-      self.clearAnimation(`${selector} >>> .titian-navbar`);
+      // #ifdef MP-WEIXIN
+      self.clearAnimation(`${selector} >>> .titian-navbar-bg`);
+      self.clearAnimation(`${selector} >>> .titian-navbar-animate-title`);
+      self.clearAnimation(`${selector} >>> .titian-navbar-animate-subtitle`);
+      // #endif
     },
     clickIcon(event: WechatMiniprogram.CustomEvent) {
       const { index } = event.currentTarget.dataset;
@@ -192,9 +210,11 @@ BasicComponent({
     },
     getDiff({ selector, height, isTitian = true, cursorSpacing = 0 }: IDetailData) {
       return new Promise<number>((resolve, reject) => {
+        // #ifdef MP-WEIXIN
         if (isTitian) {
           selector = `${selector} >>> .titian-field`;
         }
+        // #endif
         if (this._timer) clearTimeout(this._timer);
         this._timer = setTimeout(() => {
           if (height === 0) {

@@ -111,6 +111,7 @@
     "ti-uploader": "../dist/uploader/index",
     "ti-countdown": "../dist/countdown/index",
     "ti-steps": "../dist/steps/index",
+    "ti-step-item": "../dist/step-item/index",
     "ti-input-number": "../dist/input-number/index",
     "ti-calendar": "../dist/calendar/index",
     "ti-image": "../dist/image/index",

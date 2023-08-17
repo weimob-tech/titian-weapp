@@ -5,7 +5,11 @@
   class="{{ namespace.join('collapse-item') }} {{ namespace.handle('collapse-item', [ utils.completedStatus(status) ? 'dilation' : '' ]) }} ext-class"
   style="{{ extStyle }}"
 >
+  <view wx:if="{{ useCellSlot }}" bind:tap="onClick">
+    <slot name="cell" />
+  </view>
   <ti-cell
+    wx:else
     title="{{ title }}"
     label="{{ label }}"
     desc="{{ desc }}"
@@ -37,4 +41,3 @@
     </view>
   </view>
 </view>
-

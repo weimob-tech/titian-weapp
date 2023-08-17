@@ -33,9 +33,39 @@ exports[`test component should render success 1`] = `
               class="ext-main-title-class titian-titlebar-main-title"
               bind:tap="onClickTitle"
             >
-              标题
+              
+          标题
+        
             </wx-view>
           </wx-view>
+          <wx-view
+            class="ext-right-class"
+            bind:tap="onClickRight"
+          />
+          <wx-view
+            class="ext-right-class titian-titlebar-right"
+            bind:tap="onClickRight"
+          />
+          <wx-view
+            class="ext-left-class titian-titlebar-left"
+            bind:tap="onClickLeft"
+          />
+          <wx-view
+            class="ext-title-class titian-titlebar-title"
+          >
+            <wx-view
+              class="ext-main-title-class titian-titlebar-main-title"
+              bind:tap="onClickTitle"
+            >
+              
+          标题
+        
+            </wx-view>
+          </wx-view>
+          <wx-view
+            class="ext-right-class"
+            bind:tap="onClickRight"
+          />
           <wx-view
             class="ext-right-class titian-titlebar-right"
             bind:tap="onClickRight"
@@ -161,9 +191,39 @@ exports[`test component 定制 optionItemHeight number  1`] = `
               class="ext-main-title-class titian-titlebar-main-title"
               bind:tap="onClickTitle"
             >
-              标题
+              
+          标题
+        
             </wx-view>
           </wx-view>
+          <wx-view
+            class="ext-right-class"
+            bind:tap="onClickRight"
+          />
+          <wx-view
+            class="ext-right-class titian-titlebar-right"
+            bind:tap="onClickRight"
+          />
+          <wx-view
+            class="ext-left-class titian-titlebar-left"
+            bind:tap="onClickLeft"
+          />
+          <wx-view
+            class="ext-title-class titian-titlebar-title"
+          >
+            <wx-view
+              class="ext-main-title-class titian-titlebar-main-title"
+              bind:tap="onClickTitle"
+            >
+              
+          标题
+        
+            </wx-view>
+          </wx-view>
+          <wx-view
+            class="ext-right-class"
+            bind:tap="onClickRight"
+          />
           <wx-view
             class="ext-right-class titian-titlebar-right"
             bind:tap="onClickRight"
@@ -320,9 +380,39 @@ exports[`test component 定制 optionItemHeight string 1`] = `
               class="ext-main-title-class titian-titlebar-main-title"
               bind:tap="onClickTitle"
             >
-              标题
+              
+          标题
+        
             </wx-view>
           </wx-view>
+          <wx-view
+            class="ext-right-class"
+            bind:tap="onClickRight"
+          />
+          <wx-view
+            class="ext-right-class titian-titlebar-right"
+            bind:tap="onClickRight"
+          />
+          <wx-view
+            class="ext-left-class titian-titlebar-left"
+            bind:tap="onClickLeft"
+          />
+          <wx-view
+            class="ext-title-class titian-titlebar-title"
+          >
+            <wx-view
+              class="ext-main-title-class titian-titlebar-main-title"
+              bind:tap="onClickTitle"
+            >
+              
+          标题
+        
+            </wx-view>
+          </wx-view>
+          <wx-view
+            class="ext-right-class"
+            bind:tap="onClickRight"
+          />
           <wx-view
             class="ext-right-class titian-titlebar-right"
             bind:tap="onClickRight"

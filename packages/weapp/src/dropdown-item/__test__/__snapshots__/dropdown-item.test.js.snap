@@ -201,7 +201,7 @@ exports[`test component should multiple mode do success 1`] = `
                     bind:click="onCellTap"
                   >
                     <wx-view
-                      class="ext-class titian-cell-divider titian-cell"
+                      class="ext-class titian-cell-divider titian-cell titian-border-bottom"
                       hoverClass="hover-class "
                       hoverStayTime="60"
                       style="align-items:center"
@@ -249,7 +249,7 @@ exports[`test component should multiple mode do success 1`] = `
                     bind:click="onCellTap"
                   >
                     <wx-view
-                      class="ext-class titian-cell-divider titian-cell"
+                      class="ext-class titian-cell-divider titian-cell titian-border-bottom"
                       hoverClass="hover-class "
                       hoverStayTime="60"
                       style="align-items:center"
@@ -579,7 +579,7 @@ exports[`test component should render success 1`] = `
                     bind:click="onCellTap"
                   >
                     <wx-view
-                      class="ext-class titian-cell-divider titian-cell"
+                      class="ext-class titian-cell-divider titian-cell titian-border-bottom"
                       hoverClass="hover-class "
                       hoverStayTime="60"
                       style="align-items:center"
@@ -627,7 +627,7 @@ exports[`test component should render success 1`] = `
                     bind:click="onCellTap"
                   >
                     <wx-view
-                      class="ext-class titian-cell-divider titian-cell"
+                      class="ext-class titian-cell-divider titian-cell titian-border-bottom"
                       hoverClass="hover-class "
                       hoverStayTime="60"
                       style="align-items:center"

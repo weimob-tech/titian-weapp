@@ -30,7 +30,10 @@ BasicComponent({
     },
 
     // 时间格式，DD-日，HH-时，mm-分，ss-秒，SSS-毫秒
-    format: String,
+    format: {
+      type: String,
+      value: 'HH:mm:ss'
+    },
 
     // 是否自动开始倒计时
     autoplay: Boolean,
@@ -54,12 +57,10 @@ BasicComponent({
   data: {
     timeData: {},
     formattedTime: ''
-    // 为了避免频繁setData，所以将status，formatStr，lock，endTime，remainTime直接设置在this上
+    // 为了避免频繁setData，所以将status，lock，endTime，remainTime直接设置在this上
   },
   observers: {
     'useSlot, format, time': function fn(useSlot, format, time) {
-      this.formatStr = 'HH:mm:ss';
-      if (format) this.formatStr = format;
       if (time !== undefined) {
         this.reset();
       }
@@ -108,7 +109,7 @@ BasicComponent({
       this.timerId = setTimeout(() => {
         const remainTime = Math.max(this.endTime - Date.now(), 0);
         if (remainTime > 0) {
-          if (isDifferentTime(remainTime, this.remainTime, this.formatStr)) {
+          if (isDifferentTime(remainTime, this.remainTime, this.data.format)) {
             this.setClock(remainTime);
             this.remainTime = remainTime;
           }
@@ -128,12 +129,12 @@ BasicComponent({
       // 时间变化时触发
       if (['block', 'mixture'].includes(this.data.variant)) {
         this.setData({
-          timeData: formatDate(timeGroup, this.formatStr, 'group')
+          timeData: formatDate(timeGroup, this.data.format, 'group')
         });
       }
       this.triggerEvent('change', timeGroup);
       if (!this.data.useSlot) {
-        const formattedTime = formatDate(timeGroup, this.formatStr) as string;
+        const formattedTime = formatDate(timeGroup, this.data.format) as string;
         this.setData({ formattedTime });
       }
     }

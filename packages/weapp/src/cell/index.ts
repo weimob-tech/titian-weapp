@@ -207,6 +207,7 @@ export type CellProps = {
    *  <ti-cell title-width="100rpx" />
    */
   titleWidth: PropertyToData<StringConstructor>;
+  direction: PropertyToData<StringConstructor>;
 };
 
 export type CellMethods = {
@@ -261,6 +262,10 @@ BasicComponent<Record<string, never>, CellProps, CellMethods>({
     divider: {
       type: Boolean,
       value: true
+    },
+    direction: {
+      type: String,
+      value: 'bottom' // top bottom left right all
     },
     titleWidth: String
   },

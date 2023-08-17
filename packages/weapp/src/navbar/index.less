@@ -10,21 +10,21 @@
     z-index: 199;
     right: 0;
     left: 0;
+  }
 
-    &::after {
-      content: '';
+  &-bg {
+    content: '';
 
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-      opacity: var(--navbar-opacity, 0);
-      background: var(--navbar-background, var(--navbar-background-inner, none));
-      backdrop-filter: var(--navbar-backdrop-filter, var(--navbar-backdrop-filter-inner, none));
-    }
+    opacity: var(--navbar-opacity, 0);
+    background: var(--navbar-background, var(--navbar-background-inner, none));
+    backdrop-filter: var(--navbar-backdrop-filter, var(--navbar-backdrop-filter-inner, none));
   }
 
   &-group {

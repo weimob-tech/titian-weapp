@@ -52,4 +52,3 @@ packages/weapp/esm-titan/*
 
 # local env files
 .env*.local
-examples/example-weapp/dist

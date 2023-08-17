@@ -8,13 +8,13 @@
       class="{{ namespace.handle('search', [ 'virtual-placeholder' ]) }}"
       bind:tap="onClickVirtualInput"
     >
-      <ti-icon name="search" size="32" ext-class="search-icon" />
+      <ti-icon name="search" size="36" ext-class="search-icon" />
       <view class="{{ namespace.handle('search', ['placeholder-text', { virtualtext: value !== '' }]) }}">
         {{ value !== '' ? value : placeholder }}
       </view>
     </view>
     <block wx:else>
-      <ti-icon wx:if="{{ leftIcon !== 'none' }}" name="{{ leftIcon }}" size="32" ext-class="search-icon" />
+      <ti-icon wx:if="{{ leftIcon !== 'none' }}" name="{{ leftIcon }}" size="36" ext-class="search-icon" />
       <slot wx:else name="left-icon" />
       <!-- #ifdef MP-WEIXIN -->
       <ti-input
@@ -30,6 +30,7 @@
         cursor-spacing="{{ cursorSpacing }}"
         read-only="{{ readOnly }}"
         disabled="{{ disabled }}"
+        maxlength="{{ maxlength }}"
         divider="{{ false }}"
         bind:blur="onBlur"
         bind:clear="onClear"
@@ -56,6 +57,7 @@
         read-only="{{ readOnly }}"
         disabled="{{ disabled }}"
         divider="{{ false }}"
+        maxlength="{{ maxlength }}"
         bind:blur="onBlur"
         bind:clear="onClear"
         bind:focus="onFocus"

@@ -6,7 +6,7 @@ Page({
         desc: '模式',
         key: 'dashed',
         name: 'Mode',
-        value: 1,
+        value: 0,
         list: [
           {
             label: '默认',

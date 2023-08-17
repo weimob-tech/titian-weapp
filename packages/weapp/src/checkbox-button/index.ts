@@ -99,6 +99,7 @@ type CheckboxButtonData = {
   styles: string;
 };
 BasicComponent<CheckboxButtonData, CheckboxButtonProps>({
+  externalClasses: ['tag-class'],
   parent: 'checkbox-group',
   relationAction() {
     this.updateDataFromParent();

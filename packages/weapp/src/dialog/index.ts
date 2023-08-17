@@ -104,7 +104,10 @@ BasicComponent({
     extStyle: String,
 
     confirmButtonColor: String,
-    cancelButtonColor: String
+    cancelButtonColor: String,
+
+    // 是否锁定背景滚动
+    preventScroll: { type: Boolean, value: true }
   },
   data: {
     innerVisible: false,
