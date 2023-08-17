@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "ti-popup-titlebar": "../popup-title-bar/index",
-    "ti-checkbox": "../checkbox/index"
-  }
-}

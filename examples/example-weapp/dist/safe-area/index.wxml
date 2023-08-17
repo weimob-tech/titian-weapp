@@ -1,3 +1,0 @@
-<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
-
-<view class="{{ namespace.join('safe', [ position ]) }}" />

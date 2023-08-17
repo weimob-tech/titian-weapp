@@ -1,1 +1,0 @@
-:host{display:contents}.titian-sidebar{background:var(--sidebar-bg-color,var(--neutral-color-7,#f5f5f5));height:100%;overflow:scroll;width:184rpx}

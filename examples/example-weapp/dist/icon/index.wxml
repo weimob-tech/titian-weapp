@@ -1,8 +1,0 @@
-<wxs src="./index.wxs" module="utils" />
-
-<view
-  class="{{ utils.completedClasses({ prefix, name, spin, hyphen }) }} ext-class"
-  style="{{ utils.completedStyles({ extStyle, rotate, size, color, iconStyle }) }}"
-  bind:tap="onClick"
-/>
-

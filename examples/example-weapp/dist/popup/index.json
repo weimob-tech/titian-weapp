@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "ti-transition": "../transition/index",
-    "ti-safe-area": "../safe-area/index"
-  }
-}

@@ -1,1 +1,0 @@
-.titian-dropdown-menu-title-wrap{background-color:var(--dropdown-menu-title-wrap-bg-color,var(--neutral-color-9,#fff));display:flex}.titian-dropdown-menu-title{--button-font-weight:var(--dropdown-title-font-weight,400);flex:1}.titian-dropdown-menu-icon{margin-left:var(--dropdown-menu-icon-margin-left,4rpx)}

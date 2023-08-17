@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "ti-picker": "../picker/index",
-    "ti-picker-column": "../picker-column/index"
-  }
-}

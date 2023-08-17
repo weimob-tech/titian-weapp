@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "ti-icon": "../icon/index",
-    "ti-sidebar": "../sidebar/index",
-    "ti-sidebar-item": "../sidebar-item/index"
-  }
-}

@@ -1,1 +1,0 @@
-@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.titian-svg-path-view{display:var(--svg-path-view-display,inline-flex);height:var(--svg-path-view-size,20rpx);width:var(--svg-path-view-size,20rpx)}.titian-svg-path-view-spin{animation:spin 1s linear infinite}

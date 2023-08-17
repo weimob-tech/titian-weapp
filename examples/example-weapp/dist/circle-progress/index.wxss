@@ -1,1 +1,0 @@
-:host{display:contents}.titian-circle-progress{display:inline-flex;overflow:hidden;position:relative}.titian-circle-progress-canvas{color:rgb(var(--theme-r,250),var(--theme-g,44),var(--theme-b,25))}.titian-circle-progress-text{font-size:28rpx;left:50%;position:absolute;top:50%;transform:translate(-50%,-50%)}
