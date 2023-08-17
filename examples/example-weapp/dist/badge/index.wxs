@@ -1,0 +1,19 @@
+'use strict';
+
+var tools = require('../common/utils/wxs/convertStyles.wxs');
+
+function computedStyle(offset, extStyle) {
+  var style = {};
+  if (offset.length === 2) {
+    style = {
+      '--badge-top': offset[0] + 'rpx',
+      '--badge-right': offset[1] + 'rpx'
+    };
+  }
+
+  return tools.convertStyles([style, extStyle]);
+}
+
+module.exports = {
+  computedStyle: computedStyle
+};

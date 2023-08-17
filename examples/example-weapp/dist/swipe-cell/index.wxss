@@ -1,0 +1,1 @@
+:host{display:contents}.titian-swipe-cell{overflow:hidden;width:100%}.titian-swipe-cell-wrap{position:relative;transition:transform .2s cubic-bezier(.5,1,.89,1)}.titian-swipe-cell-left,.titian-swipe-cell-right{display:flex;height:100%;position:absolute;top:0}.titian-swipe-cell-left{left:0;transform:translateX(-100%)}.titian-swipe-cell-right{right:0;transform:translateX(100%)}

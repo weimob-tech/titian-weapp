@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-grid-item": "../grid-item/index"
+  }
+}

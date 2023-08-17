@@ -1,0 +1,20 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+
+<view class="ext-class {{ namespace.join('circle-progress') }}">
+  <canvas
+    class="{{ namespace.join('circle-progress', 'canvas') }}"
+    type="2d"
+    style="{{ utils.convertCircleProgressStyle({ size, color }) }}"
+  />
+  <view
+    wx:if="{{ showProgress }}"
+    style="{{ utils.convertCircleProgressStyle({ font, color }) }}"
+    class="{{ namespace.handle('circle-progress', [ 'text' ]) }}"
+  >
+    {{ value }}%
+  </view>
+  <block wx:else>
+    <slot />
+  </block>
+</view>

@@ -1,0 +1,33 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+
+<view
+ class="{{ namespace.join('tooltip') }} ext-class"
+ bind:tap="open"
+ bind:touchstart="open"
+ style="{{ extStyle }}"
+>
+	<slot/>
+	<view class="{{ namespace.handle('tooltip', [ 'content', vis ? 'content-visible' : '' ]) }} ext-content-class" style="{{ utils.completedContentStyle({ top, left, isLeft, isRight, down }) }}">
+		<view class="{{ namespace.handle('tooltip', [ 'arrow', 'placeholder' ]) }}" style="{{ utils.completedArrowStyle({ down, arrayLeft, isLeft, isRight }) }}" />
+		<ti-icon
+		 ext-class="{{ namespace.handle('tooltip', [ 'arrow', down ? 'arrow-down' : 'arrow-up' ]) }}"
+		 ext-style="{{ utils.completedArrowStyle({ down, arrayLeft, isLeft, isRight }) }}"
+		 size="{{ 12 }}"
+		 name="{{ iconName }}"
+		/>
+		<view
+		 wx:if="{{ closeOnClick }}"
+		 class="{{ namespace.handle('tooltip', [ 'mask' ]) }}"
+		 catch:tap="close"
+		 catch:touchstart="close"
+		/>
+		<view class="{{ namespace.handle('tooltip', [ 'inner' ]) }} ext-inner-class">
+			<block wx:if="{{ content }}">
+				{{ content }}
+			</block>
+			<slot wx:else name="content" />
+		</view>
+	</view>
+</view>
+

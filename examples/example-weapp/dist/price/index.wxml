@@ -1,0 +1,6 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view class="ext-class {{ namespace.join('price') }}" style="{{ extStyle }}">
+  <text class="{{ namespace.join('price', 'label') }}">{{ label }}</text><text wx:if="{{ prefix }}" class="{{ namespace.join('price', 'prefix') }}">{{ prefix }}</text><text class="{{ namespace.join('price', 'unit') }}">{{ unit }}</text><text class="{{ namespace.join('price', 'integer') }}">{{ integerPart }}</text><text wx:if="{{radix > 0}}" class="{{ namespace.join('price', 'fraction') }}">.{{ fractionPart }}</text><text wx:if="{{ suffix }}" class="{{ namespace.join('price', 'suffix') }}">{{ suffix }}</text>
+</view>
+

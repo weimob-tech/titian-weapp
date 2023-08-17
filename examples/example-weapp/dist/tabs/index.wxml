@@ -1,0 +1,73 @@
+<wxs src="./index.wxs" module="utils" />
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="../common/utils/wxs/index.wxs" module="tool" />
+
+<view class="ext-class {{ namespace.join('tabs') }}" style="{{ extStyle }}">
+  <ti-sticky
+    disabled="{{ !sticky }}"
+    offset-top="{{ offsetTop }}"
+    use-pure-css="{{ usePureCss }}"
+    bind:fixed="onFixed"
+  >
+    <scroll-view
+      class="tabs-class {{ namespace.join('tabs-scroll', [ divider, variant ]) }}"
+      scroll-x
+      scroll-into-view="{{ utils.computedIntoView(activeIndex, currentCount) }}"
+      scroll-with-animation
+      enable-flex="{{ variant === 'block' }}"
+      show-scrollbar="{{ false }}"
+      enhanced="{{ true }}"
+      enable-passive
+      scroll-anchoring
+      scroll-with-animation="{{ scrollWithAnimation }}"
+    >
+      <view
+        class="{{ namespace.join('tabs-navs', [ { show: isReady } ]) }}"
+        style="{{ utils.computedNavStyle(currentTabWidth, unit, gap) }}"
+      >
+        <view
+          wx:for="{{ tabs }}"
+          wx:key="*this"
+          id="item-{{ index }}"
+          data-index="{{ index }}"
+          class="tab-class {{ index === activeIndex ? 'tab-active-class' : '' }} {{ namespace.join('tabs-nav', [ index, variant, { active: index === activeIndex }, { disabled: tool.includes(disabledTabs, index) }, { gap: gap >= 0 } ]) }}"
+          bind:tap="onClick"
+        >
+          <view
+            class="{{ namespace.join('tabs-text-label') }} {{ index === activeIndex ? 'tab-text-active-class' : '' }} tab-text-class"
+          >{{ item[alias.label || tabKey] || item }}</view>
+          <view wx:if="{{ item[ alias.description || 'description' ]}}" class="{{ namespace.join('tabs-text-description') }}">{{ item[alias.description || 'description'] }}</view>
+          <view
+            wx:if="{{ item[alias.date || 'date'] && (index !== activeIndex) && utils.isCurrentDay(item[alias.date || 'date']) }}"
+            class="{{ namespace.join('tabs-text-tag', [ 'now' ]) }}"
+          >
+            当前
+          </view>
+          <view
+            wx:elif="{{ item[alias.tag || 'tag'] && (index !== activeIndex) }}"
+            class="{{ namespace.join('tabs-text-tag') }}"
+          >
+            {{ item[alias.tag || 'tag'] }}
+          </view>
+        </view>
+        <view
+          class="tabs-mark-class {{ namespace.handle('tabs-mark', [ variant ]) }}"
+          style="{{ utils.computedMarkLeft(activeIndex, currentTabWidth, unit, translateList) }}"
+        />
+      </view>
+    </scroll-view>
+  </ti-sticky>
+  <swiper
+    wx:if="{{ useSlot }}"
+    class="swiper-class {{ namespace.join('tabs-swiper') }}"
+    current="{{ activeIndex }}"
+    duration="{{ duration }}"
+    bind:change="onChange"
+    bind:animationfinish="onAnimationfinish"
+  >
+    <swiper-item wx:for="{{ tabsLength }}" wx:key="*this">
+      <slot wx:if="{{ !tool.includes(disabledTabs, index) }}" name="tab-content-{{ index }}" />
+    </swiper-item>
+  </swiper>
+</view>
+

@@ -1,0 +1,19 @@
+'use strict';
+
+var tools = require('../common/utils/wxs/convertStyles.wxs');
+var wxsUtils = require('../common/utils/wxs/index.wxs');
+
+function addClass(prefix, object) {
+  var className = '';
+  var keys = wxsUtils.keys(object);
+  keys.forEach(function (item) {
+    if (object[item]) {
+      className += ' ' + prefix + item;
+    }
+  });
+  return className;
+}
+
+module.exports = {
+  addClass: addClass
+};

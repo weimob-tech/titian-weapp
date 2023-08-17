@@ -1,0 +1,17 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view
+  class="{{ namespace.join('empty') }} {{ namespace.handle('empty', [ size === 'medium' ? 'medium' : 'big' ]) }} ext-class"
+  style="{{ extStyle }}"
+  bind:tap="onClick"
+>
+  <slot name="image" wx:if="{{ useImageSlot }}" />
+  <image wx:else class="{{ namespace.handle('empty', [ 'image' ]) }}" src="{{ image }}" />
+  <slot name="title" wx:if="{{ useTitleSlot }}" />
+  <block wx:else>
+    <view class="{{ namespace.handle('empty', [ 'title' ]) }}" wx:if="{{ title }}">{{ title }}</view>
+    <view class="{{ namespace.handle('empty', [ 'sub-title' ]) }}" wx:if="{{ subTitle }}">{{ subTitle }}</view>
+  </block>
+  <slot name="bottom" />
+</view>
+

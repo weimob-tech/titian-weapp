@@ -1,0 +1,78 @@
+'use strict';
+
+var tools = require('../common/utils/wxs/convertStyles.wxs');
+
+function setIconsStyle(menuClientRect, prefixIcons) {
+  var style = {
+    width: (menuClientRect.width / 2) * prefixIcons.length + 'px',
+    height: menuClientRect.height + 'px',
+    'border-radius': menuClientRect.height / 2 + 'px'
+  };
+  if (prefixIcons.length === 1) {
+    style.width = style.height;
+  }
+  return tools.convertStyles(style);
+}
+
+function setNavbarStyle(
+  background,
+  navbarPlaceholderHeight,
+  usePlaceholder,
+  type,
+  opacity,
+  fontColor,
+  frostedGlass,
+  extStyle
+) {
+  var style = {
+    '--navbar-background-inner': background
+  };
+  if (type === 'immersion') {
+    usePlaceholder = false;
+  }
+
+  if (frostedGlass && (type === 'immersion' || !usePlaceholder)) {
+    style['--navbar-background-inner'] = 'rgba(255, 255, 255, 0.7)';
+    style['--navbar-backdrop-filter-inner'] = 'blur(8px)';
+  }
+
+  if (usePlaceholder) {
+    style.height = navbarPlaceholderHeight + 'px';
+  }
+  if (type === 'immersion') {
+    style['--navbar-opacity'] = opacity;
+  } else {
+    style['--navbar-opacity'] = 1;
+  }
+  if (fontColor) {
+    style['--navbar-title-color'] = fontColor;
+    if (fontColor === '#ffffff') {
+      style['--navbar-subtitle-color'] = fontColor;
+      style['--navbar-icon-line-color'] = fontColor;
+      style['--navbar-menu-background-inner'] = 'rgba(0, 0, 0, 15%)';
+      style['--navbar-menu-border-color-inner'] = 'rgba(255, 255, 255, 30%)';
+    }
+  }
+
+  return tools.convertStyles([style, extStyle]);
+}
+
+function setNavbarTop(top) {
+  var style = {
+    top: 'var(--navbar-fixed-top, 0px)',
+    transition: 'none'
+  };
+  if (top) {
+    style = {
+      top: 'var(--navbar-fixed-top, ' + top + 'px)',
+      transition: 'top 100ms 300ms'
+    };
+  }
+  return tools.convertStyles([style]);
+}
+
+module.exports = {
+  setIconsStyle: setIconsStyle,
+  setNavbarStyle: setNavbarStyle,
+  setNavbarTop: setNavbarTop
+};

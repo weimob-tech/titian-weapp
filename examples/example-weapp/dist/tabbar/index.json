@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-tabbar-item": "../tabbar-item/index",
+    "ti-safe-area": "../safe-area/index"
+  }
+}

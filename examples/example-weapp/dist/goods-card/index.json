@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-image": "../image/index",
+    "ti-price": "../price/index"
+  }
+}

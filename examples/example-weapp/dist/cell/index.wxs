@@ -1,0 +1,35 @@
+var _require = require('../common/utils/wxs/convertStyles.wxs');
+var convertStyles = _require.convertStyles;
+
+var wxsUtils = require('../common/utils/wxs/index.wxs');
+
+var completedStyles = function (data) {
+  return convertStyles([
+    {
+      'align-items': data.alignItems
+    },
+    data['extStyle']
+  ]);
+};
+
+var completedArrow = function (data) {
+  if (wxsUtils.isString(data.rightIcon) && wxsUtils.isNotEmpty(data.rightIcon)) {
+    return data.rightIcon;
+  }
+  return 'arrow-right';
+};
+
+function completedSubDescStyles(data) {
+  if (!data.desc) {
+    return 'display:flex';
+  }
+  if (data.rightIcon || data.arrow || data.link) {
+    return 'padding-right: 32rpx;';
+  }
+}
+
+module.exports = {
+  completedSubDescStyles: completedSubDescStyles,
+  completedStyles: completedStyles,
+  completedArrow: completedArrow
+};

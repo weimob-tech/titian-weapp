@@ -1,0 +1,1 @@
+:host{display:contents}.titian-sticky{position:relative;z-index:var(--sticky-z-index,99)}.titian-sticky-fixed{position:fixed;top:0;width:100%;z-index:var(--sticky-z-index,99)}

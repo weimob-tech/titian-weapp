@@ -1,0 +1,46 @@
+var utils = require('../common/utils/wxs/convertStyles.wxs');
+var proportion = 1.2;
+
+function completedLoadingWrapStyles(data) {
+  var loadingSize = data.size / proportion;
+  return utils.convertStyles({
+    padding: Math.ceil((data.size - loadingSize) / 2) + 'rpx',
+    width: loadingSize + 'rpx',
+    height: loadingSize + 'rpx'
+  });
+}
+
+function completedLoadingStyles(data) {
+  var loadingSize = data.size / proportion;
+  return utils.convertStyles({
+    width: loadingSize + 'rpx',
+    height: loadingSize + 'rpx'
+  });
+}
+
+function completedLoadingItemStyles(data) {
+  var loadingSize = data.size / proportion;
+  return (
+    completedLoadingStyles(data) +
+    ';' +
+    utils.convertStyles({
+      'border-width': Math.max(loadingSize / 12, 2) + 'rpx',
+      'border-top-color': data.color
+    })
+  );
+}
+
+function completedSpinnerStyles(data) {
+  var loadingSize = data.size / proportion;
+
+  return utils.convertStyles({
+    height: loadingSize / 2 + 'rpx'
+  });
+}
+
+module.exports = {
+  completedLoadingStyles: completedLoadingStyles,
+  completedSpinnerStyles: completedSpinnerStyles,
+  completedLoadingWrapStyles: completedLoadingWrapStyles,
+  completedLoadingItemStyles: completedLoadingItemStyles
+};

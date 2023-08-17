@@ -1,0 +1,49 @@
+'use strict';
+
+var tools = require('../common/utils/wxs/convertStyles.wxs');
+
+function computedMarkLeft(index, tabWidth, unit, translateList) {
+  unit = unit || 'px';
+  var left = (index + 1 / 2) * tabWidth + '';
+  var style = {
+    transform: 'translateX(' + left + unit + ')'
+  };
+  // 在等间距模式下，不同tab间滑动距离不一样
+  if (translateList.length > 0) {
+    style.transform = ' translateX(' + translateList[index] + 'px)';
+  }
+  return tools.convertStyles([style]);
+}
+
+function computedIntoView(activeIndex, count) {
+  var id = activeIndex - parseInt(count / 2);
+  if (id < 0 || !count) {
+    id = 0;
+  }
+  if (count === 2) {
+    id = activeIndex;
+  }
+  return 'item-' + id;
+}
+function computedNavStyle(tabWidth, unit, gap) {
+  unit = unit || 'rpx';
+  var style = {
+    '--tabs-tab-width': tabWidth + unit,
+    '--tabs-tab-gap': gap / 2 + unit
+  };
+  return tools.convertStyles([style]);
+}
+
+function isCurrentDay(date) {
+  var getDay = function (timestamp) {
+    return Math.floor(timestamp / 86400000);
+  };
+  return getDay(getDate(date).getTime()) === getDay(getDate());
+}
+
+module.exports = {
+  computedMarkLeft: computedMarkLeft,
+  computedIntoView: computedIntoView,
+  computedNavStyle: computedNavStyle,
+  isCurrentDay: isCurrentDay
+};

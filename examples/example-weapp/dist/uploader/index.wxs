@@ -1,0 +1,29 @@
+'use strict';
+
+var tools = require('../common/utils/wxs/convertStyles.wxs');
+var UploadLoadComponentType = {
+  NULL: '',
+  LOADING: 'loading',
+  PROGRESS: 'progress'
+};
+module.exports = {
+  isLoadStatus: function (loading) {
+    return loading !== UploadLoadComponentType.NULL;
+  },
+  isLoadComponent: function (loading) {
+    return loading === UploadLoadComponentType.LOADING;
+  },
+  getFile: function (fileMap, fileKey) {
+    return fileMap[fileKey];
+  },
+  showAction: function (fileLength, count) {
+    return fileLength < count;
+  },
+  computedStyle: function (cols, extStyle) {
+    var style = {};
+    if (cols) {
+      style['--uploader-columns-count'] = cols < 6 ? cols : 6;
+    }
+    return tools.convertStyles([style, extStyle]);
+  }
+};

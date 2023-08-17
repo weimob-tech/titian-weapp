@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ti-icon": "../icon/index",
+    "ti-svg-path-view": "../svg-path-view/index",
+    "ti-popup": "../popup/index",
+    "ti-popup-titlebar": "../popup-title-bar/index"
+  }
+}

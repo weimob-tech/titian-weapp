@@ -1,0 +1,83 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<template name="content">
+  <block wx:if="{{ useLeft }}">
+    <slot name="left-slot" wx:if="{{ useLeftSlot }}" />
+    <block wx:else>
+      <view class="ext-left-class {{ namespace.handle('titlebar', [ 'left' ]) }}" bind:tap="onClickLeft">
+        <block wx:if="{{ leftText }}">{{ leftText }}</block>
+        <ti-icon wx:elif="{{ leftIcon }}" name="{{ leftIcon }}" ext-class="ext-left-icon-class" />
+      </view>
+    </block>
+  </block>
+  <block wx:if="{{ useTitle }}">
+    <slot name="title-slot" wx:if="{{ useTitleSlot }}" />
+    <block wx:else>
+      <view class="ext-title-class {{ namespace.handle('titlebar', [ 'title' ]) }}">
+        <view
+          wx:if="{{ title }}"
+          bind:tap="onClickTitle"
+          class="ext-main-title-class {{ namespace.handle('titlebar', [ 'main-title' ]) }}"
+        >
+          {{ title }}
+        </view>
+        <view
+          wx:if="{{ subTitle }}"
+          bind:tap="onClickSubTitle"
+          class="ext-sub-title-class {{ namespace.handle('titlebar', [ 'sub-title' ]) }}"
+        >
+          {{ subTitle }}
+        </view>
+      </view>
+    </block>
+  </block>
+  <block wx:if="{{ useRight }}">
+    <slot name="right-slot" wx:if="{{ useRightSlot }}" />
+    <block wx:else>
+      <!-- #ifdef MP-ALIPAY -->
+
+      <view class="ext-right-class" bind:tap="onClickRight">
+        <block wx:if="{{ rightText }}">{{ rightText }}</block>
+        <ti-icon wx:elif="{{ rightIcon }}" name="{{ rightIcon }}" ext-class="ext-right-icon-class" />
+      </view>
+      <!-- #endif -->
+
+      <!-- #ifndef MP-ALIPAY -->
+
+      <view class="ext-right-class {{ namespace.handle('titlebar', [ 'right' ]) }}" bind:tap="onClickRight">
+        <block wx:if="{{ rightText }}">{{ rightText }}</block>
+        <ti-icon wx:elif="{{ rightIcon }}" name="{{ rightIcon }}" ext-class="ext-right-icon-class" />
+      </view>
+      <!-- #endif -->
+
+    </block>
+
+  </block>
+</template>
+<view wx:if="{{ useContainer }}" class="ext-class {{ namespace.join('titlebar') }}" style="{{ extStyle }}">
+  <!-- #ifdef MP-ALIPAY -->
+  <template
+    is="content"
+    data="{{ title, subTitle, useTitleSlot, useTitle, leftText, leftIcon, useLeftSlot, useLeft, rightText, rightIcon, useRightSlot, useRight, extLeftClass, extLeftIconClass, extTitleClass, extMainTitleClass, extSubTitleClass, extRightClass, extRightIconClass }}"
+  />
+  <!-- #endif -->
+  <!-- #ifndef MP-ALIPAY -->
+  <template
+    is="content"
+    data="{{ title, subTitle, useTitleSlot, useTitle, leftText, leftIcon, useLeftSlot, useLeft, rightText, rightIcon, useRightSlot, useRight }}"
+  />
+  <!-- #endif -->
+</view>
+<block wx:else>
+  <!-- #ifdef MP-ALIPAY -->
+  <template
+    is="content"
+    data="{{ title, subTitle, useTitleSlot, useTitle, leftText, leftIcon, useLeftSlot, useLeft, rightText, rightIcon, useRightSlot, useRight, extLeftClass, extLeftIconClass, extTitleClass, extMainTitleClass, extSubTitleClass, extRightClass, extRightIconClass }}"
+  />
+  <!-- #endif -->
+  <!-- #ifndef MP-ALIPAY -->
+  <template
+    is="content"
+    data="{{ title, subTitle, useTitleSlot, useTitle, leftText, leftIcon, useLeftSlot, useLeft, rightText, rightIcon, useRightSlot, useRight }}"
+  />
+  <!-- #endif -->
+</block>

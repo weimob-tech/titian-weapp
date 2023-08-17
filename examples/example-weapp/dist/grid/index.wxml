@@ -1,0 +1,16 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+
+<view>
+  <block wx:if="{{ title }}">
+    <view class="{{ namespace.join('grid', 'title') }}">{{ title }}</view>
+  </block>
+  <slot wx:else name="title" />
+
+  <view
+    class="ext-class {{ namespace.join('grid', { gutter : gutter !== 0, borderless : !border }) }}"
+    style="{{ utils.completedStyle(gutter) }}"
+  >
+    <slot />
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<!-- #ifdef MP-WEIXIN -->
+
+<view class="{{ namespace.join('callout-map') }}" style="{{ cssVariableStyle }}">
+  <map
+    id="map"
+    class="{{ namespace.join('callout-map-real') }}"
+    longitude="{{ longitude }}"
+    latitude="{{ latitude }}"
+    markers="{{ innerMarkers }}"
+    scale="{{ 16 }}"
+    show-scale="{{ true }}"
+    bind:tap="clickMap"
+    bind:markertap="clickMarker"
+    bind:callouttap="clickCallout"
+  >
+    <cover-view slot="callout">
+
+      <block wx:for="{{ innerMarkers }}" wx:key="id" wx:for-item="item">
+
+        <cover-view marker-id="{{ item.id }}" class="{{ namespace.join('callout-map-pop-wrap') }}">
+          <cover-view class="{{ namespace.join('callout-map-pop') }}">
+            <cover-view class="{{ namespace.join('callout-map-title') }}">
+              <cover-view class="{{ namespace.join('callout-map-title1') }}">{{ item.title1 }}</cover-view>
+              <cover-view class="{{ namespace.join('callout-map-title2') }}">{{ item.title2 }}</cover-view>
+            </cover-view>
+            <cover-view class="{{ namespace.join('callout-map-btn') }}">
+              <cover-image
+                class="{{ namespace.join('callout-map-arrow') }}"
+                src="https://cdn2.weimob.com/saas/@assets/saas-fe-basis-web-stc/cms/h5/map-nav.png"
+              />
+              <cover-view class="{{ namespace.join('callout-map-btntext') }}">导航</cover-view>
+            </cover-view>
+          </cover-view>
+          <cover-view class="{{ namespace.join('callout-map-pop-triangle') }}" />
+        </cover-view>
+        <!-- <cover-view marker-id="{{ item.id }}" class="{{ namespace.join('callout-map-pop-triangle') }}" /> -->
+      </block>
+    </cover-view>
+
+  </map>
+</view>
+
+<!-- #endif -->
+

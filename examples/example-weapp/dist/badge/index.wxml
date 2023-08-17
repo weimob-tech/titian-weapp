@@ -1,0 +1,14 @@
+<wxs src="./index.wxs" module="utils" />
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+
+<view class="{{ namespace.join('badge', [ { relative } ]) }}">
+  <view
+    class="ext-class {{ namespace.join('badge-container', [{ left: spread === 'toRight', hidden: !visible, circle, offset: offset.length, static, dot, atText }]) }}"
+    style="{{ utils.computedStyle(offset, extStyle) }}"
+  >
+    <block wx:if="{{ content && !dot }}">{{ content }}</block>
+    <ti-icon wx:elif="{{ icon }}" name="{{ icon }}" size="{{ 20 }}" />
+  </view>
+  <slot />
+</view>
+

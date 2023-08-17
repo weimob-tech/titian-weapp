@@ -1,0 +1,89 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+<view
+  class="ext-class {{ namespace.join('cell', { disabled, divider }) }} {{ 'titian-border-' + direction }}"
+  hover-class="hover-class {{ namespace.handle('cell', { hover: clickable }) }}"
+  style="{{ utils.completedStyles({ alignItems, extStyle }) }}"
+  hover-stay-time="60"
+  bind:tap="onClick"
+>
+  <!-- title wrap -->
+  <view
+    class="title-wrap-class {{ namespace.join('cell', 'title-wrap') }}"
+    style="{{ utils.completedStyles({ alignItems }) }}"
+  >
+    <!-- left icon -->
+    <view class="{{ namespace.join('cell', 'icon-box') }}">
+      <ti-icon
+        wx:if="{{ icon }}"
+        size="{{ iconSize || 36 }}"
+        name="{{ icon }}"
+        color="{{ color }}"
+        ext-class="{{ namespace.join('cell', 'icon') }}"
+      />
+      <slot wx:else name="icon" />
+    </view>
+
+    <view>
+      <!-- title -->
+      <view style="display:flex;{{ utils.completedStyles({ alignItems }) }}">
+        <view
+          wx:if="{{ title }}"
+          class="title-class {{ namespace.join('cell', 'title') }}"
+          style="{{ titleWidth ? 'width: ' + titleWidth : '' }}"
+        >
+          {{ title }}
+        </view>
+        <slot wx:else name="title" />
+        <view class="{{ namespace.join('cell', 'required-box') }}" wx:if="{{ required }}">
+          <ti-icon name="required" size="24" ext-class="{{ namespace.join('cell-required') }}" />
+        </view>
+      </view>
+      <!-- sub-title -->
+      <view wx:if="{{ label }}" class="label-class {{ namespace.join('cell', 'label') }}">
+        {{ label }}
+      </view>
+
+      <slot wx:else name="label" />
+    </view>
+
+  </view>
+  <!-- desc wrap -->
+  <view class="{{ namespace.handle('cell', [ 'desc-wrap' ]) }}">
+
+    <!-- desc -->
+    <view class="desc-content-class {{ namespace.handle('cell', [ 'desc-content' ]) }}">
+      <view wx:if="{{ desc }}" class="desc-class {{ namespace.join('cell', 'desc') }}">
+        {{ desc }}
+      </view>
+      <slot wx:else name="desc" />
+
+      <!-- right icon -->
+      <ti-icon
+        size="{{ rightIconSize || 28 }}"
+        color="{{ color }}"
+        wx:if="{{ useSubArrow ? false : rightIcon && rightIcon !== '' || arrow || link && link !== '' }}"
+        name="{{ utils.completedArrow({ arrow, rightIcon, link }) }}"
+        ext-class="{{ namespace.join('cell', 'right-icon') }}"
+      />
+      <slot wx:else name="right-icon" />
+    </view>
+
+    <view
+      wx:if="{{ subDesc }}"
+      style="{{ utils.completedSubDescStyles({ desc, rightIcon, arrow, link }) }}"
+      class="sub-desc-class {{ namespace.join('cell', 'sub-desc') }}"
+    >
+      {{ subDesc }}
+      <ti-icon
+        size="{{ rightIconSize || 28 }}"
+        color="{{ color }}"
+        wx:if="{{ useSubArrow && !desc && (rightIcon && rightIcon !== '' || arrow || link && link !== '') }}"
+        name="{{ utils.completedArrow({ arrow, rightIcon, link }) }}"
+        ext-class="{{ namespace.join('cell', 'right-icon') }}"
+      />
+      <slot wx:else name="right-icon" />
+    </view>
+    <slot wx:else name="sub-desc" />
+  </view>
+</view>

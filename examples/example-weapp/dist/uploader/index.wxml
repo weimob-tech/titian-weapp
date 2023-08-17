@@ -1,0 +1,120 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs module="utils" src="./index.wxs" />
+<view
+  class="{{ namespace.join('uploader') }} {{ namespace.handle('uploader', [ disabled ? 'disabled' : '', size === 'large' ? 'large' : 'small', cols ? 'cols' : '' ]) }} ext-class"
+  style="{{ utils.computedStyle(cols, extStyle) }}"
+>
+  <view
+    class="{{ namespace.handle('uploader', [ 'action' ]) }} ext-action-class"
+    bind:tap="onSelect"
+    wx:if="{{ utils.showAction(fileKeyList.length, count) && reverse }}"
+  >
+    <view class="{{ namespace.handle('uploader', [ 'action-icon-box' ]) }}">
+      <slot name="upload" wx:if="{{ useChooseSlot }}" />
+      <block wx:else>
+        <ti-icon
+          name="{{ chooseIcon }}"
+          size="{{ size === 'large' ? 40 : 30 }}"
+          class="{{ namespace.handle('uploader', [ 'action-icon' ]) }}"
+          ext-class="{{ namespace.handle('uploader', [ 'icon' ]) }}"
+          wx:if="{{ chooseIcon }}"
+        />
+        <text class="{{ namespace.handle('uploader', [ 'action-text' ]) }}" wx:if="{{ chooseText }}">{{ chooseText }}</text>
+      </block>
+    </view>
+  </view>
+  <view
+    class="{{ namespace.handle('uploader', [ 'thum' ]) }} ext-thum-box-class"
+    wx:for-item="fileKey"
+    wx:for="{{ fileKeyList }}"
+    wx:key="key"
+  >
+    <view
+      class="ext-thum-tip-class"
+      wx:if="{{ utils.getFile(fileMap, fileKey).tip }}"
+      style="{{ utils.getFile(fileMap, fileKey).style }}"
+    >{{ utils.getFile(fileMap, fileKey).tip }}</view>
+    <image
+      wx:if="{{ utils.getFile(fileMap, fileKey).fileType === 'image' && utils.getFile(fileMap, fileKey).path }}"
+      alt="{{ utils.getFile(fileMap, fileKey).name }}"
+      class="{{ namespace.handle('uploader', [ 'image', utils.getFile(fileMap, fileKey).status === 'fail' ? '' : 'preview' ]) }} ext-thum-class ext-thum-image-class"
+      data-path="{{ utils.getFile(fileMap, fileKey).path }}"
+      data-status="{{ utils.getFile(fileMap, fileKey).status }}"
+      src="{{ utils.getFile(fileMap, fileKey).path }}"
+      mode="aspectFill"
+      bind:tap="onPreviewImage"
+    />
+    <view
+      wx:elif="{{ utils.getFile(fileMap, fileKey).fileType === 'video'  && utils.getFile(fileMap, fileKey).path }}"
+      bind:tap="onPreviewVideo"
+      data-key="{{ utils.getFile(fileMap, fileKey).key }}"
+      class="{{ namespace.handle('uploader', [ 'video-box', utils.getFile(fileMap, fileKey).status === 'fail' ? '' : 'preview' ]) }} ext-thum-class ext-thum-video-class"
+    >
+      <video
+        class="{{ namespace.handle('uploader', [ 'video' ]) }}"
+        src="{{ utils.getFile(fileMap, fileKey).path }}"
+        title="{{ utils.getFile(fileMap, fileKey).name }}"
+        poster="{{ utils.getFile(fileMap, fileKey).poster }}"
+        controls="{{ false }}"
+      />
+    </view>
+    <view wx:else class="{{ namespace.handle('uploader', [ 'name' ]) }} ext-thum-class ext-thum-other-class">
+      {{ utils.getFile(fileMap, fileKey).name }}
+    </view>
+    <block wx:if="{{ utils.getFile(fileMap, fileKey).status === 'upload' && utils.isLoadStatus(uploadExercise) }}">
+      <view class="{{ namespace.handle('uploader', [ 'loading' ]) }}" wx:if="{{ utils.isLoadComponent(uploadExercise) }}">
+        <ti-loading
+          size="{{ size === 'large' ? 40 : 30 }}"
+          ext-class="{{ namespace.handle('uploader', [ 'loading-icon' ]) }}"
+        />
+        <view class="{{ namespace.handle('uploader', [ 'loading-text' ]) }}" wx:if="{{ uploadExerciseText }}">{{ uploadExerciseText }}</view>
+      </view>
+      <ti-progress
+        wx:else
+        ext-class="{{ namespace.handle('uploader', [ 'progress' ]) }}"
+        value="{{ scheduleObj[ fileKey ]}}"
+      />
+    </block>
+    <block wx:if="{{ utils.getFile(fileMap, fileKey).status === 'fail' }}">
+      <view
+        class="{{ namespace.handle('uploader', [ 'fail' ]) }}"
+        catch:tap="onDelete"
+        data-key="{{ utils.getFile(fileMap, fileKey).key }}"
+      >
+        <ti-icon
+          name="error"
+          size="{{ size === 'large' ? 40 : 30 }}"
+          ext-class="{{ namespace.handle('uploader', [ 'fail-icon' ]) }}"
+        />
+        <view class="{{ namespace.handle('uploader', [ 'fail-text' ]) }}" wx:if="{{ uploadFailText }}">{{ uploadFailText }}</view>
+      </view>
+    </block>
+    <view
+      class="{{ namespace.handle('uploader', [ 'del' ]) }}"
+      data-key="{{ utils.getFile(fileMap, fileKey).key }}"
+      wx:if="{{ utils.getFile(fileMap, fileKey).status !== 'fail' }}"
+      catch:tap="onDelete"
+    >
+      <ti-svg-path-view name="close-double" size="{{ size === 'large' ? 40 : 30 }}" fills="{{[ '#9e9e9e', '#fff' ]}}" />
+    </view>
+  </view>
+  <view
+    class="{{ namespace.handle('uploader', [ 'action' ]) }} ext-action-class"
+    bind:tap="onSelect"
+    wx:if="{{ utils.showAction(fileKeyList.length, count) && !reverse }}"
+  >
+    <view class="{{ namespace.handle('uploader', [ 'action-icon-box' ]) }}">
+      <slot name="upload" wx:if="{{ useChooseSlot }}" />
+      <block wx:else>
+        <ti-icon
+          name="{{ chooseIcon }}"
+          size="{{ size === 'large' ? 40 : 30 }}"
+          class="{{ namespace.handle('uploader', [ 'action-icon' ]) }}"
+          ext-class="{{ namespace.handle('uploader', [ 'icon' ]) }}"
+          wx:if="{{ chooseIcon }}"
+        />
+        <text class="{{ namespace.handle('uploader', [ 'action-text' ]) }}" wx:if="{{ chooseText }}">{{ chooseText }}</text>
+      </block>
+    </view>
+  </view>
+</view>

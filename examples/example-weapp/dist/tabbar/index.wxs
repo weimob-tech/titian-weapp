@@ -1,0 +1,17 @@
+'use strict';
+var SeparationEnum = {
+  BORDER: 'border',
+  SHADOW: 'shadow',
+  EMPTY: ''
+};
+function isBorder(status) {
+  return status === SeparationEnum.BORDER;
+}
+function isShadow(status) {
+  return status === SeparationEnum.SHADOW;
+}
+
+module.exports = {
+  isBorder: isBorder,
+  isShadow: isShadow
+};

@@ -1,0 +1,43 @@
+<wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
+<wxs src="./index.wxs" module="utils" />
+
+<view
+  class="{{ namespace.join('collapse-item') }} {{ namespace.handle('collapse-item', [ utils.completedStatus(status) ? 'dilation' : '' ]) }} ext-class"
+  style="{{ extStyle }}"
+>
+  <view wx:if="{{ useCellSlot }}" bind:tap="onClick">
+    <slot name="cell" />
+  </view>
+  <ti-cell
+    wx:else
+    title="{{ title }}"
+    label="{{ label }}"
+    desc="{{ desc }}"
+    icon="{{ icon }}"
+    arrow="{{ false }}"
+    clickable="{{ clickable }}"
+    divider="{{ divider }}"
+    disabled="{{ disabled }}"
+    bind:click="onClick"
+    ext-class="{{ namespace.handle('collapse-item', [ 'cell' ]) }}"
+  >
+    <slot name="title" slot="title" />
+    <slot name="icon" slot="icon" />
+    <slot name="desc" slot="desc" />
+    <slot name="label" slot="label" />
+    <slot wx:if="{{ useRightIconSlot }}" slot="right-icon" name="right-icon" />
+    <ti-icon
+      wx:else
+      slot="right-icon"
+      name="{{ rightIcon || 'arrow-up' }}"
+      rotate="{{ !utils.completedStatus(status) ? '180deg' : '' }}"
+      ext-class="{{ namespace.handle('collapse-item', [ 'icon', isReady ? 'icon-transition' : '' ]) }}"
+    />
+    <slot name="sub-desc" slot="sub-desc" />
+  </ti-cell>
+  <view class="{{ namespace.handle('collapse-item', [ 'wrap' ]) }}" animation="{{ animation }}" style="height: 0;">
+    <view class="{{ namespace.handle('collapse-item', [ 'box' ]) }} ext-content-class">
+      <slot />
+    </view>
+  </view>
+</view>

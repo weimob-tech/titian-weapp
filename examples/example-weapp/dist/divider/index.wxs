@@ -1,0 +1,27 @@
+'use strict';
+
+var tools = require('../common/utils/wxs/convertStyles.wxs');
+
+function computedStyle(color, borderColor, borderWidth, dashed, extStyle) {
+  var style = {
+    color: color,
+    '--divider-color': color
+  };
+  if (dashed) {
+    style['--divider-style'] = 'dashed';
+  } else {
+    style['--divider-background'] = borderColor;
+  }
+  if (borderColor) {
+    style['--divider-color'] = borderColor;
+  }
+  if (borderWidth) {
+    borderWidth = borderWidth > 2 ? borderWidth : 2;
+    style['--divider-width'] = borderWidth + 'rpx';
+  }
+  return tools.convertStyles([style, extStyle]);
+}
+
+module.exports = {
+  computedStyle: computedStyle
+};

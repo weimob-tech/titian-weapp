@@ -1,0 +1,1 @@
+@keyframes iosfix{0%{padding-bottom:env(safe-area-inset-bottom)}to{padding-bottom:env(safe-area-inset-bottom)}}.titian-safe{background-color:var(--safe-bg-color,var(--neutral-color-9,#fff))}.titian-safe-top{animation:iosfix 1s infinite;padding-top:env(safe-area-inset-top)}.titian-safe-bottom{animation:iosfix 1s infinite;padding-bottom:env(safe-area-inset-bottom)}

@@ -1,0 +1,49 @@
+'use strict';
+
+var tools = require('../common/utils/wxs/convertStyles.wxs');
+var suffix = require('../common/utils/wxs/suffix.wxs');
+
+function computedStyle(width, height, aspectRatio, radius, useGlobalStyle, extStyle) {
+  var style = {};
+  if (useGlobalStyle) {
+    radius = radius || 0;
+    style['border-radius'] = 'calc(var(--base-radius-size, 0px) + ' + suffix.addUnit(radius) + ')';
+  } else {
+    style['border-radius'] = suffix.addUnit(radius);
+  }
+  if (aspectRatio > 0) {
+    style['--image-aspect-ratio'] = aspectRatio;
+  }
+  if (width) {
+    style['width'] = suffix.addUnit(width);
+  }
+  if (height) {
+    style['height'] = suffix.addUnit(height);
+    // 没有宽度，只有高度（且不是百分比）
+    var useAspectRatio = aspectRatio > 0 || aspectRatio === 'inherit';
+    if (useAspectRatio && !width && height.indexOf('%') === -1 && height.indexOf('auto') === -1) {
+      style['width'] = 'calc(' + suffix.addUnit(height) + ' * var(--image-aspect-ratio, 1))';
+    }
+  }
+  return tools.convertStyles([style, extStyle]);
+}
+
+var MODE_MAP = {
+  none: 'center',
+  fill: 'scaleToFill',
+  cover: 'aspectFill',
+  contain: 'aspectFit'
+};
+function computedMode(mode, width, height) {
+  if (width && height === 'auto') {
+    mode = 'widthFix';
+  }
+  if (height && width === 'auto') {
+    mode = 'heightFix';
+  }
+  return MODE_MAP[mode] || mode || 'scaleToFill';
+}
+module.exports = {
+  computedStyle: computedStyle,
+  computedMode: computedMode
+};
