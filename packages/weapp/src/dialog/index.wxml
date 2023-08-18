@@ -3,7 +3,7 @@
 <ti-popup
   visible="{{ innerVisible }}"
   position="center"
-  prevent-scroll="{{ true }}"
+  prevent-scroll="{{ preventScroll }}"
   close-on-mask="{{ closeOnMask }}"
   class="{{ namespace.join('dialog-popup') }}"
   ext-class="ext-popup-class"
@@ -25,7 +25,7 @@
       <view
         wx:if="{{ !useContentSlot }}"
         class="{{ namespace.join('dialog-content', [ title ? 'with-title' : 'no-title' ]) }} ext-content-class"><text>{{ content }}</text>
-      
+
       </view>
       <view wx:if="{{ useContentSlot }}" class="{{ namespace.join('dialog-content') }}">
         <slot />

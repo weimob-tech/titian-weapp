@@ -8,4 +8,6 @@ packages/weapp/esm-titan/*
 .vscode/*
 *.d.ts
 *.wxs
-examples/example-weapp/dist
+examples/example-weapp/dist/
+packages/compiler/
+packages/prettier-plugin-wxml/

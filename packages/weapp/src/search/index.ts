@@ -81,7 +81,12 @@ BasicComponent({
     alwaysShowSearch: Boolean,
     alwaysShowPrefix: Boolean,
     alwaysShowSuffix: Boolean,
-    alwaysShowRightIcon: Boolean
+    alwaysShowRightIcon: Boolean,
+
+    maxlength: {
+      type: Number,
+      value: 140
+    }
   },
   data: {
     showVirtualPlaceholder: false,

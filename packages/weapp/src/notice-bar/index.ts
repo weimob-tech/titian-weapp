@@ -84,22 +84,17 @@ BasicComponent<
         scrollable = false;
       }
       if (scrollable === false) {
-        // #ifdef MP-WEIXIN
+        
         this.clearAnimation(NOTICE_TARGET);
-        // #endif
-        // #ifndef MP-WEIXIN
-        this.clearTimer();
-        // #endif
+        
+        
       } else {
-        // #ifdef MP-WEIXIN
+        
         this.clearAnimation(NOTICE_TARGET, () => {
           this.initAnimation();
         });
-        // #endif
-        // #ifndef MP-WEIXIN
-        this.clearTimer();
-        this.initAnimation();
-        // #endif
+        
+        
       }
     },
     color() {
@@ -123,12 +118,10 @@ BasicComponent<
       this.initAnimation();
     },
     detached() {
-      // #ifdef MP-WEIXIN
+      
       this.clearAnimation(NOTICE_TARGET);
-      // #endif
-      // #ifndef MP-WEIXIN
-      this.clearTimer();
-      // #endif
+      
+      
     }
   },
   methods: {
@@ -160,7 +153,7 @@ BasicComponent<
           const firstDuration = ((wrapWidth + offsetLeft) / this.data.speed) * 1000;
           const leftPosition = -wrapWidth - offsetLeft;
           const rightPosition = containerWidth - offsetLeft;
-          // #ifdef MP-WEIXIN
+          
           const creatAnimation = () =>
             this.animate(NOTICE_TARGET, [{ translateX: leftPosition }, { translateX: rightPosition }], 1, () => {
               this.animate(
@@ -175,11 +168,9 @@ BasicComponent<
           this.animate(NOTICE_TARGET, [{ translateX: 0 }, { translateX: leftPosition }], firstDuration, () => {
             creatAnimation();
           });
-          // #endif
+          
 
-          // #ifndef MP-WEIXIN
-          this.horizontalAnimation(firstDuration, duration, leftPosition, rightPosition);
-          // #endif
+          
         }
       );
     },
@@ -192,7 +183,7 @@ BasicComponent<
       this.setData({ list });
       getRect(this, '.titian-notice-bar').then((res: { height: number }) => {
         const wrapHeight = res.height;
-        // #ifdef MP-WEIXIN
+        
         const duration = ((this.data.list.length * wrapHeight) / this.data.speed) * 1000;
         const keyframes = this.data.list.map((item: string, index: number) => ({
           translateY: -index * wrapHeight,
@@ -206,11 +197,9 @@ BasicComponent<
             });
           });
         creatAnimation();
-        // #endif
+        
 
-        // #ifndef MP-WEIXIN
-        this.verticalAnimation(wrapHeight);
-        // #endif
+        
       });
     },
     onClick() {

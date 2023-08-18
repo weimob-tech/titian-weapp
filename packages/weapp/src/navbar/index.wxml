@@ -6,6 +6,7 @@
   style="{{ utils.setNavbarStyle(background, navbarPlaceholderHeight, usePlaceholder, type, opacity, fontColor, frostedGlass, extStyle) }}"
 >
   <view class="{{ namespace.join('navbar-main') }}" style="{{ utils.setNavbarTop(top) }}">
+    <view class="{{ namespace.join('navbar-bg') }}" />
     <view style="height: {{ statusBarHeight }}px;" />
     <view
       class="{{ namespace.join('navbar-group') }}"
@@ -36,21 +37,24 @@
           size="{{ 40 }}"
           color="{{ fontColor === '#ffffff' ? '#ffffff' : '#9e9e9e' }}"
         />
-        <view wx:if="{{ title }}" class="ext-title-class {{ namespace.handle('navbar', [ 'title', 'animate-text' ]) }}">
+        <view
+          wx:if="{{ title }}"
+          class="ext-title-class {{ namespace.handle('navbar', [ 'title', 'animate-text', 'animate-title' ]) }}"
+        >
           {{ title }}
         </view>
-        <view wx:else class="{{ namespace.join('navbar-animate-text') }}">
+        <view wx:else class="{{ namespace.handle('navbar', [ 'animate-text', 'animate-title' ]) }}">
           <slot name="title" />
         </view>
       </view>
       <view
         wx:if="{{ subtitle }}"
-        class="ext-subtitle-class {{ namespace.handle('navbar', [ 'subtitle', 'animate-text' ]) }}"
+        class="ext-subtitle-class {{ namespace.handle('navbar', [ 'subtitle', 'animate-text', 'animate-subtitle' ]) }}"
         style="padding-bottom: 4px"
       >
         {{ subtitle }}
       </view>
-      <view wx:else class="{{ namespace.join('navbar-animate-text') }}">
+      <view wx:else class="{{ namespace.handle('navbar', [ 'animate-text', 'animate-subtitle' ]) }}">
         <slot name="subtitle" />
       </view>
     </view>

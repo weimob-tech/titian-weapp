@@ -84,9 +84,7 @@ BasicComponent({
       value: false
     },
 
-    // #ifdef MP-ALIPAY
-    enableNative: Boolean,
-    // #endif
+    
 
     // 是否收起输入框
     thumbnail: {

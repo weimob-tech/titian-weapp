@@ -1,5 +1,5 @@
 import BasicComponent from '../common/basic/BasicComponent';
-import { isBoolean } from '../common/utils/index';
+import { isBoolean, nextTick } from '../common/utils/index';
 
 enum CollapseItemStateEnum {
   /** 折叠 */
@@ -40,7 +40,8 @@ BasicComponent({
     },
 
     useRightIconSlot: Boolean,
-    extStyle: String
+    extStyle: String,
+    useCellSlot: Boolean
   },
   data: {
     index: -1,
@@ -84,27 +85,29 @@ BasicComponent({
       const state = { icon, rightIcon, disabled, clickable, divider };
 
       if (status !== this.data.status) {
-        wx.createSelectorQuery()
-          .in(this)
-          .select('.titian-collapse-item-box')
-          .boundingClientRect((rect) => {
-            if (rect) {
-              const animation = this.collapseAnimation.height(rect.height);
-              if (status === CollapseItemStateEnum.UN_FOLD) {
-                animation.left(1).step({ duration: 300 }).height('auto').step();
-              } else {
-                animation.left(0).step({ duration: 1 }).height(0).step({ duration: 300 });
+        nextTick(() => {
+          wx.createSelectorQuery()
+            .in(this)
+            .select('.titian-collapse-item-box')
+            .boundingClientRect((rect) => {
+              if (rect) {
+                const animation = this.collapseAnimation.height(rect.height);
+                if (status === CollapseItemStateEnum.UN_FOLD) {
+                  animation.left(1).step({ duration: 300 }).height('auto').step();
+                } else {
+                  animation.left(0).step({ duration: 1 }).height(0).step({ duration: 300 });
+                }
+                this.setData({
+                  ...state,
+                  index,
+                  status,
+                  isReady: true,
+                  animation: this.collapseAnimation.export()
+                });
               }
-              this.setData({
-                ...state,
-                index,
-                status,
-                isReady: true,
-                animation: this.collapseAnimation.export()
-              });
-            }
-          })
-          .exec();
+            })
+            .exec();
+        });
       } else {
         this.setData({ ...state, index, status, isReady: true });
       }

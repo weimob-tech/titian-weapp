@@ -52,7 +52,10 @@ BasicComponent<IPreviewData>({
         });
       }
     },
-    handleSwiperChange(e: CustomEvent<{ current: number }>) {
+    handleSwiperChange(e: CustomEvent<{ current: number; source: string }>) {
+      if (e.detail.source !== 'touch') {
+        return;
+      }
       this.triggerEvent('change', {
         current: e.detail.current,
         item: this.data.list?.[e.detail.current]

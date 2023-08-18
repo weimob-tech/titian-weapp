@@ -17,14 +17,7 @@ function getTransitions(name: string) {
   let exitClass = 'exit-class';
   let exitActiveClass = 'exit-active-class';
   let exitDoneClass = 'exit-done-class';
-  // #ifdef MP-ALIPAY
-  enterClass = this.data.enterClass || enterClass;
-  enterActiveClass = this.data.enterActiveClass || enterActiveClass;
-  enterDoneClass = this.data.enterDoneClass || enterDoneClass;
-  exitClass = this.data.exitClass || exitClass;
-  exitActiveClass = this.data.exitActiveClass || exitActiveClass;
-  exitDoneClass = this.data.exitDoneClass || exitDoneClass;
-  // #endif
+  
 
   transitionsMapping.set('enter', `titian-${name}-enter titian-${name}-enter-active ${enterClass} ${enterActiveClass}`);
   transitionsMapping.set(

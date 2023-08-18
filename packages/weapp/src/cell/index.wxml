@@ -1,7 +1,7 @@
 <wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
 <wxs src="./index.wxs" module="utils" />
 <view
-  class="ext-class {{ namespace.join('cell', { disabled, divider }) }}"
+  class="ext-class {{ namespace.join('cell', { disabled, divider }) }} {{ 'titian-border-' + direction }}"
   hover-class="hover-class {{ namespace.handle('cell', { hover: clickable }) }}"
   style="{{ utils.completedStyles({ alignItems, extStyle }) }}"
   hover-stay-time="60"

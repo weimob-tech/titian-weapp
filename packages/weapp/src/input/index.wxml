@@ -23,7 +23,7 @@
   </view>
   <view style="flex: 1">
     <!-- 微信上可采用双向绑定model:value -->
-    <!-- #ifdef MP-WEIXIN -->
+    
     <input
       class="input-class titian-field {{ namespace.join('input-input', [ { error } ]) }} {{ 'input-text-align-' + textAlign }}"
       type="{{ type }}"
@@ -56,77 +56,10 @@
       bind:confirm="onConfirm"
       bind:keyboardheightchange="onKeyboardheightchange"
     />
-    <!-- #endif -->
+    
     <!-- qq上bind:input在真机无效，此处改为bindinput -->
-    <!-- #ifdef MP-QQ -->
-    <input
-      class="input-class titian-field {{ namespace.join('input-input', [ { error } ]) }} {{ 'input-text-align-' + textAlign }}"
-      type="{{ type }}"
-      value="{{ value }}"
-      password="{{ password }}"
-      placeholder="{{ placeholder }}"
-      placeholder-class="{{ namespace.join('input-placeholder-class', [ { error } ]) }}"
-      placeholder-style="{{ placeholderStyle }}"
-      disabled="{{ disabled || readOnly }}"
-      maxlength="{{ maxlength }}"
-      cursor-spacing="{{ cursorSpacing }}"
-      focus="{{ focus }}"
-      confirm-type="{{ confirmType }}"
-      always-embed="{{ alwaysEmbed }}"
-      confirm-hold="{{ confirmHold }}"
-      cursor="{{ cursor }}"
-      selection-start="{{ selectionStart }}"
-      selection-end="{{ selectionEnd }}"
-      adjust-position="{{ adjustPosition }}"
-      hold-keyboard="{{ holdKeyboard }}"
-      safe-password-cert-path="{{ safePasswordCertPath }}"
-      safe-password-length="{{ safePasswordLength }}"
-      safe-password-time-stamp="{{ safePasswordTimeStamp }}"
-      safe-password-nonce="{{ safePasswordNonce }}"
-      safe-password-salt="{{ safePasswordSalt }}"
-      safe-password-custom-hash="{{ safePasswordCustomHash }}"
-      bindinput="onInput"
-      bindfocus="onFocus"
-      bindblur="onBlur"
-      bindconfirm="onConfirm"
-      bindkeyboardheightchange="onKeyboardheightchange"
-    />
-    <!-- #endif -->
-    <!-- #ifndef MP-WEIXIN || MP-QQ -->
-    <input
-      class="input-class titian-field {{ namespace.join('input-input', [ { error } ]) }} {{ 'input-text-align-' + textAlign }}"
-      type="{{ type }}"
-      value="{{ value }}"
-      password="{{ password }}"
-      placeholder="{{ placeholder }}"
-      placeholder-class="{{ namespace.join('input-placeholder-class', [ { error } ]) }}"
-      placeholder-style="{{ placeholderStyle }}"
-      disabled="{{ disabled || readOnly }}"
-      maxlength="{{ maxlength }}"
-      cursor-spacing="{{ cursorSpacing }}"
-      focus="{{ focus }}"
-      confirm-type="{{ confirmType }}"
-      always-embed="{{ alwaysEmbed }}"
-      confirm-hold="{{ confirmHold }}"
-      cursor="{{ cursor }}"
-      selection-start="{{ selectionStart }}"
-      selection-end="{{ selectionEnd }}"
-      adjust-position="{{ adjustPosition }}"
-      hold-keyboard="{{ holdKeyboard }}"
-      safe-password-cert-path="{{ safePasswordCertPath }}"
-      safe-password-length="{{ safePasswordLength }}"
-      safe-password-time-stamp="{{ safePasswordTimeStamp }}"
-      safe-password-nonce="{{ safePasswordNonce }}"
-      safe-password-salt="{{ safePasswordSalt }}"
-      safe-password-custom-hash="{{ safePasswordCustomHash }}"
-      enable-native="{{ enableNative }}"
-      bind:input="onInput"
-      bind:focus="onFocus"
-      bind:blur="onBlur"
-      bind:confirm="onConfirm"
-      bind:keyboardheightchange="onKeyboardheightchange"
-    />
-    <!-- #endif -->
+    
+    
     <view
       wx:if="{{ errorMessage }}"
       class="{{ namespace.join('input-error-message') }} {{ 'input-text-align-' + textAlign }}"

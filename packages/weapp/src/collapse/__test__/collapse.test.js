@@ -26,14 +26,14 @@ describe('test component', () => {
 
     // 点击 初始化未选中面板
     unDilation.querySelector('.titian-collapse-item >>> .titian-cell').dispatchEvent('tap');
-    await simulate.sleep(0);
+    await simulate.sleep(1000);
     expect(changeCallback.mock.calls[0][0].detail).toStrictEqual(item.expect[1]);
     expect(openCallback.mock.calls[0][0].detail).toStrictEqual(item.open[0]);
     changeCallback.mockClear();
 
     // 再次点击 初始化未选中面板
     unDilation.querySelector('.titian-collapse-item >>> .titian-cell').dispatchEvent('tap');
-    await simulate.sleep(0);
+    await simulate.sleep(1000);
     expect(changeCallback.mock.calls[0][0].detail).toStrictEqual(item.expect[2]);
     expect(closeCallback.mock.calls[0][0].detail).toStrictEqual(item.close[0]);
 
@@ -43,7 +43,7 @@ describe('test component', () => {
 
     // 点击 初始化选中面板
     dilation.querySelector('.titian-collapse-item >>> .titian-cell').dispatchEvent('tap');
-    await simulate.sleep(0);
+    await simulate.sleep(1000);
     expect(changeCallback.mock.calls[0][0].detail).toStrictEqual(item.expect[3]);
 
     if (item.props.repel) {
@@ -84,14 +84,14 @@ describe('test component', () => {
 
     // 点击 初始化未选中面板
     unDilation.querySelector('.titian-collapse-item >>> .titian-cell').dispatchEvent('tap');
-    await simulate.sleep(0);
+    await simulate.sleep(1000);
     expect(changeCallback.mock.calls[0][0].detail).toStrictEqual(item.expect[1]);
     expect(openCallback.mock.calls[0][0].detail).toStrictEqual(item.open[0]);
     changeCallback.mockClear();
 
     // 再次点击 初始化未选中面板
     unDilation.querySelector('.titian-collapse-item >>> .titian-cell').dispatchEvent('tap');
-    await simulate.sleep(0);
+    await simulate.sleep(1000);
     expect(changeCallback.mock.calls[0][0].detail).toStrictEqual(item.expect[2]);
     expect(closeCallback.mock.calls[0][0].detail).toStrictEqual(item.close[0]);
 
@@ -101,7 +101,7 @@ describe('test component', () => {
 
     // 点击 初始化选中面板
     dilation.querySelector('.titian-collapse-item >>> .titian-cell').dispatchEvent('tap');
-    await simulate.sleep(0);
+    await simulate.sleep(1000);
     expect(changeCallback.mock.calls[0][0].detail).toStrictEqual(item.expect[3]);
 
     if (item.props.repel) {

@@ -8,3 +8,8 @@ packages/weapp/example/components/*
 .husky/*
 .vscode/*
 .*
+
+
+examples/example-weapp/dist/
+packages/compiler/
+packages/prettier-plugin-wxml/

@@ -2,34 +2,23 @@
 <wxs src="../common/utils/wxs/namespace.wxs" module="namespace" />
 
 <view class="ext-class {{ namespace.join('steps') }}" style="{{ utils.computedStyle(extStyle, activeColor) }}">
-  <view
-    wx:for="{{ options }}"
-    wx:key="index"
-    class="{{ namespace.join('steps-item', [ { active: item.checked || utils.checkCurrent(current, index) } ]) }}"
-    style="{{ utils.computedStyle(item[ alias.style || 'style' ]) }}"
-  >
-    <view class="{{ namespace.handle('steps-item', [ 'left' ]) }}">
-      <view class="{{ namespace.handle('steps-item', [ 'icon-box' ]) }}">
-        <ti-icon wx:if="{{ item[ alias.icon || 'icon' ]|| icon }}" name="{{ item[ alias.icon || 'icon' ]|| icon }}" />
-        <view wx:else class="{{ namespace.handle('steps-item', [ 'dot' ]) }}" />
-      </view>
-      <view wx:if="{{ index !== options.length - 1 }}" class="{{ namespace.handle('steps-item', [ 'line' ]) }}" />
-    </view>
-
-    <view class="{{ namespace.handle('steps-item', [ 'content' ]) }}">
-      <view
-        wx:if="{{ item[ alias.title || 'title' ] || item[ alias.subtitle || 'subtitle' ]}}"
-        class="{{ namespace.handle('steps-item', [ 'title-box' ]) }}"
-      >
-        <view class="{{ namespace.handle('steps-item', [ 'title' ]) }}">{{ item[alias.title || 'title'] }}</view>
-        <view class="{{ namespace.join('steps-item-subtitle', [ { right: subtitleAlign === 'right' } ]) }}">{{ item[alias.subtitle || 'subtitle'] }}</view>
-      </view>
-      <view
-        wx:if="{{ item[ alias.description || 'description' ]}}"
-        class="{{ namespace.handle('steps-item', [ 'desc' ]) }}"
-      >{{ item[alias.description || 'description'] }}</view>
-      <view wx:if="{{ item[ alias.time || 'time' ]}}" class="{{ namespace.handle('steps-item', [ 'time' ]) }}">{{ item[alias.time || 'time'] }}</view>
-    </view>
-  </view>
+  <block wx:if="{{ options.length > 0 }}">
+    <ti-step-item
+      wx:for="{{ options }}"
+      title="{{ item[ alias.title || 'title' ] }}"
+      subtitle="{{ item[ alias.subtitle || 'subtitle' ] }}"
+      description="{{item[ alias.description || 'description' ]}}"
+      time="{{ item[ alias.time || 'time' ] }}"
+      checked="{{ item[ alias.checked || 'checked' ] || utils.checkCurrent(current, index) }}"
+      icon="{{ item[ alias.icon || 'icon' ] || icon }}"
+      ext-style="{{ item[ alias.style || 'style' ] }}"
+      has-line="{{ index !== options.length - 1 }}"
+      subtitle-align="{{ item[ alias.subtitleAlign || 'subtitleAlign' ] || subtitleAlign }}"
+      current="{{current}}"
+    >
+    </ti-step-item>
+  </block>
+  <block wx:else>
+    <slot />
+  </block>
 </view>
-

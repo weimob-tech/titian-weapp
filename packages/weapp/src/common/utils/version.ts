@@ -26,9 +26,9 @@ function compareVersion(v1: string, v2: string) {
 
 export function canIUseFormFieldButton(): boolean {
   let result = false;
-  // #ifdef MP-WEIXIN
+  
   const system = getSystemInfoSync();
   result = compareVersion(system.SDKVersion, '2.10.3') >= 0;
-  // #endif
+  
   return result;
 }
