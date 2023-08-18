@@ -33,28 +33,12 @@ export default Behavior({
   },
   observers: {
     openType(openType) {
-      // #ifdef MP-ALIPAY
-      if (openType === 'getPhoneNumber') {
-        this.setData({
-          innerOpenType: 'getAuthorize',
-          scope: 'phoneNumber'
-        });
-      } else if (openType === 'getUserInfo') {
-        this.setData({
-          innerOpenType: 'getAuthorize',
-          scope: 'userInfo'
-        });
-      } else {
-        this.setData({
-          innerOpenType: openType
-        });
-      }
-      // #endif
-      // #ifdef MP-WEIXIN || MP-XHS || MP-KS
+      
+      
       this.setData({
         innerOpenType: openType
       });
-      // #endif
+      
     }
   },
   methods: {
@@ -83,22 +67,11 @@ export default Behavior({
       this.triggerEvent('launchapp', event.detail);
     },
     bindGetAuthorize(event: WechatMiniprogram.TouchEvent) {
-      // #ifdef MP-ALIPAY
-      const { scope, innerOpenType } = this.data;
-      if (innerOpenType === 'getAuthorize' && scope === 'phoneNumber') {
-        this.triggerEvent('getphonenumber', event.detail);
-      }
-      if (innerOpenType === 'getAuthorize' && scope === 'userInfo') {
-        this.triggerEvent('getuserinfo', event.detail);
-      }
-      this.triggerEvent('getAuthorize', event.detail);
-      // #endif
+      
     },
     bindFollowLifestyle(event: WechatMiniprogram.TouchEvent) {
       // 支付宝渠道有效， 当 open-type 为 lifestyle 时有效
-      // #ifdef MP-ALIPAY
-      this.triggerEvent('followLifestyle', event.detail);
-      // #endif
+      
     }
   }
 });

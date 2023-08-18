@@ -76,9 +76,7 @@ BasicComponent({
     // 获取焦点
     focus: Boolean,
 
-    // #ifdef MP-ALIPAY
-    enableNative: Boolean,
-    // #endif
+    
 
     // 设置键盘右下角按钮的文字，仅在type='text'时生效
     confirmType: {
